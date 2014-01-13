@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+/home/leslie/Works/EclipseWorkspace/.metadata/.plugins/org.eclipse.jdt.core
-2588262333.index
-1377251446.index
-2539232331.index
