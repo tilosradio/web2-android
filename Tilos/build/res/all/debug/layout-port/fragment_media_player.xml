@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * ServeStream: A HTTP stream browser/player for Android
+ * Copyright 2013 William Seemann
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+           	android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:background="@null" >
+        
+            <pontezit.android.tilos.com.utils.CoverView
+				android:id="@+id/album_art"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" />
+        
+        </LinearLayout>
+        
+        <LinearLayout
+        	android:id="@+id/player_info"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dip"
+        	android:gravity="center_horizontal"
+        	android:orientation="vertical" >
+        
+            <TextView
+                android:id="@+id/track_number_text"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:textSize="13sp"
+        		android:textStyle="normal"
+        		android:textColor="#ffa9a9a9"
+        		android:singleLine="true" />
+            
+            <TextView 
+            	android:id="@+id/trackname"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginLeft="12dip"
+        		android:layout_marginRight="12dip"
+            	android:textSize="17sp"
+        		android:textStyle="bold"
+        		android:textColor="#ffffffff"
+        		android:ellipsize="marquee"
+        		android:singleLine="true" />
+
+           	<TextView
+                android:id="@+id/artist_and_album"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginLeft="12dip"
+        		android:layout_marginRight="12dip"
+                android:textSize="13sp"
+        		android:textStyle="normal"
+        		android:textColor="#ffa9a9a9"
+        		android:ellipsize="marquee"
+        		android:singleLine="true" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+<!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/layout-port/fragment_media_player.xml -->

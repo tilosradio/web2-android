@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="TilosAndroidSupportV7AppcompatUnspecified.aar" >
+        <source path="/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/leslie/Works/AndroidCodes/Tilos/Tilos/assets" >
+            <file
+                name="about.html"
+                path="/home/leslie/Works/AndroidCodes/Tilos/Tilos/assets/about.html" />
+            <file
+                name="LICENSE.html"
+                path="/home/leslie/Works/AndroidCodes/Tilos/Tilos/assets/LICENSE.html" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/leslie/Works/AndroidCodes/Tilos/Tilos/build-types/debug/assets" />
+    </dataSet>
+
+</merger>
