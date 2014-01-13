@@ -21,6 +21,7 @@ local.properties
 
 # Android Studio
 .idea/
+.metadata
 .gradle
 /*/local.properties
 /*/out
