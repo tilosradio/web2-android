@@ -29,7 +29,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.transport.TransportFactory;
 
 import org.json.JSONArray;
@@ -72,7 +72,7 @@ public class BackupUtils {
 			success = false;
 		} else {
 			BufferedWriter out = null;
-			StreamDatabase streamdb = new StreamDatabase(context);
+			TilosDatabase streamdb = new TilosDatabase(context);
 			List<UriBean> uris = streamdb.getUris();
 			streamdb.close();
 			
@@ -110,7 +110,7 @@ public class BackupUtils {
 		boolean success = true;
 		String message = "Restore failed";
 		
-		StreamDatabase streamdb = new StreamDatabase(context);
+		TilosDatabase streamdb = new TilosDatabase(context);
 		
 		File backupFile = getBackupFile();
 		
@@ -165,16 +165,16 @@ public class BackupUtils {
 			UriBean uriBean = uris.get(i);				
 			
 			js = new JSONObject();
-			js.put(StreamDatabase.FIELD_STREAM_NICKNAME, uriBean.getNickname());
-			js.put(StreamDatabase.FIELD_STREAM_PROTOCOL, uriBean.getProtocol());
-			js.put(StreamDatabase.FIELD_STREAM_USERNAME, uriBean.getUsername());
-			js.put(StreamDatabase.FIELD_STREAM_PASSWORD, uriBean.getPassword());
-			js.put(StreamDatabase.FIELD_STREAM_HOSTNAME, uriBean.getHostname());
-			js.put(StreamDatabase.FIELD_STREAM_PORT, uriBean.getPort());
-			js.put(StreamDatabase.FIELD_STREAM_PATH, uriBean.getPath());
-			js.put(StreamDatabase.FIELD_STREAM_QUERY, uriBean.getQuery());
-			js.put(StreamDatabase.FIELD_STREAM_REFERENCE, uriBean.getReference());
-			js.put(StreamDatabase.FIELD_STREAM_LASTCONNECT, uriBean.getLastConnect());
+			js.put(TilosDatabase.FIELD_STREAM_NICKNAME, uriBean.getNickname());
+			js.put(TilosDatabase.FIELD_STREAM_PROTOCOL, uriBean.getProtocol());
+			js.put(TilosDatabase.FIELD_STREAM_USERNAME, uriBean.getUsername());
+			js.put(TilosDatabase.FIELD_STREAM_PASSWORD, uriBean.getPassword());
+			js.put(TilosDatabase.FIELD_STREAM_HOSTNAME, uriBean.getHostname());
+			js.put(TilosDatabase.FIELD_STREAM_PORT, uriBean.getPort());
+			js.put(TilosDatabase.FIELD_STREAM_PATH, uriBean.getPath());
+			js.put(TilosDatabase.FIELD_STREAM_QUERY, uriBean.getQuery());
+			js.put(TilosDatabase.FIELD_STREAM_REFERENCE, uriBean.getReference());
+			js.put(TilosDatabase.FIELD_STREAM_LASTCONNECT, uriBean.getLastConnect());
 			array.put(js);
 		}
 			
@@ -211,26 +211,26 @@ public class BackupUtils {
 	      		while (iterator.hasNext()) {
 	      			String name = iterator.next();
 	      		
-	      			if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_NICKNAME)) {
-	    				uriBean.setNickname(row.getString(StreamDatabase.FIELD_STREAM_NICKNAME));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_PROTOCOL)) {
-	      				uriBean.setProtocol(row.getString(StreamDatabase.FIELD_STREAM_PROTOCOL));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_USERNAME)) {
-	    				uriBean.setUsername(row.getString(StreamDatabase.FIELD_STREAM_USERNAME));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_PASSWORD)) {
-	    				uriBean.setPassword(row.getString(StreamDatabase.FIELD_STREAM_PASSWORD));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_HOSTNAME)) {
-	      				uriBean.setHostname(row.getString(StreamDatabase.FIELD_STREAM_HOSTNAME));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_PORT)) {
-	      				uriBean.setPort(row.getInt(StreamDatabase.FIELD_STREAM_PORT));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_PATH)) {
-	      				uriBean.setPath(row.getString(StreamDatabase.FIELD_STREAM_PATH));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_QUERY)) {
-	      				uriBean.setQuery(row.getString(StreamDatabase.FIELD_STREAM_QUERY));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_REFERENCE)) {
-	      				uriBean.setReference(row.getString(StreamDatabase.FIELD_STREAM_REFERENCE));
-	      			} else if (name.equalsIgnoreCase(StreamDatabase.FIELD_STREAM_LASTCONNECT)) {
-	      				uriBean.setLastConnect(row.getLong(StreamDatabase.FIELD_STREAM_LASTCONNECT));
+	      			if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_NICKNAME)) {
+	    				uriBean.setNickname(row.getString(TilosDatabase.FIELD_STREAM_NICKNAME));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_PROTOCOL)) {
+	      				uriBean.setProtocol(row.getString(TilosDatabase.FIELD_STREAM_PROTOCOL));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_USERNAME)) {
+	    				uriBean.setUsername(row.getString(TilosDatabase.FIELD_STREAM_USERNAME));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_PASSWORD)) {
+	    				uriBean.setPassword(row.getString(TilosDatabase.FIELD_STREAM_PASSWORD));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_HOSTNAME)) {
+	      				uriBean.setHostname(row.getString(TilosDatabase.FIELD_STREAM_HOSTNAME));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_PORT)) {
+	      				uriBean.setPort(row.getInt(TilosDatabase.FIELD_STREAM_PORT));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_PATH)) {
+	      				uriBean.setPath(row.getString(TilosDatabase.FIELD_STREAM_PATH));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_QUERY)) {
+	      				uriBean.setQuery(row.getString(TilosDatabase.FIELD_STREAM_QUERY));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_REFERENCE)) {
+	      				uriBean.setReference(row.getString(TilosDatabase.FIELD_STREAM_REFERENCE));
+	      			} else if (name.equalsIgnoreCase(TilosDatabase.FIELD_STREAM_LASTCONNECT)) {
+	      				uriBean.setLastConnect(row.getLong(TilosDatabase.FIELD_STREAM_LASTCONNECT));
 	      			}
 	      		}
 	      		

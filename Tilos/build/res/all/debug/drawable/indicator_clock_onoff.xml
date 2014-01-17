@@ -23,4 +23,4 @@
         android:drawable="@drawable/ic_clock_alarm_selected" />
     <item android:drawable="@drawable/ic_clock_alarm_on" />
 </selector>
-<!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/drawable/indicator_clock_onoff.xml -->
+<!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/drawable/indicator_clock_onoff.xml -->

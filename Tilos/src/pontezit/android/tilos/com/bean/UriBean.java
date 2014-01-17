@@ -22,7 +22,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 
 import android.content.ContentValues;
 import android.net.Uri;
@@ -162,17 +162,17 @@ public class UriBean implements Parcelable {
 	public ContentValues getValues() {
 		ContentValues values = new ContentValues();
 
-		values.put(StreamDatabase.FIELD_STREAM_NICKNAME, nickname);
-		values.put(StreamDatabase.FIELD_STREAM_PROTOCOL, protocol);
-		values.put(StreamDatabase.FIELD_STREAM_USERNAME, username);
-		values.put(StreamDatabase.FIELD_STREAM_PASSWORD, password);
-		values.put(StreamDatabase.FIELD_STREAM_HOSTNAME, hostname);
-		values.put(StreamDatabase.FIELD_STREAM_PORT, port);
-		values.put(StreamDatabase.FIELD_STREAM_PATH, path);
-		values.put(StreamDatabase.FIELD_STREAM_QUERY, query);
-		values.put(StreamDatabase.FIELD_STREAM_REFERENCE, reference);
-		values.put(StreamDatabase.FIELD_STREAM_LASTCONNECT, lastConnect);
-		values.put(StreamDatabase.FIELD_STREAM_LIST_POSITION, listPosition);
+		values.put(TilosDatabase.FIELD_STREAM_NICKNAME, nickname);
+		values.put(TilosDatabase.FIELD_STREAM_PROTOCOL, protocol);
+		values.put(TilosDatabase.FIELD_STREAM_USERNAME, username);
+		values.put(TilosDatabase.FIELD_STREAM_PASSWORD, password);
+		values.put(TilosDatabase.FIELD_STREAM_HOSTNAME, hostname);
+		values.put(TilosDatabase.FIELD_STREAM_PORT, port);
+		values.put(TilosDatabase.FIELD_STREAM_PATH, path);
+		values.put(TilosDatabase.FIELD_STREAM_QUERY, query);
+		values.put(TilosDatabase.FIELD_STREAM_REFERENCE, reference);
+		values.put(TilosDatabase.FIELD_STREAM_LASTCONNECT, lastConnect);
+		values.put(TilosDatabase.FIELD_STREAM_LIST_POSITION, listPosition);
 
 		return values;
 	}

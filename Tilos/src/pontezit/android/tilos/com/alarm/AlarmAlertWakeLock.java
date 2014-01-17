@@ -39,7 +39,7 @@ class AlarmAlertWakeLock {
         sCpuWakeLock = pm.newWakeLock(
                 PowerManager.PARTIAL_WAKE_LOCK |
                 PowerManager.ACQUIRE_CAUSES_WAKEUP |
-                PowerManager.ON_AFTER_RELEASE, "ServeStream.AlarmClockActivity");
+                PowerManager.ON_AFTER_RELEASE, "Tilos.AlarmClockActivity");
         sCpuWakeLock.acquire();
     }
 

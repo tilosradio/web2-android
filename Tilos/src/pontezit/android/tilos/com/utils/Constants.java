@@ -19,10 +19,10 @@ package pontezit.android.tilos.com.utils;
 
 public class Constants {
 
-	public static final String SERVESTREAM_PLAYSTORE_URI = "market://details?id=net.sourceforge.servestream";
+	public static final String SERVESTREAM_PLAYSTORE_URI = "market://details?id=pontezit.android.tilos.com";
 	public static final String SERVESTREAM_PROJECT_PAGE = "http://sourceforge.net/projects/servestream";
 	
-	public static final String SERVESTREAM_DONATE_URI = "market://details?id=net.sourceforge.donate.servestream";
+	public static final String SERVESTREAM_DONATE_URI = "market://details?id=pontezit.android.tilos.com";
 	public static final String SERVESTREAM_DONATE_PAGE = "https://sourceforge.net/p/servestream/donate";
 	
 	public static final String ZXING_PLAYSTORE_URI = "market://details?id=com.google.zxing.client.android";

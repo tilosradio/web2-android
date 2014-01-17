@@ -24,7 +24,7 @@ import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.activity.BluetoothOptionsActivity;
 import pontezit.android.tilos.com.adapter.BrowseAdapter;
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.transport.TransportFactory;
 import pontezit.android.tilos.com.utils.DetermineActionTask;
 import pontezit.android.tilos.com.utils.LoadingDialog;
@@ -287,7 +287,7 @@ public class BrowseFragment extends ListFragment implements
 	 */
 	private void saveUri(UriBean targetUri) {
 		if (targetUri != null) {
-			StreamDatabase db = new StreamDatabase(this.getActivity());
+			TilosDatabase db = new TilosDatabase(this.getActivity());
 			db.saveUri(targetUri);
 			db.close();
 		}

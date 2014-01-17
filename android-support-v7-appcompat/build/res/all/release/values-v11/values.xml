@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v11/themes_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v11/themes_base.xml -->
     <eat-comment />
 
     <style name="Theme.Base" parent="android:Theme.Holo">
@@ -23,7 +23,7 @@
         <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
         <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v11/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v11/styles_base.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="android:Widget.Holo.AutoCompleteTextView"></style>

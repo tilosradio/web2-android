@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/attrs.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="actionBarDivider" format="reference" />
@@ -67,28 +67,28 @@
     <attr name="textAppearanceSmallPopupMenu" format="reference" />
     <attr name="textColorSearchUrl" format="reference|color" />
     <attr name="title" format="string" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/bools.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/bools.xml -->
     <eat-comment />
 
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
     <bool name="abc_action_bar_expanded_action_views_exclusive">true</bool>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/config.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/config.xml -->
     <eat-comment />
 
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/bools.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/bools.xml -->
     <eat-comment />
 
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="abc_split_action_bar_is_narrow">true</bool>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/colors.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/colors.xml -->
     <eat-comment />
 
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/attrs.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="ActionBar">
@@ -476,7 +476,7 @@
         -->
         <attr name="android:focusable" />
     </declare-styleable>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/dimens.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_action_bar_default_height">48dip</dimen>
@@ -489,11 +489,11 @@
     <dimen name="abc_action_bar_subtitle_top_margin">-3dp</dimen>
     <dimen name="abc_action_bar_title_text_size">18dp</dimen>
     <dimen name="abc_action_button_min_width">56dip</dimen>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/config.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/config.xml -->
     <eat-comment />
 
     <dimen name="abc_config_prefDialogWidth">320dp</dimen>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/dimens.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="abc_dropdownitem_icon_width">32dip</dimen>
@@ -502,7 +502,7 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/ids.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/ids.xml -->
     <eat-comment />
 
     <item name="action_bar_activity_content" type="id"/>
@@ -511,11 +511,11 @@
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/dimens.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/dimens.xml -->
     <eat-comment />
 
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/strings.xml -->
     <eat-comment />
 
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -531,7 +531,7 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles_base.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
@@ -580,7 +580,7 @@
     <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large"></style>
 
     <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Light.SearchResult.Subtitle" parent="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle"></style>
@@ -612,7 +612,7 @@
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Title"></style>
 
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" parent="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles_base.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" parent="android:TextAppearance.Small">
@@ -652,7 +652,7 @@
     <style name="TextAppearance.AppCompat.Widget.Base.DropDownItem" parent="android:TextAppearance.Small">
         <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Widget.DropDownItem" parent="TextAppearance.AppCompat.Widget.Base.DropDownItem"></style>
@@ -660,17 +660,17 @@
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large"></style>
 
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles_base.xml -->
     <eat-comment />
 
     <style name="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" parent="android:TextAppearance.Medium">
         <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles.xml -->
     <eat-comment />
 
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/themes.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/themes.xml -->
     <eat-comment />
 
     <style name="Theme.AppCompat" parent="Theme.Base.AppCompat">
@@ -707,7 +707,7 @@
         <!-- ShareActionProvider attributes -->
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/themes_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/themes_base.xml -->
     <eat-comment />
 
     <style name="Theme.AppCompat.Base.CompactMenu" parent="">
@@ -719,7 +719,7 @@
         <item name="android:itemTextAppearance">            @style/TextAppearance.AppCompat.Base.CompactMenu.Dialog</item>
         <item name="android:listViewStyle">@android:style/Widget.ListView.Menu</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/themes.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/themes.xml -->
     <eat-comment />
 
     <style name="Theme.AppCompat.CompactMenu" parent="Theme.AppCompat.Base.CompactMenu"></style>
@@ -795,7 +795,7 @@
         <!-- ShareActionProvider attributes -->
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/themes_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/themes_base.xml -->
     <eat-comment />
 
     <style name="Theme.Base" parent="android:Theme"></style>
@@ -926,7 +926,7 @@
     </style>
 
     <style name="Theme.Base.Light" parent="android:Theme.Light"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.ActionBar" parent="Widget.AppCompat.Base.ActionBar"></style>
@@ -950,7 +950,7 @@
     <style name="Widget.AppCompat.ActivityChooserView" parent="Widget.AppCompat.Base.ActivityChooserView"></style>
 
     <style name="Widget.AppCompat.AutoCompleteTextView" parent="Widget.AppCompat.Base.AutoCompleteTextView"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles_base.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.Base.ActionBar" parent="">
@@ -1084,7 +1084,7 @@
         <item name="android:clickable">true</item>
         <item name="android:background">@drawable/abc_spinner_ab_holo_dark</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.DropDownItem.Spinner" parent="Widget.AppCompat.Base.DropDownItem.Spinner"></style>
@@ -1118,7 +1118,7 @@
     <style name="Widget.AppCompat.Light.ActivityChooserView" parent="Widget.AppCompat.Light.Base.ActivityChooserView"></style>
 
     <style name="Widget.AppCompat.Light.AutoCompleteTextView" parent="Widget.AppCompat.Light.Base.AutoCompleteTextView"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles_base.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.Light.Base.ActionBar" parent="Widget.AppCompat.Base.ActionBar">
@@ -1202,7 +1202,7 @@
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
         <item name="android:background">@drawable/abc_spinner_ab_holo_light</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.Light.DropDownItem.Spinner" parent="Widget.AppCompat.Light.Base.DropDownItem.Spinner"></style>

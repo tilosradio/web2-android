@@ -70,7 +70,7 @@ public class AppWidgetOneProvider extends AppWidgetProvider {
     }
     
     /**
-     * Initialize given widgets to default state, where we launch ServeStream on default click
+     * Initialize given widgets to default state, where we launch Tilos on default click
      * and hide actions if service not running.
      */
     private void defaultAppWidget(Context context, int[] appWidgetIds) {

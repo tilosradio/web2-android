@@ -23,7 +23,7 @@ import java.io.InputStream;
 import java.util.Map;
 
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.utils.Utils;
 
 import android.net.Uri;
@@ -99,9 +99,9 @@ public class File extends AbsTransport {
 
 	@Override
 	public void getSelectionArgs(Uri uri, Map<String, String> selection) {
-		selection.put(StreamDatabase.FIELD_STREAM_NICKNAME, uri.toString());
-		selection.put(StreamDatabase.FIELD_STREAM_PROTOCOL, PROTOCOL);
-		selection.put(StreamDatabase.FIELD_STREAM_PATH, uri.getPath());
+		selection.put(TilosDatabase.FIELD_STREAM_NICKNAME, uri.toString());
+		selection.put(TilosDatabase.FIELD_STREAM_PROTOCOL, PROTOCOL);
+		selection.put(TilosDatabase.FIELD_STREAM_PATH, uri.getPath());
 	}
 
 	@Override

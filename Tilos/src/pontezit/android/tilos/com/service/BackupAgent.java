@@ -20,7 +20,7 @@ package pontezit.android.tilos.com.service;
 import java.io.IOException;
 
 import pontezit.android.tilos.com.alarm.AlarmProvider.DatabaseHelper;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.utils.PreferenceConstants;
 import android.app.backup.BackupAgentHelper;
 import android.app.backup.BackupDataInput;
@@ -43,8 +43,8 @@ public class BackupAgent extends BackupAgentHelper {
         		"_preferences");
         addHelper(PreferenceConstants.BACKUP_PREF_KEY, prefs);
         
-		FileBackupHelper streams = new FileBackupHelper(this, "../databases/" + StreamDatabase.DATABASE_NAME);
-		addHelper(StreamDatabase.DATABASE_NAME, streams);
+		FileBackupHelper streams = new FileBackupHelper(this, "../databases/" + TilosDatabase.DATABASE_NAME);
+		addHelper(TilosDatabase.DATABASE_NAME, streams);
 		
 		FileBackupHelper alarms = new FileBackupHelper(this, "../databases/" + DatabaseHelper.DATABASE_NAME);
 		addHelper(DatabaseHelper.DATABASE_NAME, alarms);
@@ -57,7 +57,7 @@ public class BackupAgent extends BackupAgentHelper {
     	Log.v(TAG, "onBackup called");
     	
         // Hold the lock while the FileBackupHelper performs backup
-        synchronized (StreamDatabase.dbLock) {
+        synchronized (TilosDatabase.dbLock) {
             super.onBackup(oldState, data, newState);
         }
     }
@@ -69,7 +69,7 @@ public class BackupAgent extends BackupAgentHelper {
     	Log.v(TAG, "onRestore called");
     	
         // Hold the lock while the FileBackupHelper restores the file
-        synchronized (StreamDatabase.dbLock) {
+        synchronized (TilosDatabase.dbLock) {
             super.onRestore(data, appVersionCode, newState);
         }
     }

@@ -19,7 +19,7 @@ package pontezit.android.tilos.com.alarm;
 
 import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.utils.DetermineActionTask;
 import pontezit.android.tilos.com.utils.MusicUtils;
 import pontezit.android.tilos.com.utils.MusicUtils.ServiceToken;
@@ -175,7 +175,7 @@ public class AlarmKlaxon extends Service implements ServiceConnection,
         Log.v(TAG, "AlarmKlaxon.play() " + alarm.id + " alert " + alarm.alert);
 
         if (!alarm.silent) {
-        	StreamDatabase streamdb = new StreamDatabase(this);
+        	TilosDatabase streamdb = new TilosDatabase(this);
         	UriBean uri = streamdb.findUri(alarm.alert);
         	streamdb.close();
         	

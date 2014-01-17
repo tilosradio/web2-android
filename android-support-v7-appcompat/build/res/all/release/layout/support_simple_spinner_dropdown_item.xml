@@ -22,4 +22,4 @@
           android:singleLine="true"
           android:layout_width="match_parent"
           android:layout_height="?attr/dropdownListPreferredItemHeight"
-          android:ellipsize="marquee"/><!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/support_simple_spinner_dropdown_item.xml -->
+          android:ellipsize="marquee"/><!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/support_simple_spinner_dropdown_item.xml -->

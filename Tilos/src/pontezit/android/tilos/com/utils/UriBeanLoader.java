@@ -20,7 +20,7 @@ package pontezit.android.tilos.com.utils;
 import java.util.List;
 
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 
 import android.content.Context;
 import android.support.v4.content.AsyncTaskLoader;
@@ -42,7 +42,7 @@ public class UriBeanLoader extends AsyncTaskLoader<List<UriBean>> {
      */
     @Override
     public List<UriBean> loadInBackground() {
-        StreamDatabase streamdb = new StreamDatabase(getContext());
+        TilosDatabase streamdb = new TilosDatabase(getContext());
         
         List<UriBean> entries = streamdb.getUris();
         

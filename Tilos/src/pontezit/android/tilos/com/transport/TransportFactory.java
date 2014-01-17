@@ -20,7 +20,7 @@ package pontezit.android.tilos.com.transport;
 import java.util.HashMap;
 import java.util.Map;
 
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 
 import pontezit.android.tilos.com.bean.UriBean;
 
@@ -141,7 +141,7 @@ public class TransportFactory {
 	 * @param host HostBean in which to put the results
 	 * @return true when host was found
 	 */
-	public static UriBean findUri(StreamDatabase streamdb, Uri uri) {
+	public static UriBean findUri(TilosDatabase streamdb, Uri uri) {
 		AbsTransport transport = getTransport(uri.getScheme());
 
 		Map<String, String> selection = new HashMap<String, String>();

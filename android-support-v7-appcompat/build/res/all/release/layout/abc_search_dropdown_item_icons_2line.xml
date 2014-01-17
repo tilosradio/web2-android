@@ -86,4 +86,4 @@
               android:layout_toLeftOf="@android:id/icon2"
               android:layout_above="@android:id/text2" />
 
-</RelativeLayout><!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_search_dropdown_item_icons_2line.xml -->
+</RelativeLayout><!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_search_dropdown_item_icons_2line.xml -->

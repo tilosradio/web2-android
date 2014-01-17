@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/strings.xml -->
     <eat-comment />
 
     <string-array name="alarm_set">
@@ -14,7 +14,7 @@
         <item>This alarm is set for <ns1:g id="HOURS" example="2 hours">%2$s</ns1:g> and <ns1:g id="MINUTES" example="2 minutes">%3$s</ns1:g> from now.</item>
         <item>This alarm is set for <ns1:g id="DAYS" example="2 days">%1$s</ns1:g>, <ns1:g id="HOURS" example="2 hours">%2$s</ns1:g>, and <ns1:g id="MINUTES" example="2 minutes">%3$s</ns1:g> from now.</item>
     </string-array>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/arrays.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/arrays.xml -->
     <eat-comment />
 
     <string-array name="drawer_items">
@@ -22,7 +22,7 @@
         <item>@string/browse_label</item>
         <item>@string/alarm_clock_label</item>
     </string-array>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <attr name="actionBarDivider" format="reference" />
@@ -51,28 +51,28 @@
     <attr name="actionModeStyle" format="reference" />
     <attr name="actionModeWebSearchDrawable" format="reference" />
     <attr name="actionOverflowButtonStyle" format="reference" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/attrs.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="action_search" format="reference" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <attr name="activityChooserViewStyle" format="reference" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/attrs.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="borderless_button" format="reference" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <attr name="buttonBarButtonStyle" format="reference" />
     <attr name="buttonBarStyle" format="reference" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/attrs.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="content_new" format="reference" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <attr name="dividerHorizontal" format="reference" />
@@ -87,12 +87,12 @@
     <attr name="listPreferredItemHeightSmall" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/attrs.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/attrs.xml -->
     <eat-comment />
 
     <attr name="navigation_accept" format="reference" />
     <attr name="navigation_refresh" format="reference" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <attr name="searchDropdownBackground" format="reference" />
@@ -128,13 +128,13 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/colors.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/colors.xml -->
     <eat-comment />
 
     <color name="blue">#ff00c8ff</color>
     <color name="selection_background_color_dark">#FEBB20</color>
     <color name="selection_background_color_light">#FEBB20</color>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="ActionBar">
@@ -241,7 +241,7 @@
         <!-- Present the text in ALL CAPS. This may use a small-caps form when available. -->
         <attr name="textAllCaps" format="reference|boolean" />
     </declare-styleable>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/dslv_attrs.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/dslv_attrs.xml -->
     <eat-comment />
 
     <declare-styleable name="DragSortListView">
@@ -271,7 +271,7 @@
         <attr name="click_remove_id" format="integer" />
         <attr name="use_default_controller" format="boolean" />
     </declare-styleable>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <declare-styleable name="LinearLayoutICS">
@@ -573,14 +573,14 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/dimens.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="expanded_height">132dip</dimen>
     <dimen name="normal_height">66dip</dimen>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <item name="action_bar_activity_content" type="id"/>
@@ -591,7 +591,7 @@
     <item name="progress_horizontal" type="id"/>
 
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/strings.xml -->
     <eat-comment />
 
     <plurals name="NNNtrackstoplaylist">
@@ -601,7 +601,7 @@
         <!-- message shown when zero or more than one song was added -->
         <item quantity="other"><ns1:g id="number" example="27">%d</ns1:g> songs added to playlist.</item>
     </plurals>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -617,7 +617,7 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/strings.xml -->
     <eat-comment />
 
     <string name="about_pref">About</string>
@@ -638,11 +638,11 @@
     <string name="alarm_repeat">Repeat</string>
     <string name="alarm_vibrate">Vibrate</string>
     <string name="alert">Ringtone</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/notrans.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/notrans.xml -->
     <eat-comment />
 
     <string name="app_name">ServeStream</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/strings.xml -->
     <eat-comment />
 
     <string name="autostart_label">Auto start</string>
@@ -670,12 +670,12 @@
     <string name="done">Done</string>
     <string name="drawer_close">Close Drawer</string>
     <string name="drawer_open">Open Drawer</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/notrans.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/notrans.xml -->
     <eat-comment />
 
     <string name="durationformatlong" translatable="false"><ns1:g id="format">%1$d:%3$02d:%5$02d</ns1:g></string>
     <string name="durationformatshort" translatable="false"><ns1:g id="format">%2$d:%5$02d</ns1:g></string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/strings.xml -->
     <eat-comment />
 
     <string name="edit_label">Edit</string>
@@ -705,12 +705,12 @@
     <string name="no_paired_devices_label">No paired devices found.</string>
     <string name="no_results_label">No results found.</string>
     <string name="no_urls_label">You haven\'t entered any urls yet.</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/notrans.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/notrans.xml -->
     <eat-comment />
 
     <string name="notification_alt_info">"<ns1:g id="INFO">%1$s</ns1:g>"</string>
     <string name="notification_artist_album">"<ns1:g id="ALBUM">%2$s</ns1:g>" - "<ns1:g id="ARTIST">%1$s</ns1:g>"</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/strings.xml -->
     <eat-comment />
 
     <string name="now_playing_label">Play queue</string>
@@ -794,11 +794,11 @@
     <string name="unknown_album_name">Unknown album</string>
     <string name="unknown_artist_name">Unknown artist</string>
     <string name="url_delete_confirmation_msg">Are you sure you want to delete \'%1$s\'?</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/notrans.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/notrans.xml -->
     <eat-comment />
 
     <string name="url_hint">http://</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/strings.xml -->
     <eat-comment />
 
     <string name="url_label">Urls</string>
@@ -806,7 +806,7 @@
     <string name="url_save_confirmation_msg">Are you sure you want to save \'%1$s\'?</string>
     <string name="view_url_label">View URL</string>
     <string name="widget_one_track_info_unavailable">"No track info available"</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
@@ -1183,7 +1183,7 @@
     </style>
 
     <style name="Theme.Base.Light" parent="android:Theme.Light" />
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values/styles.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values/styles.xml -->
     <eat-comment />
 
     <style name="Theme.ServeStream.Dark" parent="@style/Theme.AppCompat">
@@ -1202,7 +1202,7 @@
         <item name="attr/navigation_refresh">@drawable/navigation_refresh</item>
         <item name="attr/borderless_button">@drawable/borderless_button</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values/values.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.ActionBar" parent="Widget.AppCompat.Base.ActionBar" />

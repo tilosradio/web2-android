@@ -1,4 +1,4 @@
-<!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="40" android:versionName="5.1" package="pontezit.android.tilos.com">
+<!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="40" android:versionName="5.1" package="pontezit.android.tilos.com">
 
 	<uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19"/>
 
@@ -17,7 +17,7 @@
 
         <provider android:authorities="pontezit.android.tilos.com.provider.Media" android:exported="false" android:name="pontezit.android.tilos.com.provider.MediaProvider"/>
         
-        <provider android:authorities="net.sourceforge.servestream" android:exported="false" android:name="pontezit.android.tilos.com.alarm.AlarmProvider"/>
+        <provider android:authorities="pontezit.android.tilos.com" android:exported="false" android:name="pontezit.android.tilos.com.alarm.AlarmProvider"/>
 
 		<activity android:launchMode="singleTop" android:name="pontezit.android.tilos.com.activity.MainActivity" android:theme="@style/Theme.ServeStream.Dark">
 		    
@@ -34,7 +34,7 @@
 				<action android:name="android.intent.action.VIEW"/>
 				<category android:name="android.intent.category.BROWSABLE"/>
 				<category android:name="android.intent.category.DEFAULT"/>
-				<data android:mimeType="net.sourceforge.servestream/*"/>
+				<data android:mimeType="pontezit.android.tilos.com/*"/>
 			</intent-filter>
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW"/>
@@ -102,7 +102,7 @@
 
         <activity android:exported="false" android:label="@string/media_player_label" android:launchMode="singleTop" android:name="pontezit.android.tilos.com.activity.MediaPlayerActivity" android:theme="@style/Theme.ServeStream.Dark">
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.PLAYBACK_VIEWER"/>
+                <action android:name="pontezit.android.tilos.com.PLAYBACK_VIEWER"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -123,19 +123,19 @@
 
         <receiver android:exported="false" android:name="pontezit.android.tilos.com.receiver.SimpleLastfmScrobblerReceiver">
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.playbackstarted"/>
-                <action android:name="net.sourceforge.servestream.playstatechanged"/>
-                <action android:name="net.sourceforge.servestream.playbackcomplete"/>
-                <action android:name="net.sourceforge.servestream.metachanged"/>
+                <action android:name="pontezit.android.tilos.com.playbackstarted"/>
+                <action android:name="pontezit.android.tilos.com.playstatechanged"/>
+                <action android:name="pontezit.android.tilos.com.playbackcomplete"/>
+                <action android:name="pontezit.android.tilos.com.metachanged"/>
             </intent-filter>
         </receiver>
         
         <receiver android:exported="false" android:name="pontezit.android.tilos.com.receiver.ScrobbleDroidReceiver">
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.playbackstarted"/>
-                <action android:name="net.sourceforge.servestream.playstatechanged"/>
-                <action android:name="net.sourceforge.servestream.playbackcomplete"/>
-                <action android:name="net.sourceforge.servestream.metachanged"/>
+                <action android:name="pontezit.android.tilos.com.playbackstarted"/>
+                <action android:name="pontezit.android.tilos.com.playstatechanged"/>
+                <action android:name="pontezit.android.tilos.com.playbackcomplete"/>
+                <action android:name="pontezit.android.tilos.com.metachanged"/>
             </intent-filter>
         </receiver>
         
@@ -161,9 +161,9 @@
 
         <receiver android:exported="false" android:name="pontezit.android.tilos.com.alarm.AlarmReceiver">
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.ALARM_ALERT"/>
-                <action android:name="net.sourceforge.servestream.ALARM_KILLED"/>
-                <action android:name="net.sourceforge.servestream.CANCEL_SNOOZE"/>
+                <action android:name="pontezit.android.tilos.com.ALARM_ALERT"/>
+                <action android:name="pontezit.android.tilos.com.ALARM_KILLED"/>
+                <action android:name="pontezit.android.tilos.com.CANCEL_SNOOZE"/>
             </intent-filter>
         </receiver>
 
@@ -175,7 +175,7 @@
              causes the AlarmAlert activity to pause. -->
         <service android:description="@string/alarm_klaxon_service_desc" android:exported="false" android:name="pontezit.android.tilos.com.alarm.AlarmKlaxon">                
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.ALARM_ALERT"/>
+                <action android:name="pontezit.android.tilos.com.ALARM_ALERT"/>
             </intent-filter>
         </service>
 

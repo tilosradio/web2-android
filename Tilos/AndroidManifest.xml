@@ -37,7 +37,7 @@
         
         <provider
             android:name="pontezit.android.tilos.com.alarm.AlarmProvider"
-            android:authorities="net.sourceforge.servestream"
+            android:authorities="pontezit.android.tilos.com"
             android:exported="false" />
 
 		<activity
@@ -58,7 +58,7 @@
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.BROWSABLE" />
 				<category android:name="android.intent.category.DEFAULT" />
-				<data android:mimeType="net.sourceforge.servestream/*" />
+				<data android:mimeType="pontezit.android.tilos.com/*" />
 			</intent-filter>
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
@@ -165,7 +165,7 @@
             android:launchMode="singleTop"
             android:exported="false" >
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.PLAYBACK_VIEWER" />
+                <action android:name="pontezit.android.tilos.com.PLAYBACK_VIEWER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -190,10 +190,10 @@
             android:name="pontezit.android.tilos.com.receiver.SimpleLastfmScrobblerReceiver"
             android:exported="false" >
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.playbackstarted" />
-                <action android:name="net.sourceforge.servestream.playstatechanged" />
-                <action android:name="net.sourceforge.servestream.playbackcomplete" />
-                <action android:name="net.sourceforge.servestream.metachanged" />
+                <action android:name="pontezit.android.tilos.com.playbackstarted" />
+                <action android:name="pontezit.android.tilos.com.playstatechanged" />
+                <action android:name="pontezit.android.tilos.com.playbackcomplete" />
+                <action android:name="pontezit.android.tilos.com.metachanged" />
             </intent-filter>
         </receiver>
         
@@ -201,10 +201,10 @@
             android:name="pontezit.android.tilos.com.receiver.ScrobbleDroidReceiver"
             android:exported="false" >
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.playbackstarted" />
-                <action android:name="net.sourceforge.servestream.playstatechanged" />
-                <action android:name="net.sourceforge.servestream.playbackcomplete" />
-                <action android:name="net.sourceforge.servestream.metachanged" />
+                <action android:name="pontezit.android.tilos.com.playbackstarted" />
+                <action android:name="pontezit.android.tilos.com.playstatechanged" />
+                <action android:name="pontezit.android.tilos.com.playbackcomplete" />
+                <action android:name="pontezit.android.tilos.com.metachanged" />
             </intent-filter>
         </receiver>
         
@@ -254,9 +254,9 @@
             android:name="pontezit.android.tilos.com.alarm.AlarmReceiver"
             android:exported="false" >
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.ALARM_ALERT" />
-                <action android:name="net.sourceforge.servestream.ALARM_KILLED" />
-                <action android:name="net.sourceforge.servestream.CANCEL_SNOOZE" />
+                <action android:name="pontezit.android.tilos.com.ALARM_ALERT" />
+                <action android:name="pontezit.android.tilos.com.ALARM_KILLED" />
+                <action android:name="pontezit.android.tilos.com.CANCEL_SNOOZE" />
             </intent-filter>
         </receiver>
 
@@ -271,7 +271,7 @@
 			android:description="@string/alarm_klaxon_service_desc"
 			android:exported="false" >                
             <intent-filter>
-                <action android:name="net.sourceforge.servestream.ALARM_ALERT" />
+                <action android:name="pontezit.android.tilos.com.ALARM_ALERT" />
             </intent-filter>
         </service>
 

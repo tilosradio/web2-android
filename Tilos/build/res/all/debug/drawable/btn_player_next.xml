@@ -21,4 +21,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/btn_player_next_disabled" android:state_enabled="false"/>
     <item android:drawable="@drawable/btn_player_next_normal"/>
-</selector><!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/drawable/btn_player_next.xml -->
+</selector><!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/drawable/btn_player_next.xml -->

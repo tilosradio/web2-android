@@ -23,7 +23,7 @@ import java.util.List;
 import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.adapter.UrlListAdapter;
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 
 import android.content.Intent;
 import android.content.Intent.ShortcutIconResource;
@@ -50,7 +50,7 @@ public class ShortcutActivity extends ActionBarActivity {
 				UriBean uriBean = (UriBean) parent.getAdapter().getItem(position);				
 				
 				Intent contents = new Intent(Intent.ACTION_VIEW);
-				contents.setType("net.sourceforge.servestream/" + uriBean.getUri());
+				contents.setType("pontezit.android.tilos.com/" + uriBean.getUri());
 				contents.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				
 				// create shortcut if requested
@@ -66,7 +66,7 @@ public class ShortcutActivity extends ActionBarActivity {
 			}
 		});
 		
-		StreamDatabase streamdb = new StreamDatabase(this);
+		TilosDatabase streamdb = new TilosDatabase(this);
 		List<UriBean> uris = new ArrayList<UriBean>();
 		uris = streamdb.getUris();
 		UrlListAdapter adapter = new UrlListAdapter(this, uris, null);

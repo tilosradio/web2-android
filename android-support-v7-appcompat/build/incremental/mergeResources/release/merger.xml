@@ -2,9 +2,9 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res" >
+        <source path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res" >
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-zh-rCN/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-zh-rCN/strings.xml"
                 qualifiers="zh-rCN" >
                 <string
                     name="abc_action_mode_done"
@@ -60,7 +60,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-en-rIN/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-en-rIN/strings.xml"
                 qualifiers="en-rIN" >
                 <string
                     name="abc_searchview_description_clear"
@@ -116,7 +116,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-nb/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-nb/strings.xml"
                 qualifiers="nb" >
                 <string
                     name="abc_activity_chooser_view_see_all"
@@ -173,351 +173,351 @@
             </file>
             <file
                 name="abc_ab_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_transparent_light_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_voice_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_voice_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_voice_search_api_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_solid_dark_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_default_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_dark_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_selector_disabled_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_menu_hardkey_panel_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_light_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_share_pack_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_commit_search_api_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_dark.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_commit_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_commit_search_api_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_focused_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_ab_back_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_dark.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_light_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_tab_unselected_pressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_unselected_pressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_unselected_pressed_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_transparent_dark_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_disabled_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_go_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_go_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_go_search_api_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_moreoverflow_normal_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_focused_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_selected_focused_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_selected_focused_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_menu_hardkey_panel_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_hardkey_panel_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_search"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_search.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_search.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_bottom_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_search_api_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_disabled_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_disabled_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_voice_search"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_voice_search.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_voice_search.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_share_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_selector_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_share_pack_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_default_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_selected_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_selected_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_solid_light_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_dark_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_top_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_clear_search_api_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_disabled"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_clear_disabled.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_clear_disabled.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_pressed_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_pressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_selected_pressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_tab_selected_pressed_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_solid_dark_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_pressed_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_top_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_top_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_menu_dropdown_panel_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_bottom_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_cab_background_bottom_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_pressed_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_pressed_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_pressed_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_solid_light_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_longpressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_longpressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_longpressed_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_cab_done_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_dark.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_disabled_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_selected_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_focused_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_focused_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_focused_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_cab_done_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_cab_done_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_selected_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_selected_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_stacked_transparent_dark_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_share_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_share_holo_dark.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_divider_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_divider_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_divider_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_list_divider_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_divider_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_list_divider_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ab_bottom_transparent_light_holo.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_search_api_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_go"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_go.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_go.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_menu_dropdown_panel_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_menu_dropdown_panel_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_moreoverflow_normal_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_pressed_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_pressed_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_focused_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_focused_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_selected_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_light.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_spinner_ab_default_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_ic_ab_back_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_ic_ab_back_holo_light.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_selected_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-xhdpi/abc_textfield_search_right_selected_holo_dark.9.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-cs/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-cs/strings.xml"
                 qualifiers="cs" >
                 <string
                     name="abc_searchview_description_submit"
@@ -573,7 +573,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-de/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-de/strings.xml"
                 qualifiers="de" >
                 <string
                     name="abc_searchview_description_search"
@@ -629,7 +629,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-sl/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-sl/strings.xml"
                 qualifiers="sl" >
                 <string
                     name="abc_activitychooserview_choose_application"
@@ -685,7 +685,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-fa/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-fa/strings.xml"
                 qualifiers="fa" >
                 <string
                     name="abc_action_bar_home_description"
@@ -741,7 +741,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-hr/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-hr/strings.xml"
                 qualifiers="hr" >
                 <string
                     name="abc_shareactionprovider_share_with_application"
@@ -797,7 +797,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-pt/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-pt/strings.xml"
                 qualifiers="pt" >
                 <string
                     name="abc_shareactionprovider_share_with_application"
@@ -853,7 +853,7 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-zh-rTW/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-zh-rTW/strings.xml"
                 qualifiers="zh-rTW" >
                 <string
                     name="abc_searchview_description_submit"
@@ -909,14 +909,14 @@
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-land/config.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-land/config.xml"
                 qualifiers="land" >
                 <bool name="abc_config_allowActionMenuItemTextWithIcon" >
 true
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-land/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-land/dimens.xml"
                 qualifiers="land" >
                 <dimen name="abc_action_bar_title_text_size" >16dp
                 </dimen>
@@ -934,7 +934,7 @@ true
                 </dimen>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-land/bools.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-land/bools.xml"
                 qualifiers="land" >
                 <bool name="abc_action_bar_embed_tabs_pre_jb" >
 true
@@ -944,7 +944,7 @@ false
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-th/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-th/strings.xml"
                 qualifiers="th" >
                 <string
                     name="abc_shareactionprovider_share_with"
@@ -1000,7 +1000,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-el/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-el/strings.xml"
                 qualifiers="el" >
                 <string
                     name="abc_searchview_description_submit"
@@ -1057,132 +1057,132 @@ false
             </file>
             <file
                 name="support_simple_spinner_dropdown_item"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/support_simple_spinner_dropdown_item.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/support_simple_spinner_dropdown_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_activity_chooser_view_include"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_activity_chooser_view_include.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_activity_chooser_view_include.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_mode_close_item"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_mode_close_item.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_mode_close_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_tabbar"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_tabbar.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_tabbar.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_search_dropdown_item_icons_2line"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_search_dropdown_item_icons_2line.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_search_dropdown_item_icons_2line.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_decor_overlay"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_decor_overlay.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_decor_overlay.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_list_menu_item_checkbox"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_list_menu_item_checkbox.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_list_menu_item_checkbox.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_tab"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_tab.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_tab.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_search_view"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_search_view.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_search_view.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_title_item"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_title_item.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_title_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_activity_chooser_view_list_item"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_activity_chooser_view_list_item.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_activity_chooser_view_list_item.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_decor_include"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_decor_include.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_decor_include.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_mode_bar"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_mode_bar.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_mode_bar.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_list_menu_item_layout"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_list_menu_item_layout.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_list_menu_item_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_popup_menu_item_layout"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_popup_menu_item_layout.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_popup_menu_item_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_expanded_menu_layout"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_expanded_menu_layout.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_expanded_menu_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_home"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_home.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_home.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_view_list_nav_layout"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_view_list_nav_layout.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_view_list_nav_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_list_menu_item_icon"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_list_menu_item_icon.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_list_menu_item_icon.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_menu_layout"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_menu_layout.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_menu_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_activity_chooser_view"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_activity_chooser_view.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_activity_chooser_view.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_menu_item_layout"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_menu_item_layout.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_menu_item_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_action_bar_decor"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_action_bar_decor.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_action_bar_decor.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="abc_list_menu_item_radio"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_list_menu_item_radio.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_list_menu_item_radio.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-sw600dp/config.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-sw600dp/config.xml"
                 qualifiers="sw600dp" >
                 <dimen name="abc_config_prefDialogWidth" >580dp
                 </dimen>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-sw600dp/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-sw600dp/dimens.xml"
                 qualifiers="sw600dp" >
                 <dimen name="abc_action_bar_default_height" >56dip
                 </dimen>
@@ -1204,11 +1204,11 @@ false
             </file>
             <file
                 name="abc_activity_chooser_view"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout-v14/abc_activity_chooser_view.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout-v14/abc_activity_chooser_view.xml"
                 qualifiers="v14"
                 type="layout" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-iw/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-iw/strings.xml"
                 qualifiers="iw" >
                 <string
                     name="abc_searchview_description_query"
@@ -1264,14 +1264,14 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-w360dp/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-w360dp/dimens.xml"
                 qualifiers="w360dp" >
                 <integer name="abc_max_action_buttons" >
 3
                 </integer>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-sk/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-sk/strings.xml"
                 qualifiers="sk" >
                 <string
                     name="abc_action_bar_up_description"
@@ -1328,356 +1328,356 @@ false
             </file>
             <file
                 name="abc_ab_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_transparent_light_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_voice_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_voice_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_voice_search_api_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_solid_dark_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_default_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_solid_dark_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_selector_disabled_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_menu_hardkey_panel_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_solid_light_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_share_pack_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_commit_search_api_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_dark.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_commit_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_commit_search_api_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_focused_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_ab_back_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_dark.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_light_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_tab_unselected_pressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_unselected_pressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_unselected_pressed_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_transparent_dark_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_disabled_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_go_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_go_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_go_search_api_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_moreoverflow_normal_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_focused_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_selected_focused_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_selected_focused_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_menu_hardkey_panel_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_hardkey_panel_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_search"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_search.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_search.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_bottom_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_search_api_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_search_api_disabled_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_search_api_disabled_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_voice_search"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_voice_search.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_voice_search.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_share_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_selector_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_share_pack_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_default_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_selected_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_selected_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_solid_light_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_dark_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_top_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_top_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_top_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_search_api_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_normal"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_normal.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_normal.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_disabled"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_disabled.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_clear_disabled.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_pressed_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_pressed_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_pressed_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_pressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_selected_pressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_tab_selected_pressed_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_solid_dark_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_pressed_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_top_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_top_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_top_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_menu_dropdown_panel_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_bottom_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_cab_background_bottom_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_pressed_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_pressed_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_pressed_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_solid_light_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_longpressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_longpressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_longpressed_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_cab_done_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_dark.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_disabled_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_selected_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_focused_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_focused_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_focused_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_cab_done_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_cab_done_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_selected_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_selected_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_stacked_transparent_dark_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_share_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_share_holo_dark.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_divider_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_divider_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_divider_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_list_divider_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_list_divider_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_list_divider_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ab_bottom_transparent_light_holo.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_search_api_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_go"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_go.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_go.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_menu_dropdown_panel_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_menu_dropdown_panel_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_moreoverflow_normal_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_pressed_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_pressed_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_focused_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_focused_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_selected_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_light.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_spinner_ab_default_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_ic_ab_back_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_ic_ab_back_holo_light.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_selected_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-mdpi/abc_textfield_search_right_selected_holo_dark.9.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ru/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ru/strings.xml"
                 qualifiers="ru" >
                 <string
                     name="abc_searchview_description_query"
@@ -1733,7 +1733,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-da/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-da/strings.xml"
                 qualifiers="da" >
                 <string
                     name="abc_action_bar_up_description"
@@ -1789,7 +1789,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ca/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ca/strings.xml"
                 qualifiers="ca" >
                 <string
                     name="abc_shareactionprovider_share_with_application"
@@ -1845,7 +1845,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ro/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ro/strings.xml"
                 qualifiers="ro" >
                 <string
                     name="abc_shareactionprovider_share_with"
@@ -1901,7 +1901,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-fi/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-fi/strings.xml"
                 qualifiers="fi" >
                 <string
                     name="abc_searchview_description_query"
@@ -1957,7 +1957,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-zh-rHK/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-zh-rHK/strings.xml"
                 qualifiers="zh-rHK" >
                 <string
                     name="abc_activitychooserview_choose_application"
@@ -2013,7 +2013,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-lo-rLA/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-lo-rLA/strings.xml"
                 qualifiers="lo-rLA" >
                 <string
                     name="abc_action_bar_home_description"
@@ -2070,91 +2070,91 @@ false
             </file>
             <file
                 name="abc_tab_indicator_ab_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_tab_indicator_ab_holo.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_tab_indicator_ab_holo.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_search_dropdown_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_search_dropdown_dark.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_search_dropdown_dark.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_textfield_searchview_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_holo_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_holo_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_list_selector_background_transition_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_list_selector_background_transition_holo_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_item_background_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_item_background_holo_dark.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_item_background_holo_dark.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_search_dropdown_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_search_dropdown_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_search_dropdown_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_item_background_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_item_background_holo_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_item_background_holo_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_textfield_searchview_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_holo_dark.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_holo_dark.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_textfield_searchview_right_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_right_holo_dark.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_right_holo_dark.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_ic_clear_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_ic_clear_holo_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_ic_clear_holo_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_list_selector_background_transition_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_spinner_ab_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_spinner_ab_holo_dark.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_spinner_ab_holo_dark.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_spinner_ab_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_spinner_ab_holo_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_spinner_ab_holo_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_list_selector_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_list_selector_holo_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_list_selector_holo_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_textfield_searchview_right_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_right_holo_light.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_textfield_searchview_right_holo_light.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_ic_clear"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_ic_clear.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_ic_clear.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="abc_list_selector_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_list_selector_holo_dark.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_list_selector_holo_dark.xml"
                 qualifiers=""
                 type="drawable" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ka-rGE/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ka-rGE/strings.xml"
                 qualifiers="ka-rGE" >
                 <string
                     name="abc_searchview_description_voice"
@@ -2210,7 +2210,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-sv/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-sv/strings.xml"
                 qualifiers="sv" >
                 <string
                     name="abc_shareactionprovider_share_with_application"
@@ -2266,7 +2266,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-bg/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-bg/strings.xml"
                 qualifiers="bg" >
                 <string
                     name="abc_shareactionprovider_share_with_application"
@@ -2323,36 +2323,36 @@ false
             </file>
             <file
                 name="abc_slide_in_top"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/anim/abc_slide_in_top.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/anim/abc_slide_in_top.xml"
                 qualifiers=""
                 type="anim" />
             <file
                 name="abc_slide_out_bottom"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/anim/abc_slide_out_bottom.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/anim/abc_slide_out_bottom.xml"
                 qualifiers=""
                 type="anim" />
             <file
                 name="abc_slide_out_top"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/anim/abc_slide_out_top.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/anim/abc_slide_out_top.xml"
                 qualifiers=""
                 type="anim" />
             <file
                 name="abc_fade_in"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/anim/abc_fade_in.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/anim/abc_fade_in.xml"
                 qualifiers=""
                 type="anim" />
             <file
                 name="abc_slide_in_bottom"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/anim/abc_slide_in_bottom.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/anim/abc_slide_in_bottom.xml"
                 qualifiers=""
                 type="anim" />
             <file
                 name="abc_fade_out"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/anim/abc_fade_out.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/anim/abc_fade_out.xml"
                 qualifiers=""
                 type="anim" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-w600dp/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-w600dp/dimens.xml"
                 qualifiers="w600dp" >
                 <dimen name="abc_action_bar_subtitle_top_margin" >-3dp
                 </dimen>
@@ -2377,7 +2377,7 @@ false
                 </dimen>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-large/config.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-large/config.xml"
                 qualifiers="large" >
                 <dimen name="abc_config_prefDialogWidth" >440dp
                 </dimen>
@@ -2387,7 +2387,7 @@ true
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-large/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-large/dimens.xml"
                 qualifiers="large" >
                 <dimen name="abc_search_view_text_min_width" >192dip
                 </dimen>
@@ -2397,7 +2397,7 @@ true
                 </integer>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-large/bools.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-large/bools.xml"
                 qualifiers="large" >
                 <bool name="abc_split_action_bar_is_narrow" >
 false
@@ -2407,7 +2407,7 @@ true
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-km-rKH/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-km-rKH/strings.xml"
                 qualifiers="km-rKH" >
                 <string
                     name="abc_searchview_description_search"
@@ -2463,7 +2463,7 @@ true
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-lv/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-lv/strings.xml"
                 qualifiers="lv" >
                 <string
                     name="abc_action_menu_overflow_description"
@@ -2519,14 +2519,14 @@ true
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-w720dp/bools.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-w720dp/bools.xml"
                 qualifiers="w720dp" >
                 <bool name="abc_action_bar_expanded_action_views_exclusive" >
 false
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-et-rEE/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-et-rEE/strings.xml"
                 qualifiers="et-rEE" >
                 <string
                     name="abc_searchview_description_submit"
@@ -2582,7 +2582,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-uk/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-uk/strings.xml"
                 qualifiers="uk" >
                 <string
                     name="abc_action_mode_done"
@@ -2638,7 +2638,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-sw/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-sw/strings.xml"
                 qualifiers="sw" >
                 <string
                     name="abc_action_bar_up_description"
@@ -2694,7 +2694,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ja/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ja/strings.xml"
                 qualifiers="ja" >
                 <string
                     name="abc_searchview_description_clear"
@@ -2750,7 +2750,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-in/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-in/strings.xml"
                 qualifiers="in" >
                 <string
                     name="abc_shareactionprovider_share_with_application"
@@ -2807,11 +2807,11 @@ false
             </file>
             <file
                 name="abc_search_url_text_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/color/abc_search_url_text_holo.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/color/abc_search_url_text_holo.xml"
                 qualifiers=""
                 type="color" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-xlarge/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-xlarge/dimens.xml"
                 qualifiers="xlarge" >
                 <dimen name="abc_search_view_text_min_width" >192dip
                 </dimen>
@@ -2836,14 +2836,14 @@ false
                 </dimen>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-xlarge/bools.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-xlarge/bools.xml"
                 qualifiers="xlarge" >
                 <bool name="abc_action_bar_expanded_action_views_exclusive" >
 false
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-hu/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-hu/strings.xml"
                 qualifiers="hu" >
                 <string
                     name="abc_action_menu_overflow_description"
@@ -2899,14 +2899,14 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-w500dp/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-w500dp/dimens.xml"
                 qualifiers="w500dp" >
                 <integer name="abc_max_action_buttons" >
 4
                 </integer>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-am/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-am/strings.xml"
                 qualifiers="am" >
                 <string
                     name="abc_searchview_description_clear"
@@ -2962,7 +2962,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-it/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-it/strings.xml"
                 qualifiers="it" >
                 <string
                     name="abc_searchview_description_voice"
@@ -3018,7 +3018,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-hy-rAM/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-hy-rAM/strings.xml"
                 qualifiers="hy-rAM" >
                 <string
                     name="abc_activity_chooser_view_see_all"
@@ -3074,7 +3074,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-tl/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-tl/strings.xml"
                 qualifiers="tl" >
                 <string
                     name="abc_searchview_description_search"
@@ -3130,7 +3130,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-mn-rMN/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-mn-rMN/strings.xml"
                 qualifiers="mn-rMN" >
                 <string
                     name="abc_activitychooserview_choose_application"
@@ -3186,7 +3186,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-af/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-af/strings.xml"
                 qualifiers="af" >
                 <string
                     name="abc_searchview_description_clear"
@@ -3243,356 +3243,356 @@ false
             </file>
             <file
                 name="abc_ab_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_transparent_light_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_voice_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_voice_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_voice_search_api_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_solid_dark_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_default_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_solid_dark_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_selector_disabled_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_menu_hardkey_panel_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_solid_light_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_share_pack_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_commit_search_api_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_dark.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_commit_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_commit_search_api_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_focused_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_ab_back_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_dark.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_light_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_tab_unselected_pressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_unselected_pressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_unselected_pressed_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_transparent_dark_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_disabled_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_go_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_go_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_go_search_api_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_moreoverflow_normal_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_focused_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_selected_focused_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_selected_focused_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_menu_hardkey_panel_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_hardkey_panel_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_search"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_search.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_search.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_bottom_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_search_api_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_search_api_disabled_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_search_api_disabled_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_voice_search"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_voice_search.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_voice_search.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_share_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_selector_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_share_pack_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_default_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_selected_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_selected_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_solid_light_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_dark_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_top_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_top_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_top_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_search_api_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_normal"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_normal.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_normal.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_clear_disabled"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_disabled.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_clear_disabled.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_pressed_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_pressed_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_pressed_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_tab_selected_pressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_selected_pressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_tab_selected_pressed_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_solid_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_solid_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_solid_dark_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_pressed_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_top_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_top_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_top_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_menu_dropdown_panel_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_default_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_cab_background_bottom_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_cab_background_bottom_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_pressed_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_pressed_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_pressed_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_solid_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_solid_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_solid_light_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_longpressed_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_longpressed_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_longpressed_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_cab_done_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_dark.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_disabled_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_disabled_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_selected_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_focused_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_focused_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_focused_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_cab_done_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_cab_done_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_selected_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_selected_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_stacked_transparent_dark_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_share_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_share_holo_dark.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_divider_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_divider_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_divider_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_list_divider_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_list_divider_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_list_divider_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ab_bottom_transparent_light_holo"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_light_holo.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ab_bottom_transparent_light_holo.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_search_api_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_search_api_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_search_api_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_go"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_go.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_go.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_menu_dropdown_panel_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_menu_dropdown_panel_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_menu_moreoverflow_normal_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_menu_moreoverflow_normal_holo_dark.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_pressed_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_pressed_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_focused_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_focused_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_selected_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_light.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_light.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_spinner_ab_default_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_spinner_ab_default_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_ic_ab_back_holo_light"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_light.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_ic_ab_back_holo_light.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="abc_textfield_search_right_selected_holo_dark"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_dark.9.png"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable-hdpi/abc_textfield_search_right_selected_holo_dark.9.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-hi/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-hi/strings.xml"
                 qualifiers="hi" >
                 <string
                     name="abc_activity_chooser_view_see_all"
@@ -3648,7 +3648,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-nl/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-nl/strings.xml"
                 qualifiers="nl" >
                 <string
                     name="abc_searchview_description_voice"
@@ -3704,7 +3704,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v11/themes_base.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v11/themes_base.xml"
                 qualifiers="v11" >
 
                 <style
@@ -3752,7 +3752,7 @@ false
                 </style>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v11/styles_base.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v11/styles_base.xml"
                 qualifiers="v11" >
 
                 <style
@@ -3776,7 +3776,7 @@ false
                 </style>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-tr/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-tr/strings.xml"
                 qualifiers="tr" >
                 <string
                     name="abc_action_bar_home_description"
@@ -3832,7 +3832,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-sr/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-sr/strings.xml"
                 qualifiers="sr" >
                 <string
                     name="abc_searchview_description_query"
@@ -3888,7 +3888,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-es/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-es/strings.xml"
                 qualifiers="es" >
                 <string
                     name="abc_searchview_description_search"
@@ -3944,7 +3944,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ar/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ar/strings.xml"
                 qualifiers="ar" >
                 <string
                     name="abc_activity_chooser_view_see_all"
@@ -4000,7 +4000,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ko/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ko/strings.xml"
                 qualifiers="ko" >
                 <string
                     name="abc_shareactionprovider_share_with_application"
@@ -4056,7 +4056,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-lt/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-lt/strings.xml"
                 qualifiers="lt" >
                 <string
                     name="abc_action_menu_overflow_description"
@@ -4112,7 +4112,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-vi/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-vi/strings.xml"
                 qualifiers="vi" >
                 <string
                     name="abc_shareactionprovider_share_with"
@@ -4168,7 +4168,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-ms-rMY/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-ms-rMY/strings.xml"
                 qualifiers="ms-rMY" >
                 <string
                     name="abc_action_bar_home_description"
@@ -4224,7 +4224,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-es-rUS/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-es-rUS/strings.xml"
                 qualifiers="es-rUS" >
                 <string
                     name="abc_action_bar_up_description"
@@ -4280,7 +4280,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-fr/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-fr/strings.xml"
                 qualifiers="fr" >
                 <string
                     name="abc_action_mode_done"
@@ -4336,7 +4336,7 @@ false
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/themes_base.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/themes_base.xml"
                 qualifiers="" >
 
                 <style
@@ -4691,7 +4691,7 @@ true
                 </style>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/ids.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/ids.xml"
                 qualifiers="" >
                 <item
                     name="action_menu_presenter"
@@ -4713,7 +4713,7 @@ true
                     type="id"/>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/config.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/config.xml"
                 qualifiers="" >
                 <bool name="abc_config_allowActionMenuItemTextWithIcon" >
 false
@@ -4726,7 +4726,7 @@ true
                 </dimen>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles.xml"
                 qualifiers="" >
 
                 <style
@@ -5019,7 +5019,7 @@ true
                     parent="Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse" />
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/colors.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/colors.xml"
                 qualifiers="" >
                 <color name="abc_search_url_text_selected" >@android:color/black
                 </color>
@@ -5029,7 +5029,7 @@ true
                 </color>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/strings.xml"
                 qualifiers="" >
                 <string name="abc_shareactionprovider_share_with_application" >Share with %s
                 </string>
@@ -5059,7 +5059,7 @@ true
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/dimens.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/dimens.xml"
                 qualifiers="" >
                 <dimen name="abc_search_view_text_min_width" >160dip
                 </dimen>
@@ -5100,7 +5100,7 @@ true
                 </dimen>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/bools.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/bools.xml"
                 qualifiers="" >
                 <bool name="abc_action_bar_expanded_action_views_exclusive" >
 true
@@ -5116,7 +5116,7 @@ false
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/themes.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/themes.xml"
                 qualifiers="" >
 
                 <style
@@ -5385,7 +5385,7 @@ true
                 </style>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/attrs.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/attrs.xml"
                 qualifiers="" >
                 <attr
                     name="actionModeSplitBackground"
@@ -6103,7 +6103,7 @@ true
                 </declare-styleable>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values/styles_base.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values/styles_base.xml"
                 qualifiers="" >
 
                 <style
@@ -6812,7 +6812,7 @@ normal
                 </style>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-en-rGB/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-en-rGB/strings.xml"
                 qualifiers="en-rGB" >
                 <string
                     name="abc_searchview_description_search"
@@ -6868,7 +6868,7 @@ normal
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-fr-rCA/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-fr-rCA/strings.xml"
                 qualifiers="fr-rCA" >
                 <string
                     name="abc_shareactionprovider_share_with"
@@ -6924,7 +6924,7 @@ normal
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-pl/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-pl/strings.xml"
                 qualifiers="pl" >
                 <string
                     name="abc_activitychooserview_choose_application"
@@ -6980,7 +6980,7 @@ normal
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v14/themes_base.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v14/themes_base.xml"
                 qualifiers="v14" >
 
                 <style
@@ -7161,7 +7161,7 @@ normal
                 </style>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v14/styles_base.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v14/styles_base.xml"
                 qualifiers="v14" >
 
                 <style
@@ -7423,14 +7423,14 @@ middle
                 </style>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-w480dp/config.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-w480dp/config.xml"
                 qualifiers="w480dp" >
                 <bool name="abc_config_allowActionMenuItemTextWithIcon" >
 true
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-w480dp/bools.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-w480dp/bools.xml"
                 qualifiers="w480dp" >
                 <bool name="abc_split_action_bar_is_narrow" >
 false
@@ -7440,7 +7440,7 @@ true
                 </bool>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-pt-rPT/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-pt-rPT/strings.xml"
                 qualifiers="pt-rPT" >
                 <string
                     name="abc_shareactionprovider_share_with"
@@ -7496,7 +7496,7 @@ true
                 </string>
             </file>
             <file
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-zu/strings.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-zu/strings.xml"
                 qualifiers="zu" >
                 <string
                     name="abc_action_mode_done"
@@ -7553,14 +7553,14 @@ true
             </file>
             <file
                 name="abc_action_bar_decor"
-                path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout-v11/abc_action_bar_decor.xml"
+                path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout-v11/abc_action_bar_decor.xml"
                 qualifiers="v11"
                 type="layout" />
         </source>
-        <source path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/build/res/rs/release" />
+        <source path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/build/res/rs/release" />
     </dataSet>
     <dataSet config="release" >
-        <source path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/build-types/release/res" />
+        <source path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/build-types/release/res" />
     </dataSet>
 
 </merger>

@@ -343,7 +343,7 @@ public class MusicUtils {
             sService.open(list, force_shuffle ? -1 : position);
         } catch (RemoteException ex) {
         } finally {
-            Intent intent = new Intent("net.sourceforge.servestream.PLAYBACK_VIEWER")
+            Intent intent = new Intent("pontezit.android.tilos.com.PLAYBACK_VIEWER")
             	.setFlags(flags);
             context.startActivity(intent);
         }
@@ -857,7 +857,7 @@ public class MusicUtils {
     private final static long [] sEmptyList = new long[0];
     
     public static long [] getFilesInPlaylist(Context context, String uri, String contentType, InputStream is) {
-    	
+        LogHelper.Log("getFilesInPlaylist run", 1);
     	if (uri == null) {
     		return sEmptyList;
     	}
@@ -868,15 +868,20 @@ public class MusicUtils {
         try {
 			parser.parse(uri, contentType, is, playlist);
 		} catch (IOException e) {
+            LogHelper.Log("getFilesInPlaylist: IOException", 1);
 			playlist = null;
 		} catch (SAXException e) {
+            LogHelper.Log("getFilesInPlaylist: SAXException", 1);
 			playlist = null;
 		} catch (JPlaylistParserException e) {
+            LogHelper.Log("getFilesInPlaylist: JPlaylistParserException", 1);
 			playlist = null;
 		} finally {
+            LogHelper.Log("getFilesInPlaylist: try/finally", 1);
 			Utils.closeInputStream(is);
 		}
-			
+
+        LogHelper.Log(uri.toString(), 1);
 		if (playlist == null) {
 			playlist = new Playlist();
 			PlaylistEntry playlistEntry = new PlaylistEntry();
@@ -905,20 +910,23 @@ public class MusicUtils {
 	}
     
     private static long [] addFilesToMediaStore(Context context, Playlist playlist) {
-    	if (playlist == null || playlist.getPlaylistEntries().size() == 0) {
-    		return sEmptyList;
-    	}	
-    	
+        LogHelper.Log("addFilesToMediaStore run", 1);
+
+        if (playlist == null || playlist.getPlaylistEntries().size() == 0) {
+            return sEmptyList;
+        }
+        LogHelper.Log("playlist is not empty", 1);
     	List<ContentValues> contentValues = new ArrayList<ContentValues>();
-    	
+        LogHelper.Log("playlist is not empty after 1", 1);
     	ContentResolver contentResolver = context.getContentResolver();
-    	
+        LogHelper.Log("playlist is not empty after 2", 1);
     	Map<String, Integer> uriList = retrieveAllRows(context);
-    	
+
     	long [] list = new long[playlist.getPlaylistEntries().size()];
-    	
+
     	// process the returned media files
     	for (int i = 0; i < playlist.getPlaylistEntries().size(); i++) {
+
     		long id = -1;
     	
     		String uri = null;
@@ -926,10 +934,11 @@ public class MusicUtils {
         	try {
         		uri = URLDecoder.decode(playlist.getPlaylistEntries().get(i).get(PlaylistEntry.URI), "UTF-8");
     		} catch (UnsupportedEncodingException ex) {
+                LogHelper.Log("addFilesToMediaStore; UnsupportedEncodingException", 1);
     			ex.printStackTrace();
     			uri = playlist.getPlaylistEntries().get(i).get(PlaylistEntry.URI);
     		}
-    		
+            LogHelper.Log("addFilesToMediaStore; uri: "+uri.toString(), 1);
     		if (uriList.get(uri) != null) {
     			id = uriList.get(uri);
         		list[i] = id;
@@ -969,6 +978,7 @@ public class MusicUtils {
     }
     
     private static Map<String, Integer> retrieveAllRows(Context context) {
+        LogHelper.Log("retrieveAllRows running", 1);
     	Map<String, Integer> list = new HashMap<String, Integer>();
     	
 		// Form an array specifying which columns to return. 
@@ -976,20 +986,28 @@ public class MusicUtils {
 
 		// Get the base URI for the Media Files table in the Media content provider.
 		Uri mediaFile =  Media.MediaColumns.CONTENT_URI;
-    	
+
 		// Make the query.
 		Cursor cursor = context.getContentResolver().query(mediaFile, 
 				projection,
 				null,
 				null,
-				null);    	
-	
+				null);
+
+        LogHelper.Log("Ez a cursor egy null lesz?", 1);
+        LogHelper.Log("retrieveAllRows; cursor.length"+cursor.getCount(), 1);
 		while (cursor.moveToNext()) {
+            LogHelper.Log("retrieveAllRows; cursor.moveNext", 1);
 			int uriColumn = cursor.getColumnIndex(Media.MediaColumns.URI);
+            LogHelper.Log("retrieveAllRows; cursor.moveNext 1", 1);
 			int idColumn = cursor.getColumnIndex(Media.MediaColumns._ID);
+            LogHelper.Log("retrieveAllRows; cursor.moveNext 2", 1);
 			String uri = cursor.getString(uriColumn);
+            LogHelper.Log("retrieveAllRows; cursor.moveNext 3", 1);
 			int id = cursor.getInt(idColumn);
+            LogHelper.Log("retrieveAllRows; cursor.moveNext 4", 1);
 			list.put(uri, id);
+            LogHelper.Log("retrieveAllRows; cursor.moveNext 5", 1);
 		}
 
 		cursor.close();

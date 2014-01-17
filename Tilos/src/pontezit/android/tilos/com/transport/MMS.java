@@ -22,7 +22,7 @@ import java.io.InputStream;
 import java.util.Map;
 
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.utils.Utils;
 
 import android.net.Uri;
@@ -88,17 +88,17 @@ public class MMS extends AbsTransport {
 
 	@Override
 	public void getSelectionArgs(Uri uri, Map<String, String> selection) {
-		selection.put(StreamDatabase.FIELD_STREAM_PROTOCOL, getPrivateProtocolName());
+		selection.put(TilosDatabase.FIELD_STREAM_PROTOCOL, getPrivateProtocolName());
 		
-		selection.put(StreamDatabase.FIELD_STREAM_HOSTNAME, uri.getHost());
+		selection.put(TilosDatabase.FIELD_STREAM_HOSTNAME, uri.getHost());
 
-		selection.put(StreamDatabase.FIELD_STREAM_PORT, Integer.toString(uri.getPort()));
+		selection.put(TilosDatabase.FIELD_STREAM_PORT, Integer.toString(uri.getPort()));
 		
 		if (uri.getPath() != null) {
-			selection.put(StreamDatabase.FIELD_STREAM_PATH, uri.getPath());
+			selection.put(TilosDatabase.FIELD_STREAM_PATH, uri.getPath());
 		}
-		selection.put(StreamDatabase.FIELD_STREAM_QUERY, uri.getQuery());
-		selection.put(StreamDatabase.FIELD_STREAM_REFERENCE, uri.getFragment());		
+		selection.put(TilosDatabase.FIELD_STREAM_QUERY, uri.getQuery());
+		selection.put(TilosDatabase.FIELD_STREAM_REFERENCE, uri.getFragment());
 	}
 
 	@Override

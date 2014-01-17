@@ -297,7 +297,7 @@ public class DownloadPlayer extends FFmpegPlayer {
         			return null;
         		}
 		
-        		conn.setRequestProperty("User-Agent", "ServeStream");
+        		conn.setRequestProperty("User-Agent", "Tilos");
         		conn.setConnectTimeout(6000);
         		conn.setReadTimeout(6000);
         		conn.setRequestProperty("Range", "bytes=" + bytesProcessed + "-");

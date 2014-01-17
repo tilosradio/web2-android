@@ -21,7 +21,8 @@ import java.util.List;
 
 import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -42,13 +43,13 @@ public class AlarmPreference extends ListPreference {
     // dialog.
     private int mNewId = -1;
 	
-	protected StreamDatabase mStreamdb = null;
+	protected TilosDatabase mStreamdb = null;
     
 	public AlarmPreference(Context context, AttributeSet attrs) {
 		super(context, attrs);
         
 		// connect with streams database and populate list
-		mStreamdb = new StreamDatabase(getContext());
+		mStreamdb = new TilosDatabase(getContext());
 		
 		List<UriBean> uris = mStreamdb.getUris();
 

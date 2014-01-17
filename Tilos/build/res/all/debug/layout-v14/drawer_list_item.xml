@@ -24,4 +24,4 @@
     android:paddingRight="16dp"
     android:textColor="#fff"
     android:background="?android:attr/activatedBackgroundIndicator"
-    android:minHeight="?android:attr/listPreferredItemHeight" /><!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/layout-v14/drawer_list_item.xml -->
+    android:minHeight="?android:attr/listPreferredItemHeight" /><!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/layout-v14/drawer_list_item.xml -->

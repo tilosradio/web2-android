@@ -44,4 +44,4 @@
         android:title="@string/label"
         android:dialogTitle="@string/label" />
 </PreferenceScreen>
-<!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/xml/alarm_prefs.xml -->
+<!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/xml/alarm_prefs.xml -->

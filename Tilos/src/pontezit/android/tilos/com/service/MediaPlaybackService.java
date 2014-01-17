@@ -103,21 +103,21 @@ public class MediaPlaybackService extends Service implements
     public static final int REPEAT_CURRENT = 1;
     public static final int REPEAT_ALL = 2;
 
-    public static final String PLAYSTATE_CHANGED = "net.sourceforge.servestream.playstatechanged";
-    public static final String META_CHANGED = "net.sourceforge.servestream.metachanged";
-    public static final String META_RETRIEVED = "net.sourceforge.servestream.meta_retrieved";
-    public static final String ART_CHANGED = "net.sourceforge.servestream.artchanged";
-    public static final String QUEUE_CHANGED = "net.sourceforge.servestream.queuechanged";
+    public static final String PLAYSTATE_CHANGED = "pontezit.android.tilos.com.playstatechanged";
+    public static final String META_CHANGED = "pontezit.android.tilos.com.metachanged";
+    public static final String META_RETRIEVED = "pontezit.android.tilos.com.meta_retrieved";
+    public static final String ART_CHANGED = "pontezit.android.tilos.com.artchanged";
+    public static final String QUEUE_CHANGED = "pontezit.android.tilos.com.queuechanged";
     private static final String AVRCP_PLAYSTATE_CHANGED = "com.android.music.playstatechanged";
     private static final String AVRCP_META_CHANGED = "com.android.music.metachanged";
     
-    public static final String PLAYBACK_STARTED = "net.sourceforge.servestream.playbackstarted";
-    public static final String PLAYBACK_COMPLETE = "net.sourceforge.servestream.playbackcomplete";
-    public static final String START_DIALOG = "net.sourceforge.servestream.startdialog";
-    public static final String STOP_DIALOG = "net.sourceforge.servestream.stopdialog";
-    public static final String PLAYER_CLOSED = "net.sourceforge.servestream.playerclosed";
+    public static final String PLAYBACK_STARTED = "pontezit.android.tilos.com.playbackstarted";
+    public static final String PLAYBACK_COMPLETE = "pontezit.android.tilos.com.playbackcomplete";
+    public static final String START_DIALOG = "pontezit.android.tilos.com.startdialog";
+    public static final String STOP_DIALOG = "pontezit.android.tilos.com.stopdialog";
+    public static final String PLAYER_CLOSED = "pontezit.android.tilos.com.playerclosed";
     
-    public static final String SERVICECMD = "net.sourceforge.servestream.musicservicecommand";
+    public static final String SERVICECMD = "pontezit.android.tilos.com.musicservicecommand";
     public static final String CMDNAME = "command";
     public static final String CMDTOGGLEPAUSE = "togglepause";
     public static final String CMDSTOP = "stop";
@@ -127,12 +127,12 @@ public class MediaPlaybackService extends Service implements
     public static final String CMDNEXT = "next";
     public static final String CMDNOTIF = "buttonId";
 
-    public static final String TOGGLEPAUSE_ACTION = "net.sourceforge.servestream.musicservicecommand.togglepause";
-    public static final String PAUSE_ACTION = "net.sourceforge.servestream.musicservicecommand.pause";
-    public static final String PREVIOUS_ACTION = "net.sourceforge.servestream.musicservicecommand.previous";
-    public static final String NEXT_ACTION = "net.sourceforge.servestream.musicservicecommand.next";
+    public static final String TOGGLEPAUSE_ACTION = "pontezit.android.tilos.com.musicservicecommand.togglepause";
+    public static final String PAUSE_ACTION = "pontezit.android.tilos.com.musicservicecommand.pause";
+    public static final String PREVIOUS_ACTION = "pontezit.android.tilos.com.musicservicecommand.previous";
+    public static final String NEXT_ACTION = "pontezit.android.tilos.com.musicservicecommand.next";
 
-    public static final String BLUETOOTH_DEVICE_PAIRED = "net.sourceforge.servestream.musicservicecommand.bluetooth_device_paired";
+    public static final String BLUETOOTH_DEVICE_PAIRED = "pontezit.android.tilos.com.musicservicecommand.bluetooth_device_paired";
     
     public static final int SLEEP_TIMER_OFF = 0;
     

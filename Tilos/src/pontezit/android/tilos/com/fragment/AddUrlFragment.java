@@ -27,7 +27,7 @@ import net.sourceforge.jplaylistparser.playlist.Playlist;
 import net.sourceforge.jplaylistparser.playlist.PlaylistEntry;
 import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.transport.AbsTransport;
 import pontezit.android.tilos.com.transport.TransportFactory;
 import pontezit.android.tilos.com.utils.LoadingDialog;
@@ -143,7 +143,7 @@ public class AddUrlFragment extends Fragment implements LoadingDialogListener {
 			return;
 		}
 
-		StreamDatabase streamdb = new StreamDatabase(getActivity());
+		TilosDatabase streamdb = new TilosDatabase(getActivity());
 		UriBean uriBean = TransportFactory.findUri(streamdb, uri);
 		if (uriBean == null) {
 			uriBean = TransportFactory.getTransport(uri.getScheme()).createUri(uri);
@@ -216,7 +216,7 @@ public class AddUrlFragment extends Fragment implements LoadingDialogListener {
     	
     	@Override
     	protected Void doInBackground(Void... params) {
-			StreamDatabase streamdb = new StreamDatabase(mContext);
+			TilosDatabase streamdb = new TilosDatabase(mContext);
     		
     		AutoDetectParser parser = new AutoDetectParser(); // Should auto-detect!
     	    Playlist playlist = new Playlist();
@@ -266,7 +266,7 @@ public class AddUrlFragment extends Fragment implements LoadingDialogListener {
     	    mHandler.sendEmptyMessage(0);
         }
     	
-    	private void processUri(StreamDatabase streamdb, String input) {
+    	private void processUri(TilosDatabase streamdb, String input) {
     		Uri uri = TransportFactory.getUri(input);
 
     		if (uri == null) {

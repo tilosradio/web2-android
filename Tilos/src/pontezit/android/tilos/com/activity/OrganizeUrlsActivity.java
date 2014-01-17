@@ -23,7 +23,7 @@ import java.util.List;
 import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.adapter.OrganizeAdapter;
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.dslv.DragSortController;
 import pontezit.android.tilos.com.dslv.DragSortListView;
 
@@ -44,7 +44,7 @@ public class OrganizeUrlsActivity extends ActionBarActivity {
 	private List<UriBean> mBaselineUris;
 	
 	private OrganizeAdapter mAdapter;
-	private StreamDatabase mStreamdb;
+	private TilosDatabase mStreamdb;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -73,7 +73,7 @@ public class OrganizeUrlsActivity extends ActionBarActivity {
 	public void onStart() {
 		super.onStart();
 		
-		mStreamdb = new StreamDatabase(this);
+		mStreamdb = new TilosDatabase(this);
 		updateList();
 	}
 	
@@ -142,7 +142,7 @@ public class OrganizeUrlsActivity extends ActionBarActivity {
 		
 		for (int i = 0; i < uris.size(); i++) {
 			values.clear();
-			values.put(StreamDatabase.FIELD_STREAM_LIST_POSITION, listPosition);
+			values.put(TilosDatabase.FIELD_STREAM_LIST_POSITION, listPosition);
 			listPosition++;
 			
 			mStreamdb.updateUri(uris.get(i), values);

@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/assets" />
+        <source path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/assets" />
     </dataSet>
     <dataSet config="release" >
-        <source path="/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/build-types/release/assets" />
+        <source path="/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/build-types/release/assets" />
     </dataSet>
 
 </merger>

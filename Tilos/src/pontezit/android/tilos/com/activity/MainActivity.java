@@ -335,8 +335,8 @@ public class MainActivity extends ActionBarActivity implements
 		
         // check to see if we were called from a home screen shortcut
 		if ((contentType = intent.getType()) != null) {
-			if (contentType.contains("net.sourceforge.servestream/")) {
-				intentUri = intent.getType().toString().replace("net.sourceforge.servestream/", "");
+			if (contentType.contains("pontezit.android.tilos.com/")) {
+				intentUri = intent.getType().toString().replace("pontezit.android.tilos.com/", "");
 				setIntent(null);
 				return intentUri;
 			}

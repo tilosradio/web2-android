@@ -26,4 +26,4 @@
     <item android:state_focused="false"
         android:drawable="@drawable/ic_clock_add_alarm" />
 </selector>
-<!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/drawable/add_alarm.xml -->
+<!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/drawable/add_alarm.xml -->

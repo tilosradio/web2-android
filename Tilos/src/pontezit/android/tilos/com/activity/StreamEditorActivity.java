@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Set;
 
 import pontezit.android.tilos.com.R;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -213,7 +213,7 @@ public class StreamEditorActivity extends PreferenceActivity implements OnShared
 
 	protected static final String TAG = StreamEditorActivity.class.getName();
 
-	protected StreamDatabase m_streamdb = null;
+	protected TilosDatabase m_streamdb = null;
 
 	private CursorPreferenceHack pref;
 
@@ -225,9 +225,9 @@ public class StreamEditorActivity extends PreferenceActivity implements OnShared
 		
 		long streamId = this.getIntent().getLongExtra(Intent.EXTRA_TITLE, -1);
 
-		this.m_streamdb = new StreamDatabase(this);
+		this.m_streamdb = new TilosDatabase(this);
 
-		this.pref = new CursorPreferenceHack(StreamDatabase.TABLE_STREAMS, streamId);
+		this.pref = new CursorPreferenceHack(TilosDatabase.TABLE_STREAMS, streamId);
 		this.pref.registerOnSharedPreferenceChangeListener(this);
 
 		this.addPreferencesFromResource(R.xml.stream_prefs);
@@ -240,7 +240,7 @@ public class StreamEditorActivity extends PreferenceActivity implements OnShared
 		super.onStart();
 
 		if(this.m_streamdb == null)
-			this.m_streamdb = new StreamDatabase(this);
+			this.m_streamdb = new TilosDatabase(this);
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/leslie/Works/AndroidCodes/Tilos/Tilos/src/pontezit/android/tilos/com/service/IMediaPlaybackService.aidl
+ * Original file: /home/leslie/Works/Temp/importTeszt/web2-android/Tilos/src/pontezit/android/tilos/com/service/IMediaPlaybackService.aidl
  */
 package pontezit.android.tilos.com.service;
 public interface IMediaPlaybackService extends android.os.IInterface

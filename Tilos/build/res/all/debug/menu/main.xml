@@ -12,4 +12,4 @@
         android:id="@+id/menu_item_scan"
         android:title="@string/list_menu_scan"
         android:icon="@drawable/ic_menu_scan" />
-</menu><!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/menu/main.xml -->
+</menu><!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/menu/main.xml -->

@@ -20,6 +20,7 @@ package pontezit.android.tilos.com.fragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.transport.AbsTransport;
 import pontezit.android.tilos.com.transport.TransportFactory;
 import pontezit.android.tilos.com.utils.LoadingDialog;
@@ -36,7 +37,6 @@ import pontezit.android.tilos.com.activity.StreamEditorActivity;
 import pontezit.android.tilos.com.adapter.UrlListAdapter;
 import pontezit.android.tilos.com.alarm.Alarm;
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
 import pontezit.android.tilos.com.utils.PreferenceConstants;
 
 import android.annotation.SuppressLint;
@@ -86,14 +86,14 @@ public class UrlListFragment extends ListFragment implements
 	
 	public final static String TAG = UrlListFragment.class.getName();	
 	
-    public static final String UPDATE_LIST = "net.sourceforge.servestream.updatelist";
+    public static final String UPDATE_LIST = "pontezit.android.tilos.com.updatelist";
 	
     private final static String LOADING_DIALOG = "loading_dialog";
 	private final static String RATE_DIALOG = "rate_dialog";
 	
 	public static final String ARG_TARGET_URI = "target_uri";
 	
-	private StreamDatabase mStreamdb = null;
+	private TilosDatabase mStreamdb = null;
 	
 	private SharedPreferences mPreferences = null;
     private DetermineActionTask mDetermineActionTask;
@@ -125,7 +125,7 @@ public class UrlListFragment extends ListFragment implements
         }
        
 		// connect with streams database and populate list
-		mStreamdb = new StreamDatabase(getActivity());
+		mStreamdb = new TilosDatabase(getActivity());
     }
 	
     @Override

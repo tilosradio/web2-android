@@ -23,4 +23,4 @@
           android:drawable="@drawable/abc_spinner_ab_focused_holo_light" />
     <item android:drawable="@drawable/abc_spinner_ab_default_holo_light" />
 </selector>
-<!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/drawable/abc_spinner_ab_holo_light.xml --><!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/drawable/abc_spinner_ab_holo_light.xml -->
+<!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/drawable/abc_spinner_ab_holo_light.xml --><!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/drawable/abc_spinner_ab_holo_light.xml -->

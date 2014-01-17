@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values-es/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values-es/strings.xml -->
     <eat-comment />
 
     <string-array name="alarm_set">
@@ -22,7 +22,7 @@
         <!-- message shown when zero or more than one song was added -->
         <item quantity="other"><ns1:g id="number" example="27">%d</ns1:g> canciones agregadas a la lista.</item>
     </plurals>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/build/exploded-bundles/TilosAndroidSupportV7AppcompatUnspecified.aar/res/values-es/values.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/build/exploded-bundles/Web2AndroidAndroidSupportV7AppcompatUnspecified.aar/res/values-es/values.xml -->
     <eat-comment />
 
     <string name="abc_action_bar_home_description" msgid="4600421777120114993">"Ir a la pantalla de inicio"</string>
@@ -38,7 +38,7 @@
     <string name="abc_searchview_description_voice" msgid="893419373245838918">"Búsqueda por voz"</string>
     <string name="abc_shareactionprovider_share_with" msgid="3421042268587513524">"Compartir con"</string>
     <string name="abc_shareactionprovider_share_with_application" msgid="7165123711973476752">"Compartir con %s"</string>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/Tilos/res/values-es/strings.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/values-es/strings.xml -->
     <eat-comment />
 
     <string name="about_pref">Acerca de</string>

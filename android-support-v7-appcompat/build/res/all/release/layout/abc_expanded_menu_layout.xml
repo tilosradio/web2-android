@@ -19,4 +19,4 @@
         android:id="@+id/expanded_menu"
         android:layout_width="?attr/panelMenuListWidth"
         android:layout_height="wrap_content"/>
-<!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/layout/abc_expanded_menu_layout.xml -->
+<!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/layout/abc_expanded_menu_layout.xml -->

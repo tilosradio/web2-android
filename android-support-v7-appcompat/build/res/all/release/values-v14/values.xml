@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v14/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v14/styles_base.xml -->
     <eat-comment />
 
     <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle" parent="@android:TextAppearance.Holo.SearchResult.Subtitle"></style>
@@ -37,7 +37,7 @@
     <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title" parent="android:TextAppearance.Holo.Widget.ActionMode.Title"></style>
 
     <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" parent="android:TextAppearance.Holo.Widget.ActionMode.Title.Inverse"></style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v14/themes_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v14/themes_base.xml -->
     <eat-comment />
 
     <style name="Theme.Base.AppCompat" parent="android:Theme.Holo">
@@ -114,7 +114,7 @@
         <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
         <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
     </style>
-    <!-- From: file:/home/leslie/Works/AndroidCodes/Tilos/android-support-v7-appcompat/res/values-v14/styles_base.xml -->
+    <!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/android-support-v7-appcompat/res/values-v14/styles_base.xml -->
     <eat-comment />
 
     <style name="Widget.AppCompat.Base.ActionBar" parent="android:Widget.Holo.ActionBar"></style>

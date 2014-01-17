@@ -54,12 +54,12 @@ public final class Media {
         /**
          * The MIME type of {@link #CONTENT_URI} providing a directory of uris.
          */
-        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/com.sourceforge.servestream.uri";
+        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/pontezit.android.tilos.com.uri";
 
         /**
          * The MIME type of a {@link #CONTENT_URI} sub-directory of a single uri.
          */
-        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/com.sourceforge.servestream.uri";
+        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/pontezit.android.tilos.com.uri";
 
         /**
          * The default sort order for this table

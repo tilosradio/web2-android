@@ -24,7 +24,7 @@ import java.net.URLDecoder;
 import java.util.Map;
 
 import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.StreamDatabase;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.utils.Utils;
 
 import android.net.Uri;
@@ -166,32 +166,32 @@ public class RTMP extends AbsTransport {
 
 	@Override
 	public void getSelectionArgs(Uri uri, Map<String, String> selection) {
-		selection.put(StreamDatabase.FIELD_STREAM_PROTOCOL, PROTOCOL);
+		selection.put(TilosDatabase.FIELD_STREAM_PROTOCOL, PROTOCOL);
 		
 		if (uri.getUserInfo() != null) {
 			String [] authInfo = uri.getUserInfo().split("\\:");
 			
 			if (authInfo.length == 2) {
-				selection.put(StreamDatabase.FIELD_STREAM_USERNAME, authInfo[0]);
-				selection.put(StreamDatabase.FIELD_STREAM_PASSWORD, authInfo[1]);
+				selection.put(TilosDatabase.FIELD_STREAM_USERNAME, authInfo[0]);
+				selection.put(TilosDatabase.FIELD_STREAM_PASSWORD, authInfo[1]);
 			}
 		} else {
-			selection.put(StreamDatabase.FIELD_STREAM_USERNAME, null);
-			selection.put(StreamDatabase.FIELD_STREAM_PASSWORD, null);
+			selection.put(TilosDatabase.FIELD_STREAM_USERNAME, null);
+			selection.put(TilosDatabase.FIELD_STREAM_PASSWORD, null);
 		}
 		
-		selection.put(StreamDatabase.FIELD_STREAM_HOSTNAME, uri.getHost());
+		selection.put(TilosDatabase.FIELD_STREAM_HOSTNAME, uri.getHost());
 
 		int port = uri.getPort();
 		if (port < 0)
 			port = DEFAULT_PORT;
-		selection.put(StreamDatabase.FIELD_STREAM_PORT, Integer.toString(port));
+		selection.put(TilosDatabase.FIELD_STREAM_PORT, Integer.toString(port));
 		
 		if (uri.getPath() != null) {
-			selection.put(StreamDatabase.FIELD_STREAM_PATH, uri.getPath());
+			selection.put(TilosDatabase.FIELD_STREAM_PATH, uri.getPath());
 		}
-		selection.put(StreamDatabase.FIELD_STREAM_QUERY, uri.getQuery());
-		selection.put(StreamDatabase.FIELD_STREAM_REFERENCE, uri.getFragment());		
+		selection.put(TilosDatabase.FIELD_STREAM_QUERY, uri.getQuery());
+		selection.put(TilosDatabase.FIELD_STREAM_REFERENCE, uri.getFragment());
 	}
 
 	@Override
