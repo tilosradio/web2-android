@@ -116,14 +116,8 @@
 		    android:name="pontezit.android.tilos.com.activity.NowPlayingActivity"
 		    android:theme="@style/Theme.ServeStream.Dark"
 			android:label="@string/now_playing_label" />
-		
-		<activity
-            android:name="pontezit.android.tilos.com.activity.OrganizeUrlsActivity"
-            android:theme="@style/Theme.ServeStream.Dark"
-            android:configChanges="orientation"
-            android:label="@string/organize_urls_label" />
-        
-		<activity
+
+        <activity
 		    android:name="pontezit.android.tilos.com.activity.SearchableActivity"
 		    android:theme="@style/Theme.ServeStream.Dark"
 		    android:launchMode="singleTop" >
