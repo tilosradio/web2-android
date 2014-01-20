@@ -24,7 +24,7 @@ import android.provider.BaseColumns;
  * Convenience definitions for MediaProvider
  */
 public final class Media {
-    public static final String AUTHORITY = "Media";
+    public static final String AUTHORITY = "pontezit.android.tilos.com.provider.Media";
 
     /**
      * The string that is used when a media attribute is not known.

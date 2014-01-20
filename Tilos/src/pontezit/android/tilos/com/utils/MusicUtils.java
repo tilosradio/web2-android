@@ -917,9 +917,7 @@ public class MusicUtils {
         }
         LogHelper.Log("playlist is not empty", 1);
     	List<ContentValues> contentValues = new ArrayList<ContentValues>();
-        LogHelper.Log("playlist is not empty after 1", 1);
     	ContentResolver contentResolver = context.getContentResolver();
-        LogHelper.Log("playlist is not empty after 2", 1);
     	Map<String, Integer> uriList = retrieveAllRows(context);
 
     	long [] list = new long[playlist.getPlaylistEntries().size()];
@@ -980,7 +978,7 @@ public class MusicUtils {
     private static Map<String, Integer> retrieveAllRows(Context context) {
         LogHelper.Log("retrieveAllRows running", 1);
     	Map<String, Integer> list = new HashMap<String, Integer>();
-    	
+
 		// Form an array specifying which columns to return. 
 		String [] projection = new String [] { Media.MediaColumns._ID, Media.MediaColumns.URI };
 
@@ -988,7 +986,7 @@ public class MusicUtils {
 		Uri mediaFile =  Media.MediaColumns.CONTENT_URI;
 
 		// Make the query.
-		Cursor cursor = context.getContentResolver().query(mediaFile, 
+		Cursor cursor = context.getContentResolver().query(mediaFile,
 				projection,
 				null,
 				null,
@@ -1011,7 +1009,7 @@ public class MusicUtils {
 		}
 
 		cursor.close();
-		
+
 		return list;
     }
 }
