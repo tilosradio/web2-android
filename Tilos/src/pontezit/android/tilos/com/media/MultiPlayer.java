@@ -26,9 +26,6 @@ import java.io.IOException;
 import pontezit.android.tilos.com.transport.File;
 import pontezit.android.tilos.com.transport.HTTP;
 import pontezit.android.tilos.com.transport.HTTPS;
-import pontezit.android.tilos.com.transport.MMS;
-import pontezit.android.tilos.com.transport.MMSH;
-import pontezit.android.tilos.com.transport.MMST;
 import pontezit.android.tilos.com.transport.RTSP;
 import pontezit.android.tilos.com.utils.HTTPRequestTask;
 import pontezit.android.tilos.com.utils.URLUtils;
@@ -272,12 +269,6 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
 			return mNativeMediaPlayer;
 		} else if (uri.startsWith(RTSP.getProtocolName())) {
 			return mNativeMediaPlayer;
-		} else if (uri.startsWith(MMS.getProtocolName())) {
-			return getFFmpegPlayer();
-		} else if (uri.startsWith(MMSH.getProtocolName())) {
-			return getFFmpegPlayer();
-		} else if (uri.startsWith(MMST.getProtocolName())) {
-			return getFFmpegPlayer();
 		} else {
 			return mNativeMediaPlayer;
 		}
@@ -306,15 +297,7 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
 	@Override
 	public void onContentTypeObtained(String path, boolean useFFmpegPlayer, 
 			String contentType) {
-		if (contentType.equalsIgnoreCase("video/x-ms-asf") || 
-				contentType.equalsIgnoreCase("application/vnd.ms-asf")) {
-			path = path.replace(HTTP.getProtocolName(), MMSH.getProtocolName());
-		} else if (contentType.equals("audio/aacp") ||
-				contentType.equals("audio/3gpp") ||
-				contentType.equals("audio/3gpp2")) {
-			useFFmpegPlayer = true;
-		}
-		
+
 		setDataSource(null, path, -1, false, useFFmpegPlayer, contentType);
 	}
 

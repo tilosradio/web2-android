@@ -35,9 +35,6 @@ public class TransportFactory {
 		HTTPS.getProtocolName(),
 		File.getProtocolName(),
 		RTSP.getProtocolName(),
-		MMS.getProtocolName(),
-		MMSH.getProtocolName(),
-		MMST.getProtocolName(),
 		RTMP.getProtocolName()
 	};
 
@@ -54,12 +51,6 @@ public class TransportFactory {
 			return new File();
 		} else if (RTSP.getProtocolName().equals(protocol)) {
 			return new RTSP();
-		} else if (MMS.getProtocolName().equals(protocol)) {
-			return new MMS();
-		} else if (MMSH.getProtocolName().equals(protocol)) {
-			return new MMSH();
-		} else if (MMST.getProtocolName().equals(protocol)) {
-			return new MMST();
 		} else if (RTMP.getProtocolName().equals(protocol)) {
 			return new RTMP();
 		} else {
@@ -91,12 +82,6 @@ public class TransportFactory {
 			scheme = File.getProtocolName();
 		} else if (uri.getScheme().equals(RTSP.getProtocolName())) {
 			scheme = RTSP.getProtocolName();
-		} else if (uri.getScheme().equals(MMS.getProtocolName())) {
-			scheme = MMS.getProtocolName();
-		} else if (uri.getScheme().equals(MMSH.getProtocolName())) {
-			scheme = MMSH.getProtocolName();
-		} else if (uri.getScheme().equals(MMST.getProtocolName())) {
-			scheme = MMST.getProtocolName();
 		} else if (uri.getScheme().equals(RTMP.getProtocolName())) {
 			scheme = RTMP.getProtocolName();
 		}
@@ -112,12 +97,6 @@ public class TransportFactory {
 			return File.getUri(input);
 		} else if (RTSP.getProtocolName().equals(scheme)) {
 			return RTSP.getUri(input);
-		} else if (MMS.getProtocolName().equals(scheme)) {
-			return MMS.getUri(input);
-		} else if (MMSH.getProtocolName().equals(scheme)) {
-			return MMSH.getUri(input);
-		} else if (MMST.getProtocolName().equals(scheme)) {
-			return MMST.getUri(input);
 		} else if (RTMP.getProtocolName().equals(scheme)) {
 			return RTMP.getUri(input);
 		} else
