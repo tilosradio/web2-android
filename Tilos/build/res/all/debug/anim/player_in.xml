@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android">
-    <alpha
-        android:interpolator="@android:anim/linear_interpolator"
-        android:duration="200"
-        android:fromAlpha="0.0"
-        android:toAlpha="1.0" />
-</set>
-<!-- From: file:/home/leslie/Works/Temp/importTeszt/web2-android/Tilos/res/anim/player_in.xml -->
