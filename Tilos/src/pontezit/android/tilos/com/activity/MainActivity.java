@@ -198,16 +198,6 @@ public class MainActivity extends ActionBarActivity implements
 			case (R.id.menu_item_settings):
 				startActivity(new Intent(this, SettingsActivity.class));
 				return true;
-			case (R.id.menu_item_scan):
-				try {
-					Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-					intent.setPackage("com.google.zxing.client.android");
-					intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-					startActivityForResult(intent, 0);
-				} catch (ActivityNotFoundException ex) {
-					showDialog(DOWNLOAD_SCANNER_DIALOG);
-				}
-        		return true;
 			default:
 				return super.onOptionsItemSelected(item);
         }

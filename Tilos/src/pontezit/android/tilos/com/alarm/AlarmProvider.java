@@ -41,8 +41,8 @@ public class AlarmProvider extends ContentProvider {
             UriMatcher.NO_MATCH);
 
     static {
-        sURLMatcher.addURI("net.sourceforge.servestream", "alarm", ALARMS);
-        sURLMatcher.addURI("net.sourceforge.servestream", "alarm/#", ALARMS_ID);
+        sURLMatcher.addURI("pontezit.android.tilos.com", "alarm", ALARMS);
+        sURLMatcher.addURI("pontezit.android.tilos.com", "alarm/#", ALARMS_ID);
     }
 
     public static class DatabaseHelper extends SQLiteOpenHelper {

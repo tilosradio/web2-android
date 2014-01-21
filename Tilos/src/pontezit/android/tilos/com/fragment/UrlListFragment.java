@@ -31,7 +31,6 @@ import pontezit.android.tilos.com.utils.RateDialog;
 import pontezit.android.tilos.com.utils.UriBeanLoader;
 
 import pontezit.android.tilos.com.R;
-import pontezit.android.tilos.com.activity.AddUrlActivity;
 import pontezit.android.tilos.com.activity.BluetoothOptionsActivity;
 import pontezit.android.tilos.com.activity.StreamEditorActivity;
 import pontezit.android.tilos.com.adapter.UrlListAdapter;
@@ -227,9 +226,6 @@ public class UrlListFragment extends ListFragment implements
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-	    	case (R.id.menu_item_add):
-				startActivity(new Intent(getActivity(), AddUrlActivity.class));
-				return true;
 	        default:
 	        	return super.onOptionsItemSelected(item);
 	    }
