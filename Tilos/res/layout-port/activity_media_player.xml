@@ -25,13 +25,15 @@
     android:orientation="vertical"
     android:background="@null" >
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+    <ImageView
+        android:id="@+id/bg"
         android:layout_width="fill_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:orientation="vertical" />
-        
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        />
+
     <LinearLayout
         android:id="@+id/player_controller"
         android:layout_width="fill_parent"
@@ -86,23 +88,9 @@
             android:layout_height="60dip"
             android:orientation="horizontal" >
 
-            <ImageButton
-                android:id="@+id/shuffle_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:paddingBottom="20dip"
-                android:paddingLeft="12dip"
-                android:paddingRight="10dip"
-                android:paddingTop="8dip"
-                android:background="@null"
-                android:src="@drawable/btn_player_shuffle_normal" />
-            
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_toLeftOf="@+id/repeat_button"
-                android:layout_toRightOf="@+id/shuffle_button"
                 android:paddingLeft="10dip"
                 android:paddingRight="10dip"
                 android:gravity="center_vertical"
@@ -136,18 +124,6 @@
                     android:src="@drawable/btn_player_next" />
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/repeat_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:paddingBottom="20dip"
-                android:paddingLeft="10dip"
-                android:paddingRight="12dip"
-                android:paddingTop="8dip"
-                android:background="@null"
-                android:src="@drawable/btn_player_repeat_normal" />
-            
         </RelativeLayout>
         
     </LinearLayout>

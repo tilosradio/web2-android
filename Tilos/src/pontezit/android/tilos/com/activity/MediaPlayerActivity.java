@@ -111,14 +111,11 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     private RepeatingImageButton mPrevButton;
     private ImageButton mPauseButton;
     private RepeatingImageButton mNextButton;
-    private ImageButton mRepeatButton;
-    private ImageButton mShuffleButton;
     private Toast mToast;
     private MusicUtils.ServiceToken mToken;
 
     private VolumeObserver mVolumeObserver;
-    
-	private ViewPager mPager;
+
 	private GridPagerAdapter mAdapter;
     
     public MediaPlayerActivity()
@@ -172,8 +169,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         mProgress.setMax(1000);
         
         mVolume.setOnSeekBarChangeListener(mVolumeListener);
-        
-        mPager = (ViewPager) findViewById(R.id.pager);
+
     }
 
     private boolean processUri(String input) {
@@ -684,13 +680,8 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
                     // but also if the audio ID is valid but the service is paused.
                     if (mService.getAudioId() >= 0 || mService.isPlaying() ||
                             mService.getPath() != null) {
-                        // something is playing now, we're done
-                        mRepeatButton.setVisibility(View.VISIBLE);
-                        mShuffleButton.setVisibility(View.VISIBLE);
-                        setRepeatButtonImage();
-                        setShuffleButtonImage();
                         setPauseButtonImage();
-                        initPager();
+
                         return;
                     }
                 } catch (RemoteException ex) {
@@ -704,39 +695,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
                 mService = null;
             }
     };
-    
-    private void setRepeatButtonImage() {
-        if (mService == null) return;
-        try {
-            switch (mService.getRepeatMode()) {
-                case MediaPlaybackService.REPEAT_ALL:
-                    mRepeatButton.setImageResource(R.drawable.btn_player_repeat_checked);
-                    break;
-                case MediaPlaybackService.REPEAT_CURRENT:
-                    mRepeatButton.setImageResource(R.drawable.btn_player_repeat_one_checked);
-                    break;
-                default:
-                    mRepeatButton.setImageResource(R.drawable.btn_player_repeat_normal);
-                    break;
-            }
-        } catch (RemoteException ex) {
-        }
-    }
-    
-    private void setShuffleButtonImage() {
-        if (mService == null) return;
-        try {
-            switch (mService.getShuffleMode()) {
-                case MediaPlaybackService.SHUFFLE_NONE:
-                    mShuffleButton.setImageResource(R.drawable.btn_player_shuffle_normal);
-                    break;
-                default:
-                    mShuffleButton.setImageResource(R.drawable.btn_player_shuffle_checked);
-                    break;
-            }
-        } catch (RemoteException ex) {
-        }
-    }
+
     
     private void setPauseButtonImage() {
         try {
@@ -767,78 +726,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
 		} catch (RemoteException e) {
 		}	
     }
-    
-    private void initPager() {
-        LogHelper.Log("MediaPlayerActivity; initPager run", 1);
-    	if (mService == null) {
-    		return;
-        }
-     	
-    	int count = 0;
-    	
-    	try {
-			count = mService.getQueue().length + 2;
-		} catch (RemoteException e) {
-			finish();
-		}
-    	
-    	mAdapter = new GridPagerAdapter(getSupportFragmentManager(), count);
-        mPager.setAdapter(mAdapter);
-        mPager.setOnPageChangeListener(new OnPageChangeListener() {
 
-        	boolean mFromUser = false;
-        	
-			@Override
-			public void onPageScrollStateChanged(int state) {
-				if (state == ViewPager.SCROLL_STATE_DRAGGING) {
-					mFromUser = true;
-			    } else if (state == ViewPager.SCROLL_STATE_IDLE) {
-			    	mFromUser = false;
-			    }
-			}
-
-			@Override
-			public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-				
-			}
-
-			@Override
-			public void onPageSelected(int position) {
-				try {
-					if (mFromUser) {
-						position--;
-						
-						if (position == -1) {
-							position = mService.getQueue().length - 1;
-						} else if (position == mService.getQueue().length) {
-							position = 0;
-						}
-						
-						mService.setQueuePosition(position);
-						mFromUser = false;
-					}
-				} catch (RemoteException e) {
-					e.printStackTrace();
-				}
-			}
-        });
-        
-        setPager();
-    }
-    
-    private void setPager() {
-        if (mService == null) {
-            return;
-        }
-    	
-        try {
-        	int position = mService.getQueuePosition() + 1;
-			mPager.setCurrentItem(position, false);
-		} catch (RemoteException e) {
-			e.printStackTrace();
-		}
-    }
-    
     private TextView mCurrentTime;
     private TextView mTotalTime;
     private ProgressBar mProgress;
@@ -946,7 +834,6 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
                 setSeekControls();
                 setPauseButtonImage();
                 queueNextRefresh(1);
-                setPager();
             } else if (action.equals(MediaPlaybackService.PLAYSTATE_CHANGED)) {
                 setPauseButtonImage();
             } else if (action.equals(MediaPlaybackService.START_DIALOG)) {
