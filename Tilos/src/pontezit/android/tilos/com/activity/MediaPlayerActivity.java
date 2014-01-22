@@ -18,12 +18,18 @@
 package pontezit.android.tilos.com.activity;
 
 import pontezit.android.tilos.com.R;
+import pontezit.android.tilos.com.bean.UriBean;
 import pontezit.android.tilos.com.button.RepeatingImageButton;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.fragment.MediaPlayerFragment;
 import pontezit.android.tilos.com.service.IMediaPlaybackService;
 import pontezit.android.tilos.com.service.MediaPlaybackService;
+import pontezit.android.tilos.com.transport.AbsTransport;
+import pontezit.android.tilos.com.transport.TransportFactory;
+import pontezit.android.tilos.com.utils.DetermineActionTask;
 import pontezit.android.tilos.com.utils.LoadingDialog;
 import pontezit.android.tilos.com.utils.LoadingDialog.LoadingDialogListener;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.MusicUtils;
 import pontezit.android.tilos.com.utils.PreferenceConstants;
 import pontezit.android.tilos.com.utils.SleepTimerDialog;
@@ -79,9 +85,13 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils.Defs,
     		OnSharedPreferenceChangeListener,
     		LoadingDialogListener,
-    		SleepTimerDialogListener {
+    		SleepTimerDialogListener,
+            DetermineActionTask.MusicRetrieverPreparedListener {
 	
     private static final String TAG = MediaPlayerActivity.class.getName();
+
+    private TilosDatabase mStreamdb = null;
+    private DetermineActionTask mDetermineActionTask;
 
 	private static final String LOADING_DIALOG = "loading_dialog";
 	private static final String SLEEP_TIMER_DIALOG = "sleep_timer_dialog";
@@ -121,7 +131,8 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_media_player);
-        
+        mStreamdb = new TilosDatabase(this);
+        processUri("http://stream.tilos.hu/tilos.m3u");
 		ActionBar actionBar = getSupportActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
@@ -169,6 +180,48 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         mVolume.setOnSeekBarChangeListener(mVolumeListener);
         
         mPager = (ViewPager) findViewById(R.id.pager);
+    }
+
+    private boolean processUri(String input) {
+        LogHelper.Log("UrlListFragment; processUri run", 1);
+        Uri uri = TransportFactory.getUri(input);
+
+        if (uri == null) {
+            return false;
+        }
+
+        UriBean uriBean = TransportFactory.findUri(mStreamdb, uri);
+        if (uriBean == null) {
+            uriBean = TransportFactory.getTransport(uri.getScheme()).createUri(uri);
+
+            AbsTransport transport = TransportFactory.getTransport(uriBean.getProtocol());
+            transport.setUri(uriBean);
+
+        }
+
+        //showDialog(LOADING_DIALOG);
+        mDetermineActionTask = new DetermineActionTask(this, uriBean, this);
+        mDetermineActionTask.execute();
+
+        return true;
+    }
+
+    @Override
+    public void onMusicRetrieverPrepared(String action, UriBean uri, long[] list) {
+        LogHelper.Log("UrlListFragment; onMusicRetrieverPrepared run", 1);
+
+
+        if (action.equals(DetermineActionTask.URL_ACTION_UNDETERMINED)) {
+            showUrlNotOpenedToast();
+        } else if (action.equals(DetermineActionTask.URL_ACTION_PLAY)) {
+
+            mStreamdb.touchUri(uri);
+            MusicUtils.playAll(this, list, 0);
+        }
+    }
+
+    private void showUrlNotOpenedToast() {
+        Toast.makeText(this, R.string.url_not_opened_message, Toast.LENGTH_SHORT).show();
     }
     
 	public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,

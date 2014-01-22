@@ -40,26 +40,39 @@
             android:authorities="pontezit.android.tilos.com"
             android:exported="false" />
 
+        <activity
+            android:name="pontezit.android.tilos.com.activity.MediaPlayerActivity"
+            android:theme="@style/Theme.ServeStream.Dark"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pontezit.android.tilos.com.PLAYBACK_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="pontezit.android.tilos.com/*" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".activity.SearchableActivity" />
+        </activity>
+
 		<activity
 		    android:name="pontezit.android.tilos.com.activity.MainActivity"
 	   		android:theme="@style/Theme.ServeStream.Dark"
 		    android:launchMode="singleTop" >
-		    
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-			<intent-filter>
-  				<action android:name="android.intent.action.SEND" />
-  				<category android:name="android.intent.category.DEFAULT" />
-  				<data android:mimeType="text/plain" />
-			</intent-filter>
-			<intent-filter>
-				<action android:name="android.intent.action.VIEW" />
-				<category android:name="android.intent.category.BROWSABLE" />
-				<category android:name="android.intent.category.DEFAULT" />
-				<data android:mimeType="pontezit.android.tilos.com/*" />
-			</intent-filter>
+
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.BROWSABLE" />
@@ -90,9 +103,7 @@
         		<data android:mimeType="audio/x-scpls" />
         		<data android:mimeType="video/x-ms-asf" />
     		</intent-filter>
-    		<meta-data
-	            android:name="android.app.default_searchable"
-                android:value=".activity.SearchableActivity" />
+
 		</activity>
 
 		<activity
@@ -145,17 +156,7 @@
 		    android:name="pontezit.android.tilos.com.service.MediaPlaybackService"
 			android:description="@string/media_service_desc" />
 
-        <activity
-            android:name="pontezit.android.tilos.com.activity.MediaPlayerActivity"
-            android:theme="@style/Theme.ServeStream.Dark"
-            android:label="@string/media_player_label"
-            android:launchMode="singleTop"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="pontezit.android.tilos.com.PLAYBACK_VIEWER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+
         
         <receiver
             android:name="pontezit.android.tilos.com.receiver.MediaButtonIntentReceiver" >

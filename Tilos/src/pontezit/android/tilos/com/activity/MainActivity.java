@@ -24,6 +24,7 @@ import pontezit.android.tilos.com.fragment.UrlListFragment;
 import pontezit.android.tilos.com.fragment.UrlListFragment.BrowseIntentListener;
 import pontezit.android.tilos.com.service.MediaPlaybackService;
 import pontezit.android.tilos.com.utils.DownloadScannerDialog;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.MusicUtils;
 import pontezit.android.tilos.com.utils.MusicUtils.ServiceToken;
 
@@ -79,7 +80,7 @@ public class MainActivity extends ActionBarActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        LogHelper.Log("MainActivity running", 1);
         mTitle = mDrawerTitle = getTitle();
         mDrawerItems = getResources().getStringArray(R.array.drawer_items);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -126,7 +127,7 @@ public class MainActivity extends ActionBarActivity implements
     @Override
     public void onNewIntent(Intent intent) {
     	super.onNewIntent(intent);
-		
+        LogHelper.Log("MainActivity; onNewIntent run", 1);
         setIntent(intent);
         
         openUri(getUri());
@@ -251,6 +252,7 @@ public class MainActivity extends ActionBarActivity implements
     }
 
     private void selectItem(int position) {
+        LogHelper.Log("MainActivity; selectItem run", 1);
     	FragmentManager fragmentManager = getSupportFragmentManager();
     	Fragment fragment = getSupportFragmentManager().findFragmentByTag(mTag);
     	
@@ -311,6 +313,7 @@ public class MainActivity extends ActionBarActivity implements
     }
     
     private String getUri() {
+        LogHelper.Log("MainActivity; getUri run", 1);
 		String intentUri = null;
 		String contentType = null;
 		
@@ -362,19 +365,20 @@ public class MainActivity extends ActionBarActivity implements
 	}
 
 	private void openUri(String uri) {
+        LogHelper.Log("MainActivity; openUri run", 1);
 		Bundle args = new Bundle();
 		args.putString(UrlListFragment.ARG_TARGET_URI, uri);
-    	
+
     	FragmentManager fragmentManager = getSupportFragmentManager();
     	Fragment fragment = getSupportFragmentManager().findFragmentByTag(mTag);
-    	
+
     	if (fragment != null) {
     		fragmentManager.beginTransaction().detach(fragment).commit();
     	}
-    	
+
     	String tag = String.valueOf(0);
     	fragment = getSupportFragmentManager().findFragmentByTag(tag);
-    	
+
     	if (fragment == null) {
            	fragment = new UrlListFragment();
            	fragment.setArguments(args);
@@ -383,9 +387,9 @@ public class MainActivity extends ActionBarActivity implements
            	fragment.getArguments().putString(UrlListFragment.ARG_TARGET_URI, uri);
     		fragmentManager.beginTransaction().attach(fragment).commit();
     	}
-    	
+
     	mTag = tag;
-    	
+
     	mDrawerList.setItemChecked(0, true);
     	setTitle(mDrawerItems[0]);
     	mDrawerLayout.closeDrawer(mDrawerList);
@@ -421,7 +425,7 @@ public class MainActivity extends ActionBarActivity implements
     	setTitle(mDrawerItems[1]);
     	mDrawerLayout.closeDrawer(mDrawerList);
 	}
-	
+
 	private void showDialog(String tag) {
 		// DialogFragment.show() will take care of adding the fragment
 		// in a transaction.  We also want to remove any currently showing

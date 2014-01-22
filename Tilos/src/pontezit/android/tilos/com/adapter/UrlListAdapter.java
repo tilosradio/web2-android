@@ -21,6 +21,7 @@ import java.util.List;
 
 import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.bean.UriBean;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.OverflowClickListener;
 
 import android.app.Activity;
@@ -39,6 +40,8 @@ public class UrlListAdapter extends ArrayAdapter<UriBean> {
  
     public UrlListAdapter(Context context, List<UriBean> rowItems, OverflowClickListener listener) {
 		super(context, R.layout.url_list_item, rowItems);
+
+        LogHelper.Log("UrlListAdapter run", 1);
         mContext = context;
         mRowItems = rowItems;
         mListener = listener;
@@ -53,7 +56,7 @@ public class UrlListAdapter extends ArrayAdapter<UriBean> {
  
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
- 
+        LogHelper.Log("UrlListAdapter; getView run", 1);
         LayoutInflater mInflater = (LayoutInflater)
         		mContext.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {

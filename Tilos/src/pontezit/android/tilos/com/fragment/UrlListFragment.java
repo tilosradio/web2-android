@@ -25,6 +25,7 @@ import pontezit.android.tilos.com.transport.AbsTransport;
 import pontezit.android.tilos.com.transport.TransportFactory;
 import pontezit.android.tilos.com.utils.LoadingDialog;
 import pontezit.android.tilos.com.utils.LoadingDialog.LoadingDialogListener;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.MusicUtils;
 import pontezit.android.tilos.com.utils.OverflowClickListener;
 import pontezit.android.tilos.com.utils.RateDialog;
@@ -130,7 +131,8 @@ public class UrlListFragment extends ListFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
+        LogHelper.Log("UrlListFragment; onCreate run", 1);
         setRetainInstance(true);
         setHasOptionsMenu(true);
     }
@@ -138,6 +140,7 @@ public class UrlListFragment extends ListFragment implements
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+        LogHelper.Log("UrlListFragment; onCreateView run", 1);
 		View view = inflater.inflate(R.layout.fragment_uri_list, container, false);
 		ListView list = (ListView) view.findViewById(android.R.id.list);
 		list.setEmptyView(view.findViewById(android.R.id.empty));
@@ -148,7 +151,7 @@ public class UrlListFragment extends ListFragment implements
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-		
+        LogHelper.Log("UrlListFragment; onViewCreated run", 1);
 		mPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
 		
 		ListView list = getListView();
@@ -225,6 +228,7 @@ public class UrlListFragment extends ListFragment implements
 		
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+        LogHelper.Log("UrlListFragment; onOptionsItemSelected run", 1);
 		switch (item.getItemId()) {
 	        default:
 	        	return super.onOptionsItemSelected(item);
@@ -232,6 +236,7 @@ public class UrlListFragment extends ListFragment implements
 	}
 	
 	private boolean processUri(String input) {
+        LogHelper.Log("UrlListFragment; processUri run", 1);
 		Uri uri = TransportFactory.getUri(input);
 
 		if (uri == null) {
@@ -244,10 +249,7 @@ public class UrlListFragment extends ListFragment implements
 			
 			AbsTransport transport = TransportFactory.getTransport(uriBean.getProtocol());
 			transport.setUri(uriBean);
-			if (mPreferences.getBoolean(PreferenceConstants.AUTOSAVE, true) && transport.shouldSave()) {
-				mStreamdb.saveUri(uriBean);
-				updateList();
-			}
+
 		}
 		
 	    showDialog(LOADING_DIALOG);
@@ -267,6 +269,7 @@ public class UrlListFragment extends ListFragment implements
 	
 	@Override
 	public void onMusicRetrieverPrepared(String action, UriBean uri, long[] list) {
+        LogHelper.Log("UrlListFragment; onMusicRetrieverPrepared run", 1);
 		dismissDialog(LOADING_DIALOG);
 		
 		if (action.equals(DetermineActionTask.URL_ACTION_UNDETERMINED)) {

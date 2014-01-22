@@ -28,6 +28,7 @@ import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.transport.TransportFactory;
 import pontezit.android.tilos.com.utils.DetermineActionTask;
 import pontezit.android.tilos.com.utils.LoadingDialog;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.OverflowClickListener;
 import pontezit.android.tilos.com.utils.LoadingDialog.LoadingDialogListener;
 import pontezit.android.tilos.com.utils.MusicUtils;
@@ -103,7 +104,7 @@ public class BrowseFragment extends ListFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+        LogHelper.Log("BrowseFragment; onCreate run", 1);
         setRetainInstance(true);
         setHasOptionsMenu(true);
     }
@@ -111,6 +112,7 @@ public class BrowseFragment extends ListFragment implements
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+        LogHelper.Log("BrowseFragment; onCreateView run", 1);
 		View view = inflater.inflate(R.layout.fragment_browse, container, false);
 		ListView list = (ListView) view.findViewById(android.R.id.list);
 		list.setEmptyView(view.findViewById(android.R.id.empty));
@@ -121,7 +123,7 @@ public class BrowseFragment extends ListFragment implements
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-
+        LogHelper.Log("BrowseFragment; onViewCreated run", 1);
 		ListView list = getListView();
 		list.setFastScrollEnabled(true);
 	    list.setOnItemClickListener(new OnItemClickListener() {
@@ -249,6 +251,7 @@ public class BrowseFragment extends ListFragment implements
     }
 
     private void selectInList(UriBean uri) {
+        LogHelper.Log("BrowseFragment; openUri run", 1);
     	if (uri == null) {
     		return;
     	}

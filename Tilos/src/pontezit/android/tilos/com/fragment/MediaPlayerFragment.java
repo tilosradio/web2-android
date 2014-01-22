@@ -18,13 +18,20 @@
 package pontezit.android.tilos.com.fragment;
 
 import pontezit.android.tilos.com.R;
+import pontezit.android.tilos.com.bean.UriBean;
+import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.provider.Media;
 import pontezit.android.tilos.com.service.IMediaPlaybackService;
 import pontezit.android.tilos.com.service.MediaPlaybackService;
+import pontezit.android.tilos.com.transport.AbsTransport;
+import pontezit.android.tilos.com.transport.TransportFactory;
 import pontezit.android.tilos.com.utils.CoverView;
 import pontezit.android.tilos.com.utils.CoverView.CoverViewListener;
+import pontezit.android.tilos.com.utils.DetermineActionTask;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.MusicUtils;
 import pontezit.android.tilos.com.utils.MusicUtils.ServiceToken;
+import pontezit.android.tilos.com.utils.PreferenceConstants;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -32,6 +39,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -43,13 +51,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MediaPlayerFragment extends Fragment implements CoverViewListener {
+public class MediaPlayerFragment extends Fragment implements CoverViewListener{
 	
     private Worker mAlbumArtWorker;
     private AlbumArtHandler mAlbumArtHandler;
     private IMediaPlaybackService mService = null;
-    
     private ServiceToken mToken;
 
     private TextView mTrackNumber;
@@ -58,7 +66,7 @@ public class MediaPlayerFragment extends Fragment implements CoverViewListener {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_media_player, container, false);
-		
+
 		mAlbumArtWorker = new Worker("album art worker");
         mAlbumArtHandler = new AlbumArtHandler(mAlbumArtWorker.getLooper());
         
@@ -69,7 +77,7 @@ public class MediaPlayerFragment extends Fragment implements CoverViewListener {
         mArtistAndAlbumName = (TextView) view.findViewById(R.id.artist_and_album);
         mArtistAndAlbumName.setSelected(true);
         mTrackNumber = (TextView) view.findViewById(R.id.track_number_text);
-		
+
 		return view;
 	}
     
@@ -284,4 +292,6 @@ public class MediaPlayerFragment extends Fragment implements CoverViewListener {
 		} catch (RemoteException e) {
 		}
 	}
+
+
 }

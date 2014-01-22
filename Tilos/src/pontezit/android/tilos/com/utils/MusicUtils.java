@@ -864,7 +864,7 @@ public class MusicUtils {
     	
         AutoDetectParser parser = new AutoDetectParser(); // Should auto-detect!
         Playlist playlist = new Playlist();
-        
+        LogHelper.Log(uri, 1);
         try {
 			parser.parse(uri, contentType, is, playlist);
 		} catch (IOException e) {

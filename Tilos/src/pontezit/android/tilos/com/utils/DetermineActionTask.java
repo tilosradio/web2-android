@@ -59,24 +59,14 @@ public class DetermineActionTask extends AsyncTask<Void, Void, Void> {
 	private void processUri() {
 		AbsTransport transport = TransportFactory.getTransport(getUri().getProtocol());
 		transport.setUri(getUri());
-		
+
 		try {
 			transport.connect();
-		
-			if (transport.getContentType() == null) {
-				mAction = URL_ACTION_UNDETERMINED;
-			} else if (transport.getContentType().contains("text/html")) {
-				mAction = URL_ACTION_BROWSE;
-			} else {
-				mAction = URL_ACTION_PLAY;
-				if (transport.isPotentialPlaylist()) {
-                    LogHelper.Log("DetermineAction, isPotentialPlayList", 1);
-                    mList = MusicUtils.getFilesInPlaylist(mContext, getUri().getScrubbedUri().toString(), transport.getContentType(), transport.getConnection());
-                } else {
-                    LogHelper.Log("DetermineAction, isNotPotentialPlayList", 1);
-					mList = MusicUtils.storeFile(mContext, getUri().getScrubbedUri().toString());
-				}
-			}
+
+            mAction = URL_ACTION_PLAY;
+            LogHelper.Log("DetermineAction, isPotentialPlayList", 1);
+            mList = MusicUtils.getFilesInPlaylist(mContext, getUri().getScrubbedUri().toString(), transport.getContentType(), transport.getConnection());
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			mAction = URL_ACTION_UNDETERMINED;
