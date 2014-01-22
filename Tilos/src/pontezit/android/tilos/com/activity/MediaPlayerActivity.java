@@ -67,7 +67,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -165,12 +164,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
 
         mDeviceHasDpad = (getResources().getConfiguration().navigation ==
             Configuration.NAVIGATION_DPAD);
-        
-        mShuffleButton = (ImageButton) findViewById(R.id.shuffle_button);
-        mShuffleButton.setOnClickListener(mShuffleListener);        
-        mRepeatButton = (ImageButton) findViewById(R.id.repeat_button);
-        mRepeatButton.setOnClickListener(mRepeatListener);
-        
+
         if (mProgress instanceof SeekBar) {
             SeekBar seeker = (SeekBar) mProgress;
             seeker.setOnSeekBarChangeListener(mSeekListener);
@@ -281,18 +275,8 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
 			
 		}
     };
-    
-    private View.OnClickListener mShuffleListener = new View.OnClickListener() {
-        public void onClick(View v) {
-            toggleShuffle();
-        }
-    };
 
-    private View.OnClickListener mRepeatListener = new View.OnClickListener() {
-        public void onClick(View v) {
-            cycleRepeat();
-        }
-    };
+
 
     private View.OnClickListener mPauseListener = new View.OnClickListener() {
         public void onClick(View v) {
@@ -335,26 +319,29 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     };
 
     @Override
-    public void onStart() {
+    public void onStart(){
+        LogHelper.Log("MediaPlayerActivity; onStart run", 1);
         super.onStart();
         paused = false;
-        
-		if (mPreferences.getBoolean(PreferenceConstants.WAKELOCK, true)) {
-	    	getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		}
-        
+        processUri("http://stream.tilos.hu/tilos.m3u");
+
+        if (mPreferences.getBoolean(PreferenceConstants.WAKELOCK, true)) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        }
+
         mToken = MusicUtils.bindToService(this, osc);
         if (mToken == null) {
             // something went wrong
+            LogHelper.Log("MediaPlayerActivity; onStart; mToken is null", 1);
             mHandler.sendEmptyMessage(QUIT);
         }
-        
-        mVolumeObserver = new VolumeObserver(new Handler()); 
-        getApplicationContext().getContentResolver().registerContentObserver( 
+
+        mVolumeObserver = new VolumeObserver(new Handler());
+        getApplicationContext().getContentResolver().registerContentObserver(
         		android.provider.Settings.System.CONTENT_URI,
-        		true, 
+        		true,
         		mVolumeObserver);
-        
+
         IntentFilter f = new IntentFilter();
         f.addAction(MediaPlaybackService.PLAYSTATE_CHANGED);
         f.addAction(MediaPlaybackService.META_CHANGED);
@@ -364,7 +351,6 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         updateTrackInfo();
         long next = refreshNow();
         queueNextRefresh(next);
-        processUri("http://stream.tilos.hu/tilos.m3u");
     }
     
     @Override
@@ -466,101 +452,6 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         return true;
     }
 
-    private final int keyboard[][] = {
-        {
-            KeyEvent.KEYCODE_Q,
-            KeyEvent.KEYCODE_W,
-            KeyEvent.KEYCODE_E,
-            KeyEvent.KEYCODE_R,
-            KeyEvent.KEYCODE_T,
-            KeyEvent.KEYCODE_Y,
-            KeyEvent.KEYCODE_U,
-            KeyEvent.KEYCODE_I,
-            KeyEvent.KEYCODE_O,
-            KeyEvent.KEYCODE_P,
-        },
-        {
-            KeyEvent.KEYCODE_A,
-            KeyEvent.KEYCODE_S,
-            KeyEvent.KEYCODE_D,
-            KeyEvent.KEYCODE_F,
-            KeyEvent.KEYCODE_G,
-            KeyEvent.KEYCODE_H,
-            KeyEvent.KEYCODE_J,
-            KeyEvent.KEYCODE_K,
-            KeyEvent.KEYCODE_L,
-            KeyEvent.KEYCODE_DEL,
-        },
-        {
-            KeyEvent.KEYCODE_Z,
-            KeyEvent.KEYCODE_X,
-            KeyEvent.KEYCODE_C,
-            KeyEvent.KEYCODE_V,
-            KeyEvent.KEYCODE_B,
-            KeyEvent.KEYCODE_N,
-            KeyEvent.KEYCODE_M,
-            KeyEvent.KEYCODE_COMMA,
-            KeyEvent.KEYCODE_PERIOD,
-            KeyEvent.KEYCODE_ENTER
-        }
-
-    };
-
-    private int lastX;
-    private int lastY;
-
-    private boolean seekMethod1(int keyCode)
-    {
-        if (mService == null) return false;
-        for(int x=0;x<10;x++) {
-            for(int y=0;y<3;y++) {
-                if(keyboard[y][x] == keyCode) {
-                    int dir = 0;
-                    // top row
-                    if(x == lastX && y == lastY) dir = 0;
-                    else if (y == 0 && lastY == 0 && x > lastX) dir = 1;
-                    else if (y == 0 && lastY == 0 && x < lastX) dir = -1;
-                    // bottom row
-                    else if (y == 2 && lastY == 2 && x > lastX) dir = -1;
-                    else if (y == 2 && lastY == 2 && x < lastX) dir = 1;
-                    // moving up
-                    else if (y < lastY && x <= 4) dir = 1; 
-                    else if (y < lastY && x >= 5) dir = -1; 
-                    // moving down
-                    else if (y > lastY && x <= 4) dir = -1; 
-                    else if (y > lastY && x >= 5) dir = 1; 
-                    lastX = x;
-                    lastY = y;
-                    try {
-                        mService.seek(mService.position() + dir * 5);
-                    } catch (RemoteException ex) {
-                    }
-                    refreshNow();
-                    return true;
-                }
-            }
-        }
-        lastX = -1;
-        lastY = -1;
-        return false;
-    }
-
-    private boolean seekMethod2(int keyCode)
-    {
-        if (mService == null) return false;
-        for(int i=0;i<10;i++) {
-            if(keyboard[0][i] == keyCode) {
-                int seekpercentage = 100*i/10;
-                try {
-                    mService.seek(mService.duration() * seekpercentage / 100);
-                } catch (RemoteException ex) {
-                }
-                refreshNow();
-                return true;
-            }
-        }
-        return false;
-    }
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
@@ -620,51 +511,6 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         return false;
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        int repcnt = event.getRepeatCount();
-
-        if((seekmethod==0)?seekMethod1(keyCode):seekMethod2(keyCode))
-            return true;
-
-        switch(keyCode)
-        {
-            case KeyEvent.KEYCODE_SLASH:
-                seekmethod = 1 - seekmethod;
-                return true;
-
-            case KeyEvent.KEYCODE_DPAD_LEFT:
-                if (!useDpadMusicControl()) {
-                    break;
-                }
-                if (!mPrevButton.hasFocus()) {
-                    mPrevButton.requestFocus();
-                }
-                scanBackward(repcnt, event.getEventTime() - event.getDownTime());
-                return true;
-            case KeyEvent.KEYCODE_DPAD_RIGHT:
-                if (!useDpadMusicControl()) {
-                    break;
-                }
-                if (!mNextButton.hasFocus()) {
-                    mNextButton.requestFocus();
-                }
-                scanForward(repcnt, event.getEventTime() - event.getDownTime());
-                return true;
-
-            case KeyEvent.KEYCODE_S:
-                toggleShuffle();
-                return true;
-
-            case KeyEvent.KEYCODE_DPAD_CENTER:
-            case KeyEvent.KEYCODE_SPACE:
-                doPauseResume();
-                return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-    
     private void scanBackward(int repcnt, long delta) {
         if(mService == null) return;
         try {
@@ -768,57 +614,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     	} catch (RemoteException ex) {
     	}
     }
-    
-    private void toggleShuffle() {
-        if (mService == null) {
-            return;
-        }
-        try {
-            int shuffle = mService.getShuffleMode();
-            if (shuffle == MediaPlaybackService.SHUFFLE_NONE) {
-            	mService.setShuffleMode(MediaPlaybackService.SHUFFLE_ON);
-                if (mService.getRepeatMode() == MediaPlaybackService.REPEAT_CURRENT) {
-                	mService.setRepeatMode(MediaPlaybackService.REPEAT_ALL);
-                    setRepeatButtonImage();
-                }
-                showToast(R.string.shuffle_on_notif);
-            } else if (shuffle == MediaPlaybackService.SHUFFLE_ON) {
-            	mService.setShuffleMode(MediaPlaybackService.SHUFFLE_NONE);
-                showToast(R.string.shuffle_off_notif);
-            } else {
-                Log.e(TAG, "Invalid shuffle mode: " + shuffle);
-            }
-            setShuffleButtonImage();
-        } catch (RemoteException ex) {
-        }
-    }
-    
-    private void cycleRepeat() {
-        if (mService == null) {
-            return;
-        }
-        try {
-            int mode = mService.getRepeatMode();
-            if (mode == MediaPlaybackService.REPEAT_NONE) {
-                mService.setRepeatMode(MediaPlaybackService.REPEAT_ALL);
-                showToast(R.string.repeat_all_notif);
-            } else if (mode == MediaPlaybackService.REPEAT_ALL) {
-                mService.setRepeatMode(MediaPlaybackService.REPEAT_CURRENT);
-                if (mService.getShuffleMode() != MediaPlaybackService.SHUFFLE_NONE) {
-                    mService.setShuffleMode(MediaPlaybackService.SHUFFLE_NONE);
-                    setShuffleButtonImage();
-                }
-                showToast(R.string.repeat_current_notif);
-            } else {
-                mService.setRepeatMode(MediaPlaybackService.REPEAT_NONE);
-                showToast(R.string.repeat_off_notif);
-            }
-            setRepeatButtonImage();
-        } catch (RemoteException ex) {
-        }
-        
-    }
-    
+
     private void setSleepTimer(int pos) {
         if (mService == null) {
             return;
@@ -869,7 +665,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     }
     
     private void startPlayback() {
-
+        LogHelper.Log("MediaPlayerActivity; startPlayback run", 1);
         if(mService == null)
             return;
 
@@ -880,6 +676,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
 
     private ServiceConnection osc = new ServiceConnection() {
             public void onServiceConnected(ComponentName classname, IBinder obj) {
+                LogHelper.Log("MediaPlayerActivity; ServiceConncetion; onServiceConnected run", 1);
                 mService = IMediaPlaybackService.Stub.asInterface(obj);
                 startPlayback();
                 try {
@@ -898,11 +695,12 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
                     }
                 } catch (RemoteException ex) {
                 }
-                // Service is dead or not playing anything. Return to the previous
-                // activity.
-                finish();
+                // Service is dead or not playing anything.
+                /* TODO: DO SOMETHING */
+
             }
             public void onServiceDisconnected(ComponentName classname) {
+                LogHelper.Log("MediaPlayerActivity; ServiceConncetion; onServiceDisconnected run", 1);
                 mService = null;
             }
     };
@@ -971,6 +769,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     }
     
     private void initPager() {
+        LogHelper.Log("MediaPlayerActivity; initPager run", 1);
     	if (mService == null) {
     		return;
         }
@@ -1138,6 +937,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     private BroadcastReceiver mStatusListener = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+            LogHelper.Log("MediaPlayerActivity; mStatusListener (BroadcastReceiver) run", 1);
             String action = intent.getAction();
             if (action.equals(MediaPlaybackService.META_CHANGED)) {
                 // redraw the artist/title info and
