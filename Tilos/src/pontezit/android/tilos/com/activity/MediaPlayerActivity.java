@@ -183,7 +183,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     }
 
     private boolean processUri(String input) {
-        LogHelper.Log("UrlListFragment; processUri run", 1);
+        LogHelper.Log("MediaPlayerActivity; processUri run", 1);
         Uri uri = TransportFactory.getUri(input);
 
         if (uri == null) {
@@ -208,13 +208,11 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
 
     @Override
     public void onMusicRetrieverPrepared(String action, UriBean uri, long[] list) {
-        LogHelper.Log("UrlListFragment; onMusicRetrieverPrepared run", 1);
-
+        LogHelper.Log("MediaPlayerActivity; onMusicRetrieverPrepared run", 1);
 
         if (action.equals(DetermineActionTask.URL_ACTION_UNDETERMINED)) {
             showUrlNotOpenedToast();
         } else if (action.equals(DetermineActionTask.URL_ACTION_PLAY)) {
-
             mStreamdb.touchUri(uri);
             MusicUtils.playAll(this, list, 0);
         }
