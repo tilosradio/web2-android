@@ -32,10 +32,7 @@ public class TransportFactory {
 
 	private static String[] transportNames = {
 		HTTP.getProtocolName(),
-		HTTPS.getProtocolName(),
 		File.getProtocolName(),
-		RTSP.getProtocolName(),
-		RTMP.getProtocolName()
 	};
 
 	/**
@@ -45,14 +42,8 @@ public class TransportFactory {
 	public static AbsTransport getTransport(String protocol) {
 		if (HTTP.getProtocolName().equals(protocol)) {
 			return new HTTP();
-		} else if (HTTPS.getProtocolName().equals(protocol)) {
-			return new HTTPS();
 		} else if (File.getProtocolName().equals(protocol)) {
 			return new File();
-		} else if (RTSP.getProtocolName().equals(protocol)) {
-			return new RTSP();
-		} else if (RTMP.getProtocolName().equals(protocol)) {
-			return new RTMP();
 		} else {
 			return null;
 		}
@@ -76,14 +67,8 @@ public class TransportFactory {
 		
 		if (uri.getScheme().equals(HTTP.getProtocolName())) {
 			scheme = HTTP.getProtocolName();
-		} else if (uri.getScheme().equals(HTTPS.getProtocolName())) {
-			scheme = HTTPS.getProtocolName();
 		} else if (uri.getScheme().equals(File.getProtocolName())) {
 			scheme = File.getProtocolName();
-		} else if (uri.getScheme().equals(RTSP.getProtocolName())) {
-			scheme = RTSP.getProtocolName();
-		} else if (uri.getScheme().equals(RTMP.getProtocolName())) {
-			scheme = RTMP.getProtocolName();
 		}
 		
 		//Log.d("TransportFactory", String.format(
@@ -91,15 +76,9 @@ public class TransportFactory {
 		//		input));
 		if (HTTP.getProtocolName().equals(scheme))
 			return HTTP.getUri(input);
-		else if (HTTPS.getProtocolName().equals(scheme))
-			return HTTPS.getUri(input);
-		else if (File.getProtocolName().equals(scheme)) {
+		else if (File.getProtocolName().equals(scheme))
 			return File.getUri(input);
-		} else if (RTSP.getProtocolName().equals(scheme)) {
-			return RTSP.getUri(input);
-		} else if (RTMP.getProtocolName().equals(scheme)) {
-			return RTMP.getUri(input);
-		} else
+		else
 			return null;
 	}
 

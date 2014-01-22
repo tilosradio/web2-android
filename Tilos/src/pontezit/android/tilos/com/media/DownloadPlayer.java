@@ -29,7 +29,6 @@ import javax.net.ssl.HttpsURLConnection;
 import pontezit.android.tilos.com.bean.UriBean;
 import pontezit.android.tilos.com.provider.Media;
 import pontezit.android.tilos.com.transport.HTTP;
-import pontezit.android.tilos.com.transport.HTTPS;
 import pontezit.android.tilos.com.transport.TransportFactory;
 import pontezit.android.tilos.com.utils.Utils;
 import android.content.Context;
@@ -62,9 +61,7 @@ public class DownloadPlayer extends FFmpegPlayer {
 		String path = getUri(context, id);		
 		Uri uri = TransportFactory.getUri(path);
 
-		if (uri == null ||
-				(!uri.getScheme().equals(HTTP.getProtocolName()) &&
-				!uri.getScheme().equals(HTTPS.getProtocolName()))) {
+		if (uri == null || !uri.getScheme().equals(HTTP.getProtocolName()) ) {
 			throw new IllegalArgumentException();
 		}
 		

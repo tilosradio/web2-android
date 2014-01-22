@@ -25,8 +25,6 @@ import java.io.IOException;
 
 import pontezit.android.tilos.com.transport.File;
 import pontezit.android.tilos.com.transport.HTTP;
-import pontezit.android.tilos.com.transport.HTTPS;
-import pontezit.android.tilos.com.transport.RTSP;
 import pontezit.android.tilos.com.utils.HTTPRequestTask;
 import pontezit.android.tilos.com.utils.URLUtils;
 import pontezit.android.tilos.com.service.MediaPlaybackService;
@@ -263,11 +261,7 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
 	private AbstractMediaPlayer getMediaPlayer(String uri) {
 		if (uri.startsWith(HTTP.getProtocolName())) {
 			return mNativeMediaPlayer;
-		} else if (uri.startsWith(HTTPS.getProtocolName())) {
-			return mNativeMediaPlayer;
 		} else if (uri.startsWith(File.getProtocolName())) {
-			return mNativeMediaPlayer;
-		} else if (uri.startsWith(RTSP.getProtocolName())) {
 			return mNativeMediaPlayer;
 		} else {
 			return mNativeMediaPlayer;

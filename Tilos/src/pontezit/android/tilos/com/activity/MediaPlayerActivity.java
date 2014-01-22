@@ -132,7 +132,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         super.onCreate(icicle);
         setContentView(R.layout.activity_media_player);
         mStreamdb = new TilosDatabase(this);
-        processUri("http://stream.tilos.hu/tilos.m3u");
+
 		ActionBar actionBar = getSupportActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
@@ -364,6 +364,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         updateTrackInfo();
         long next = refreshNow();
         queueNextRefresh(next);
+        processUri("http://stream.tilos.hu/tilos.m3u");
     }
     
     @Override
