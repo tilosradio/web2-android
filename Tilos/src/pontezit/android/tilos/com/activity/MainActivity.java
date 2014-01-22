@@ -19,7 +19,6 @@ package pontezit.android.tilos.com.activity;
 
 import pontezit.android.tilos.com.R;
 import pontezit.android.tilos.com.fragment.AlarmClockFragment;
-import pontezit.android.tilos.com.fragment.BrowseFragment;
 import pontezit.android.tilos.com.fragment.UrlListFragment;
 import pontezit.android.tilos.com.fragment.UrlListFragment.BrowseIntentListener;
 import pontezit.android.tilos.com.service.MediaPlaybackService;
@@ -28,7 +27,6 @@ import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.MusicUtils;
 import pontezit.android.tilos.com.utils.MusicUtils.ServiceToken;
 
-import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -209,9 +207,7 @@ public class MainActivity extends ActionBarActivity implements
         // check if search intent
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
         	Fragment fragment = getSupportFragmentManager().findFragmentByTag(mTag);
-        	if (fragment != null && fragment instanceof BrowseFragment) {
-    			intent.putParcelableArrayListExtra("uris", ((BrowseFragment) fragment).getUris());
-        	}
+
         }
 
         super.startActivity(intent);
@@ -221,10 +217,7 @@ public class MainActivity extends ActionBarActivity implements
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 	    	Fragment fragment = getSupportFragmentManager().findFragmentByTag(mTag);
-			if (fragment != null && fragment instanceof BrowseFragment) {
-				((BrowseFragment) fragment).onBackKeyPressed();
-				return true;
-			}
+
 		}
 		
 		return super.onKeyDown(keyCode, event);
@@ -266,9 +259,6 @@ public class MainActivity extends ActionBarActivity implements
     	if (fragment == null) {
             if (position == 0) {
             	fragment = new UrlListFragment();
-            	fragment.setArguments(new Bundle());
-            } else if (position == 1) {
-            	fragment = new BrowseFragment();
             	fragment.setArguments(new Bundle());
             } else if (position == 2) {
             	fragment = new AlarmClockFragment();
@@ -410,11 +400,7 @@ public class MainActivity extends ActionBarActivity implements
     	String tag = String.valueOf(1);
     	fragment = getSupportFragmentManager().findFragmentByTag(tag);
     	
-    	if (fragment == null) {
-           	fragment = new BrowseFragment();
-           	fragment.setArguments(args);
-    		fragmentManager.beginTransaction().add(R.id.content_frame, fragment, tag).commit();
-    	} else {
+    	if (fragment != null) {
            	fragment.getArguments().putString(UrlListFragment.ARG_TARGET_URI, uri.toString());
     		fragmentManager.beginTransaction().attach(fragment).commit();
     	}
