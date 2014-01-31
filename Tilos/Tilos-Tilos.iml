@@ -67,9 +67,11 @@
     <orderEntry type="jdk" jdkName="Android SDK" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="android-support-v4" level="project" />
+    <orderEntry type="library" exported="" name="android-async-http-1.4.4" level="project" />
     <orderEntry type="library" exported="" name="jplaylistparser-0.2.4" level="project" />
     <orderEntry type="library" exported="" name="streamscraper" level="project" />
     <orderEntry type="library" exported="" name="jsoup-1.7.3" level="project" />
+    <orderEntry type="library" exported="" name="flexjson-2.1" level="project" />
     <orderEntry type="module" module-name="android-support-v7-appcompat" exported="" />
   </component>
 </module>

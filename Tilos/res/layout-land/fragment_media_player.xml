@@ -31,10 +31,7 @@
             android:padding="10dip"
             android:background="@null" >
         
-            <pontezit.android.tilos.com.utils.CoverView
-				android:id="@+id/album_art"
-				android:layout_height="fill_parent"
-				android:layout_width="fill_parent" />
+
         
         </LinearLayout>
         

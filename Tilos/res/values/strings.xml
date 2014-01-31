@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-	
+
+    <!-- TILOS string -->
+    <string name="player">Lejátszó</string>
+    <string name="shows">Műsorok</string>
+    <string name="archive">Archívum</string>
+    <string name="news">Hírek</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="alarm">Ébresztő</string>
+    <string name="noEpisodeInfo">Az adásinfó nem elérhető :(</string>
+    <string name="gettingInfo">Információ letöltése...</string>
+    <string name="notSupported">Ez nem támogatott a készülékeden... :(</string>
+
     <!-- Activitiy titles -->
     <string name="url_label">Urls</string>
     <string name="browse_label">Browse</string>
@@ -10,7 +21,7 @@
     <string name="media_player_label">Now playing</string>
 	<string name="alarm_clock_label">Alarm Clock</string>
 	<string name="set_alarm_label">Set Alarm</string>
-    
+
     <!-- Other -->
     <string name="devices_label">Devices</string>
     <string name="autostart_label">Auto start</string>

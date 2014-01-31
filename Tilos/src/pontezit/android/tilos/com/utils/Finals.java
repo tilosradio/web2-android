@@ -5,4 +5,6 @@ public final class Finals {
     public static final String LOG_TAG      = "Tilos";
     public static final boolean LOG_ENABLED = true;
     public static final int LOG_LEVEL       = 1;
+
+    public static final String API_BASE_URL = "http://tilos.hu/api/v0/";
 }

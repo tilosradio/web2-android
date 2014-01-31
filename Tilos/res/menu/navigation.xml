@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_item_player"
+        android:title="@string/player"
+        android:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/menu_item_archive"
+        android:title="@string/archive"
+        android:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/menu_item_shows"
+        android:title="@string/shows"
+        android:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_item_news"
+        android:title="@string/news"
+        android:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_item_alarm"
+        android:title="@string/alarm"
+        android:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_item_equalizer"
+        android:title="@string/equalizer"
+        android:showAsAction="collapseActionView"/>
+
+</menu>
