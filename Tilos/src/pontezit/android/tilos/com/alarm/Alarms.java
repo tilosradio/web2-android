@@ -35,6 +35,7 @@ import android.util.Log;
 import java.util.Calendar;
 
 import pontezit.android.tilos.com.fragment.AlarmClockFragment;
+import pontezit.android.tilos.com.utils.LogHelper;
 
 /**
  * The Alarms provider supplies info about Alarm Clock settings
@@ -45,35 +46,35 @@ public class Alarms {
     // This action triggers the AlarmReceiver as well as the AlarmKlaxon. It
     // is a public action used in the manifest for receiving Alarm broadcasts
     // from the alarm manager.
-    public static final String ALARM_ALERT_ACTION = "net.sourceforge.servestream.ALARM_ALERT";
+    public static final String ALARM_ALERT_ACTION = "pontezit.android.tilos.com.ALARM_ALERT";
 
     // A public action sent by AlarmKlaxon when the alarm has stopped sounding
     // for any reason (e.g. because it has been dismissed from AlarmAlertFullScreen,
     // or killed due to an incoming phone call, etc).
-    public static final String ALARM_DONE_ACTION = "net.sourceforge.servestream.ALARM_DONE";
+    public static final String ALARM_DONE_ACTION = "pontezit.android.tilos.com.ALARM_DONE";
 
     // AlarmAlertFullScreen listens for this broadcast intent, so that other applications
     // can snooze the alarm (after ALARM_ALERT_ACTION and before ALARM_DONE_ACTION).
-    public static final String ALARM_SNOOZE_ACTION = "net.sourceforge.servestream.ALARM_SNOOZE";
+    public static final String ALARM_SNOOZE_ACTION = "pontezit.android.tilos.com.ALARM_SNOOZE";
 
     // AlarmAlertFullScreen listens for this broadcast intent, so that other applications
     // can dismiss the alarm (after ALARM_ALERT_ACTION and before ALARM_DONE_ACTION).
-    public static final String ALARM_DISMISS_ACTION = "net.sourceforge.servestream.ALARM_DISMISS";
+    public static final String ALARM_DISMISS_ACTION = "pontezit.android.tilos.com.ALARM_DISMISS";
 
     // This is a private action used by the AlarmKlaxon to update the UI to
     // show the alarm has been killed.
-    public static final String ALARM_KILLED = "net.sourceforge.servestream.ALARM_KILLED";
+    public static final String ALARM_KILLED = "pontezit.android.tilos.com.ALARM_KILLED";
 
     // Extra in the ALARM_KILLED intent to indicate to the user how long the
     // alarm played before being killed.
-    public static final String ALARM_KILLED_TIMEOUT = "net.sourceforge.servestream.ALARM_KILLED_TIMEOUT";
+    public static final String ALARM_KILLED_TIMEOUT = "pontezit.android.tilos.com.ALARM_KILLED_TIMEOUT";
 
     // This string is used to indicate a silent alarm in the db.
-    public static final int ALARM_ALERT_SILENT = 0;//= "silent";
+    public static final int ALARM_ALERT_LIVE = 0;//= "silent";
 
     // This intent is sent from the notification when the user cancels the
     // snooze alert.
-    public static final String CANCEL_SNOOZE = "net.sourceforge.servestream.CANCEL_SNOOZE";
+    public static final String CANCEL_SNOOZE = "pontezit.android.tilos.com.CANCEL_SNOOZE";
 
     // This string is used when passing an Alarm object through an intent.
     public static final String ALARM_INTENT_EXTRA = "intent.extra.alarm";
@@ -102,8 +103,7 @@ public class Alarms {
      */
     public static long addAlarm(Context context, Alarm alarm) {
         ContentValues values = createContentValues(alarm);
-        Uri uri = context.getContentResolver().insert(
-                Alarm.Columns.CONTENT_URI, values);
+        Uri uri = context.getContentResolver().insert(Alarm.Columns.CONTENT_URI, values);
         alarm.id = (int) ContentUris.parseId(uri);
 
         long timeInMillis = calculateAlarm(alarm);
@@ -167,8 +167,7 @@ public class Alarms {
 
         Log.v(TAG, "Writing alarm Id");
         // An alert with a value of 0 indicates a silent alarm.
-        values.put(Alarm.Columns.ALERT, alarm.alert == 0 ? 0
-                : alarm.alert);
+        values.put(Alarm.Columns.ALERT, alarm.alert);
 
         return values;
     }
@@ -342,9 +341,11 @@ public class Alarms {
      * otherwise loads all alarms, activates next alert.
      */
     public static void setNextAlert(final Context context) {
+        LogHelper.Log("Alarms; setNextAlarm;", 1);
         if (!enableSnoozeAlert(context)) {
             Alarm alarm = calculateNextAlert(context);
             if (alarm != null) {
+                LogHelper.Log("Alarms; setNextAlarm; alarm != null", 1);
                 enableAlert(context, alarm, alarm.time);
             } else {
                 disableAlert(context);
@@ -386,7 +387,6 @@ public class Alarms {
                 context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
         am.set(AlarmManager.RTC_WAKEUP, atTimeInMillis, sender);
-
         setStatusBarIcon(context, true);
 
         Calendar c = Calendar.getInstance();
@@ -398,7 +398,7 @@ public class Alarms {
     /**
      * Disables alert in AlarmManger and StatusBar.
      *
-     * @param id Alarm ID.
+     * id Alarm ID.
      */
     static void disableAlert(Context context) {
         AlarmManager am = (AlarmManager)

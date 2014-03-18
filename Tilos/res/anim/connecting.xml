@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <item
+        android:drawable="@drawable/off"
+        android:duration="400"/>
+
+    <item
+        android:drawable="@drawable/on"
+        android:duration="400"/>
+
+    <item
+        android:drawable="@drawable/connect1"
+        android:duration="400"/>
+
+    <item
+        android:drawable="@drawable/connect2"
+        android:duration="400"/>
+
+    <item
+        android:drawable="@drawable/connect1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/connect2"
+        android:duration="100"/>
+
+    <item
+        android:drawable="@drawable/connect1"
+        android:duration="100"/>
+</animation-list>

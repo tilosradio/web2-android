@@ -179,9 +179,9 @@ public final class Alarm implements Parcelable {
         vibrate = c.getInt(Columns.ALARM_VIBRATE_INDEX) == 1;
         label = c.getString(Columns.ALARM_MESSAGE_INDEX);
         alert = c.getInt(Columns.ALARM_ALERT_INDEX);
-        if (Alarms.ALARM_ALERT_SILENT == alert) {
-            Log.v(TAG, "Alarm is marked as silent");
-            silent = true;
+        if (Alarms.ALARM_ALERT_LIVE == alert) {
+            Log.v(TAG, "Alarm is marked as live stream");
+            silent = false;
         }
     }
 

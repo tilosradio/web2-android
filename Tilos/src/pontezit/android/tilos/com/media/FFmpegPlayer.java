@@ -1689,7 +1689,7 @@ public class FFmpegPlayer extends AbstractMediaPlayer
             throws IOException, IllegalArgumentException, IllegalStateException {
         String scheme = uri.getScheme();
         if(scheme == null || scheme.equals("file")) {
-            addTimedTextSource(uri.getPath(), mimeType);
+            addTimedTextSource(uri.toString(), mimeType);
             return;
         }
 

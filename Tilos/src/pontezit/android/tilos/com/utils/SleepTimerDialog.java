@@ -1,19 +1,4 @@
 /*
- * ServeStream: A HTTP stream browser/player for Android
- * Copyright 2013 William Seemann
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
 package pontezit.android.tilos.com.utils;
 
@@ -38,7 +23,7 @@ public class SleepTimerDialog extends DialogFragment implements DialogInterface.
 	
     /* The activity that creates an instance of this dialog fragment must
      * implement this interface in order to receive event callbacks.
-     * Each method passes the DialogFragment in case the host needs to query it. */
+     * Each method passes the DialogFragment in case the host needs to query it.
     public interface SleepTimerDialogListener {
         public void onSleepTimerSet(DialogFragment dialog, int pos);
     }
@@ -52,7 +37,7 @@ public class SleepTimerDialog extends DialogFragment implements DialogInterface.
      * @returns A new instance of SleepTimerDialog.
      * @throws  ClassCastException if the host activity does not
      *          implement SleepTimerDialogListener
-     */
+
     public static SleepTimerDialog newInstance(Activity activity, int sleepTimerMode) {
     	// Verify that the host activity implements the callback interface
         try {
@@ -146,4 +131,4 @@ public class SleepTimerDialog extends DialogFragment implements DialogInterface.
     	
     	return minuteText;
     }
-}
+}*/

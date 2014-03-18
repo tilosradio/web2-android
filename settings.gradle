@@ -1,1 +1,2 @@
-include ':android-support-v7-appcompat', 'Tilos'
+include 'Tilos'
+include 'vitamio'

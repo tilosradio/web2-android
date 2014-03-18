@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0DF"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/showListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/no_fav"
+        android:textColor="#ADADAD"
+        android:typeface="sans"
+        android:textSize="19dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/showListArtist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showListTitle"
+        android:textColor="#858585"
+        android:textSize="10dip"
+        android:layout_marginTop="5dp"
+        android:text="@string/why_fav"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

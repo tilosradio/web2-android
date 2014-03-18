@@ -2,12 +2,10 @@ package pontezit.android.tilos.com.media;
 
 public class Metadata {
 
-	private String mTitle;
-	private String mAlbum;
-	private String mArtist;
-	private String mDuration;
-	private byte [] mArtwork;
-	
+	private boolean isLive;
+	private String readableTime;
+	private String showName;
+
 	/**
 	 * Default constructor
 	 */
@@ -15,73 +13,27 @@ public class Metadata {
 		
 	}
 
-	/**
-	 * @return the title
-	 */
-	public String getTitle() {
-		return mTitle;
-	}
+    public boolean isLive(){
+        return isLive;
+    }
 
-	/**
-	 * @param title the title to set
-	 */
-	public void setTitle(String title) {
-		mTitle = title;
-	}
+    public void setLive(boolean isLive){
+        this.isLive = isLive;
+    }
 
-	/**
-	 * @return the album
-	 */
-	public String getAlbum() {
-		return mAlbum;
-	}
+    public String getReadableTime(){
+        return readableTime;
+    }
 
-	/**
-	 * @param album the album to set
-	 */
-	public void setAlbum(String album) {
-		mAlbum = album;
-	}
+    public void setReadableTime(String readableTime){
+        this.readableTime = readableTime;
+    }
 
-	/**
-	 * @return the artist
-	 */
-	public String getArtist() {
-		return mArtist;
-	}
+    public String getShowName(){
+        return showName;
+    }
 
-	/**
-	 * @param artist the artist to set
-	 */
-	public void setArtist(String artist) {
-		mArtist = artist;
-	}
-
-	/**
-	 * @return the duration
-	 */
-	public String getDuration() {
-		return mDuration;
-	}
-
-	/**
-	 * @param duration the duration to set
-	 */
-	public void setDuration(String duration) {
-		mDuration = duration;
-	}
-
-	/**
-	 * @return the artwork
-	 */
-	public byte [] getArtwork() {
-		return mArtwork;
-	}
-
-	/**
-	 * @param artwork the artwork to set
-	 */
-	public void setArtwork(byte [] artwork) {
-		mArtwork = artwork;
-	}
+    public void setShowName(String showName){
+        this.showName = showName;
+    }
 }

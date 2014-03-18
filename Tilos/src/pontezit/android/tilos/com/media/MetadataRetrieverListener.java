@@ -24,5 +24,5 @@ public interface MetadataRetrieverListener {
 	 * @param id The id of the media file associated with the metadata.
 	 * @param metadata The retrieved metadata.
 	 */
-    public void onMetadataParsed(long id, Metadata metadata);
+    public void onMetadataParsed(Metadata metadata);
 }

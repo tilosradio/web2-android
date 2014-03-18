@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/showListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Csonkamagyarország"
+        android:textColor="#DD4C3B"
+        android:typeface="sans"
+        android:textSize="19dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/showListArtist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showListTitle"
+        android:textColor="#858585"
+        android:textSize="10dip"
+        android:layout_marginTop="5dp"
+        android:text="Hétfő, 10:00-12:00, (Páratlan hét)"
+        android:layout_marginRight="20dp"/>
+
+    <!-- Rightend Arrow -->
+    <ImageView android:layout_width="10dp"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"/>
+
+</RelativeLayout>

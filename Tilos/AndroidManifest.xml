@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pontezit.android.tilos.com"
-    android:versionCode="40"
-    android:versionName="5.1"
+    android:versionCode="22"
+    android:versionName="4.1"
     android:installLocation="auto">
 
 	<uses-sdk
 	    android:targetSdkVersion="19"
-	    android:minSdkVersion="11" />
+	    android:minSdkVersion="8" />
 
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<uses-permission android:name="android.permission.BLUETOOTH" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	<uses-permission android:name="android.permission.VIBRATE"/>
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.BROADCAST_STICKY" />
-
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.telephony"
+                  android:required="false" />
 	<application
 		android:icon="@drawable/ic_launcher"
 		android:label="Tilos"
-		android:allowBackup="true"
-		android:backupAgent="pontezit.android.tilos.com.service.BackupAgent"
+        android:debuggable="false"
 		android:killAfterRestore="true"
 		android:theme="@style/Theme.ServeStream.Dark" >
-
-		<meta-data
-		    android:name="com.google.android.backup.api_key"
-    		android:value="AEdPqrEAAAAIWcqt9c_ET5W0EpBB9ZCQGbBhfrOetXL6t6Cdwg" />
 
         <provider
             android:name="pontezit.android.tilos.com.provider.MediaProvider"
@@ -42,7 +38,7 @@
 
         <activity
             android:name="pontezit.android.tilos.com.activity.MediaPlayerActivity"
-            android:theme="@style/Theme.ServeStream.Dark"
+            android:theme="@style/Theme.Tilos"
             android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,101 +59,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="pontezit.android.tilos.com/*" />
             </intent-filter>
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".activity.SearchableActivity" />
         </activity>
 
-		<activity
-		    android:name="pontezit.android.tilos.com.activity.MainActivity"
-	   		android:theme="@style/Theme.ServeStream.Dark"
-		    android:launchMode="singleTop" >
-
-			<intent-filter>
-				<action android:name="android.intent.action.VIEW" />
-				<category android:name="android.intent.category.BROWSABLE" />
-				<category android:name="android.intent.category.DEFAULT" />
-				<data android:scheme="http" />
-				<data android:host="*" />
-				<data android:mimeType="audio/*" />
-				<data android:mimeType="video/*" />
-				<data android:mimeType="audio/x-mpegurl" />
-        		<data android:mimeType="audio/x-scpls" />
-        		<data android:mimeType="video/x-ms-asf" />
-			</intent-filter>
-			<intent-filter>
-				<action android:name="android.intent.action.VIEW" />
-				<category android:name="android.intent.category.BROWSABLE" />
-				<category android:name="android.intent.category.DEFAULT" />
-				<data android:scheme="http" />
-				<data android:host="*" />
-				<data android:pathPattern=".*\\.m3u" />
-				<data android:pathPattern=".*\\.pls" />
-				<data android:pathPattern=".*\\.asx" />
-			</intent-filter>
-			<intent-filter>
-        		<action android:name="android.intent.action.VIEW" />
-        		<category android:name="android.intent.category.DEFAULT" />
-        		<data android:scheme="file" />
-        		<data android:mimeType="audio/x-mpegurl" />
-        		<data android:mimeType="audio/x-scpls" />
-        		<data android:mimeType="video/x-ms-asf" />
-    		</intent-filter>
-
-		</activity>
-
-		<activity
-            android:name="pontezit.android.tilos.com.activity.AboutActivity"
-            android:theme="@style/Theme.ServeStream.Dark"
-            android:label="@string/about_pref" />
-
-        <activity
-            android:name="pontezit.android.tilos.com.activity.BluetoothOptionsActivity"
-            android:theme="@style/Theme.ServeStream.Dark"
-            android:label="@string/pref_bluetooth_options" />
-
-		<activity
-		    android:name="pontezit.android.tilos.com.activity.NowPlayingActivity"
-		    android:theme="@style/Theme.ServeStream.Dark"
-			android:label="@string/now_playing_label" />
-
-        <activity
-		    android:name="pontezit.android.tilos.com.activity.SearchableActivity"
-		    android:theme="@style/Theme.ServeStream.Dark"
-		    android:launchMode="singleTop" >
-        	<intent-filter>
-            	<action android:name="android.intent.action.SEARCH" />
-        	</intent-filter>
-        	<meta-data
-        	    android:name="android.app.searchable"
-                android:resource="@xml/searchable" />
-    	</activity>
-		
-		
-		<activity
-            android:name="pontezit.android.tilos.com.activity.SettingsActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:label="@string/settings_label" />
-        
-		<activity
-		    android:name="pontezit.android.tilos.com.activity.ShortcutActivity"
-			android:theme="@style/Theme.ServeStream.Dark" >
-			<intent-filter>
-				<action android:name="android.intent.action.CREATE_SHORTCUT" />
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
-		
-		<activity
-		    android:name="pontezit.android.tilos.com.activity.StreamEditorActivity"
-			android:configChanges="keyboardHidden|orientation" />
-
-		<service
-		    android:name="pontezit.android.tilos.com.service.MediaPlaybackService"
-			android:description="@string/media_service_desc" />
 
 
-        
+        <service
+		    android:name="pontezit.android.tilos.com.service.MediaPlaybackService"/>
+
+
+
         <receiver
             android:name="pontezit.android.tilos.com.receiver.MediaButtonIntentReceiver" >
             <intent-filter>
@@ -174,46 +84,9 @@
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_one" />
         </receiver>
 
-        <receiver
-            android:name="pontezit.android.tilos.com.receiver.SimpleLastfmScrobblerReceiver"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="pontezit.android.tilos.com.playbackstarted" />
-                <action android:name="pontezit.android.tilos.com.playstatechanged" />
-                <action android:name="pontezit.android.tilos.com.playbackcomplete" />
-                <action android:name="pontezit.android.tilos.com.metachanged" />
-            </intent-filter>
-        </receiver>
-        
-        <receiver
-            android:name="pontezit.android.tilos.com.receiver.ScrobbleDroidReceiver"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="pontezit.android.tilos.com.playbackstarted" />
-                <action android:name="pontezit.android.tilos.com.playstatechanged" />
-                <action android:name="pontezit.android.tilos.com.playbackcomplete" />
-                <action android:name="pontezit.android.tilos.com.metachanged" />
-            </intent-filter>
-        </receiver>
-        
-        <receiver
-            android:name="pontezit.android.tilos.com.receiver.BluetoothReceiver"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
-                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
-            </intent-filter>
-        </receiver>
-        
-		<!-- Alarm Activities -->
 
-        <activity
-            android:name=".activity.AlarmClockActivity"
-            android:theme="@style/Theme.ServeStream.Dark"
-            android:label="@string/alarm_clock_label"
-            android:excludeFromRecents="true"
-            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
-            android:exported="false" />
+        <!-- Alarm Activities -->
+
 
         <activity
             android:name="pontezit.android.tilos.com.activity.SetAlarmActivity"
@@ -221,7 +94,7 @@
             android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
                 
         <activity
-            android:name="pontezit.android.tilos.com.alarm.AlarmAlert"
+            android:name=".alarm.AlarmAlert"
         	android:excludeFromRecents="true"
         	android:launchMode="singleInstance"
         	android:taskAffinity=""
@@ -231,7 +104,7 @@
              generic theme. It also shows as full screen (with status bar) but
              with the wallpaper background. -->
         <activity
-            android:name="pontezit.android.tilos.com.alarm.AlarmAlertFullScreen"
+            android:name=".alarm.AlarmAlertFullScreen"
             android:excludeFromRecents="true"
             android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
             android:launchMode="singleInstance"
@@ -239,7 +112,7 @@
             android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
 
         <receiver
-            android:name="pontezit.android.tilos.com.alarm.AlarmReceiver"
+            android:name=".alarm.AlarmReceiver"
             android:exported="false" >
             <intent-filter>
                 <action android:name="pontezit.android.tilos.com.ALARM_ALERT" />
@@ -255,8 +128,7 @@
              This allows the alert to continue playing even if another activity
              causes the AlarmAlert activity to pause. -->
         <service
-            android:name="pontezit.android.tilos.com.alarm.AlarmKlaxon"
-			android:description="@string/alarm_klaxon_service_desc"
+            android:name=".alarm.AlarmKlaxon"
 			android:exported="false" >                
             <intent-filter>
                 <action android:name="pontezit.android.tilos.com.ALARM_ALERT" />

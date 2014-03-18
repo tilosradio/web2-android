@@ -20,8 +20,6 @@ package pontezit.android.tilos.com.utils;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import pontezit.android.tilos.com.transport.TransportFactory;
-
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
 
@@ -50,7 +48,7 @@ public class URLUtils {
 	}
 	
 	public static String encodeURL(String path) {
-		Uri uri = TransportFactory.getUri(path);
+		Uri uri = HTTPTransport.getUri(path);
 
 		if (uri == null) {
 			return path;

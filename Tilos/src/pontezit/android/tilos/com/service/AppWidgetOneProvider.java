@@ -18,11 +18,12 @@
 package pontezit.android.tilos.com.service;
 
 import pontezit.android.tilos.com.R;
-import pontezit.android.tilos.com.activity.MainActivity;
 import pontezit.android.tilos.com.activity.MediaPlayerActivity;
 import pontezit.android.tilos.com.provider.Media;
+import pontezit.android.tilos.com.utils.Finals;
 import pontezit.android.tilos.com.utils.MusicUtils;
 
+import android.app.Activity;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -75,7 +76,7 @@ public class AppWidgetOneProvider extends AppWidgetProvider {
      */
     private void defaultAppWidget(Context context, int[] appWidgetIds) {
         final RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.appwidget_one);
-        
+
         views.setViewVisibility(R.id.title, View.INVISIBLE);
         views.setViewVisibility(R.id.artist, View.INVISIBLE);
 
@@ -126,18 +127,29 @@ public class AppWidgetOneProvider extends AppWidgetProvider {
         if (what.equals(MediaPlaybackService.PLAYER_CLOSED)) {
         	defaultAppWidget(service, appWidgetIds);
         } else {
-        	CharSequence trackName = service.getTrackName();
-        	CharSequence artistName = service.getArtistName();
+        	CharSequence trackName = service.getReadableTime();
+        	CharSequence artistName = service.getShowName();
         	//CharSequence errorState = null;
-        
+
         	if (trackName == null || trackName.equals(Media.UNKNOWN_STRING)) {
-        		trackName = res.getText(R.string.widget_one_track_info_unavailable);
+                if(service.getPath() == Finals.getLiveHiUrl()){
+        		    trackName = res.getText(R.string.live_stream);
+                    //views.setViewVisibility(R.id.control_previous, View.INVISIBLE);
+                    views.setViewVisibility(R.id.control_next, View.INVISIBLE);
+                }else{
+                    trackName = res.getText(R.string.archive);
+                    views.setViewVisibility(R.id.control_next, View.VISIBLE);
+                }
         	}
         		
         	if (artistName == null || artistName.equals(Media.UNKNOWN_STRING)) {
         		artistName = service.getMediaUri();
         	}
-        	
+            if(service.getPath() == Finals.getLiveHiUrl()){
+                views.setViewVisibility(R.id.control_next, View.GONE);
+            }else{
+                views.setViewVisibility(R.id.control_next, View.VISIBLE);
+            }
         	// Show media info
         	views.setViewVisibility(R.id.title, View.VISIBLE);
         	views.setTextViewText(R.id.title, trackName);
@@ -164,13 +176,7 @@ public class AppWidgetOneProvider extends AppWidgetProvider {
         	if (id != mCoverArtId) {
         		//MusicUtils.clearWidgetArtCache();
         	}
-        	
-        	if (id >= 0) {
-        		b = MusicUtils.getWidgetArtwork(service, id);
-        		views.setImageViewBitmap(R.id.coverart, b);
-        		mCoverArtId = id;
-        	}
-            
+
             // Link actions buttons to intents
             linkButtons(service, views, true);
             pushUpdate(service, appWidgetIds, views);
@@ -178,11 +184,11 @@ public class AppWidgetOneProvider extends AppWidgetProvider {
     }
     
     /**
-     * Link up various button actions using {@link PendingIntents}.
+     * Link up various button actions using  PendingIntents.
      * 
      * @param playerActive True if player is active in background, which means
-     *            widget click will launch {@link MediaPlayerActivity},
-     *            otherwise we launch {@link UriListActivity}.
+     *            widget click will launch link MediaPlayerActivity,
+     *            otherwise we launch UriListActivity.
      */
     private void linkButtons(Context context, RemoteViews views, boolean playerActive) {
         // Connect up various buttons and touch events
@@ -190,18 +196,12 @@ public class AppWidgetOneProvider extends AppWidgetProvider {
         PendingIntent pendingIntent;
         
         final ComponentName serviceName = new ComponentName(context, MediaPlaybackService.class);
-        
-        if (playerActive) {
-            intent = new Intent(context, MediaPlayerActivity.class);
-            pendingIntent = PendingIntent.getActivity(context,
-                    0 /* no requestCode */, intent, 0 /* no flags */);
-            views.setOnClickPendingIntent(R.id.appwidget_two, pendingIntent);
-        } else {
-            intent = new Intent(context, MainActivity.class);
-            pendingIntent = PendingIntent.getActivity(context,
-                    0 /* no requestCode */, intent, 0 /* no flags */);
-            views.setOnClickPendingIntent(R.id.appwidget_two, pendingIntent);
-        }
+
+        intent = new Intent(context, MediaPlayerActivity.class);
+        pendingIntent = PendingIntent.getActivity(context,
+                0 /* no requestCode */, intent, 0 /* no flags */);
+        views.setOnClickPendingIntent(R.id.appwidget_two, pendingIntent);
+
         
         intent = new Intent(MediaPlaybackService.PREVIOUS_ACTION);
         intent.setComponent(serviceName);

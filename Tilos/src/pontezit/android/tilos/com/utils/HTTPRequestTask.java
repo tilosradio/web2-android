@@ -17,9 +17,8 @@
 
 package pontezit.android.tilos.com.utils;
 
-import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.transport.AbsTransport;
-import pontezit.android.tilos.com.transport.TransportFactory;
+import pontezit.android.tilos.com.utils.AbsTransport;
+
 import android.net.Uri;
 
 public class HTTPRequestTask implements Runnable {
@@ -28,9 +27,7 @@ public class HTTPRequestTask implements Runnable {
 	private boolean mUseFFmpegPlayer;
 	private HTTPRequestListener mListener;
 	
-    public HTTPRequestTask(String uri,
-    		boolean useFFmpegPlayer,
-    		HTTPRequestListener listener) {
+    public HTTPRequestTask(String uri, boolean useFFmpegPlayer, HTTPRequestListener listener) {
 		mUri = uri;
 		mUseFFmpegPlayer = useFFmpegPlayer;
         mListener = listener;
@@ -42,20 +39,16 @@ public class HTTPRequestTask implements Runnable {
 	}
 
 	private String processUri() {
-		UriBean uriBean = null;
+
 		AbsTransport transport = null;
 		String contentType = null;
 		
 		try {
-			Uri uri = TransportFactory.getUri(mUri);
-		
+			Uri uri = HTTPTransport.getUri(mUri);
+
 			if (uri != null) {
-				uriBean = TransportFactory.getTransport(uri.getScheme()).createUri(uri);
-			}
-		
-			if (uriBean != null) {
-				transport = TransportFactory.getTransport(uriBean.getProtocol());
-				transport.setUri(uriBean);
+				transport = new HTTPTransport();
+				transport.setUri(uri);
 				transport.connect();
 				contentType = transport.getContentType();
 			}

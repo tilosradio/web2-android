@@ -26,16 +26,15 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import pontezit.android.tilos.com.bean.UriBean;
 import pontezit.android.tilos.com.provider.Media;
-import pontezit.android.tilos.com.transport.HTTP;
-import pontezit.android.tilos.com.transport.TransportFactory;
+import pontezit.android.tilos.com.utils.HTTPTransport;
 import pontezit.android.tilos.com.utils.Utils;
 import android.content.Context;
 import android.database.Cursor;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.util.Log;
+import android.webkit.URLUtil;
 
 public class DownloadPlayer extends FFmpegPlayer {
 	private static final String TAG = DownloadPlayer.class.getName();
@@ -59,19 +58,15 @@ public class DownloadPlayer extends FFmpegPlayer {
 			IllegalArgumentException, SecurityException, IllegalStateException {
 		mId = id;
 		String path = getUri(context, id);		
-		Uri uri = TransportFactory.getUri(path);
+		Uri uri = HTTPTransport.getUri(path);
 
-		if (uri == null || !uri.getScheme().equals(HTTP.getProtocolName()) ) {
+		if (uri == null || !uri.getScheme().equals(HTTPTransport.getProtocolName()) ) {
 			throw new IllegalArgumentException();
 		}
+
+
 		
-		UriBean uriBean = TransportFactory.getTransport(uri.getScheme()).createUri(uri);
-		
-		if (uriBean == null) {
-			throw new IllegalArgumentException();
-		}
-		
-		mUrl = uriBean.getURL();
+		mUrl = new URL(uri.toString());
 	}
 	
 	@Override
@@ -345,7 +340,7 @@ public class DownloadPlayer extends FFmpegPlayer {
 			
 			Log.v(TAG, "setDataSource called");
 			try {
-				DownloadPlayer.super.setDataSource(getPartialFile().getPath());
+				DownloadPlayer.super.setDataSource(getPartialFile().toString());
 				DownloadPlayer.super.prepareAsync();
 			} catch (IllegalArgumentException e) {
 				e.printStackTrace();

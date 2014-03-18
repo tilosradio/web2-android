@@ -1,31 +1,15 @@
-/*
- * ServeStream: A HTTP stream browser/player for Android
- * Copyright 2013 William Seemann
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package pontezit.android.tilos.com.media;
 
 import android.content.Context;
+//import io.vov.vitamio.MediaPlayer;
 import android.media.MediaPlayer;
 import android.util.Log;
 
 import java.io.IOException;
 
-import pontezit.android.tilos.com.transport.File;
-import pontezit.android.tilos.com.transport.HTTP;
+import pontezit.android.tilos.com.utils.HTTPTransport;
 import pontezit.android.tilos.com.utils.HTTPRequestTask;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.URLUtils;
 import pontezit.android.tilos.com.service.MediaPlaybackService;
 
@@ -37,10 +21,11 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
 	
 	private MultiPlayerListener mListener;
 	
-	private NativePlayer mNativeMediaPlayer = new NativePlayer();
+	private NativePlayer mNativeMediaPlayer;
 	private DownloadPlayer mDownloadMediaPlayer;
 	private FFmpegPlayer mFFmpegMediaPlayer;
-	private AbstractMediaPlayer mMediaPlayer = mNativeMediaPlayer;
+	private AbstractMediaPlayer mMediaPlayer;
+    private Context context;
     private boolean mIsInitialized = false;
 
     /**
@@ -51,6 +36,11 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
     }
 
     public MultiPlayer(Context context) {
+        this.context = context;
+
+        mNativeMediaPlayer = new NativePlayer(context);
+        //mNativeMediaPlayer = new NativePlayer();
+        mMediaPlayer = mNativeMediaPlayer;
     	// Verify that the host activity implements the callback interface
         try {
             // Instantiate the MultiPlayerListener so we can send events with it
@@ -74,7 +64,7 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
         try {
             mMediaPlayer.reset();
             
-            if (!isLocalFile && contentType == null && path.startsWith(HTTP.getProtocolName())) {
+            if (!isLocalFile && contentType == null && path.startsWith(HTTPTransport.getProtocolName())) {
             	new HTTPRequestTask(path, useFFmpegPlayer, this).execute();
             	return;
             }
@@ -101,19 +91,21 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
                 mMediaPlayer.setDataSource(context, id);
             	mMediaPlayer.prepareAsync();
             } else {
-                mMediaPlayer.setDataSource(URLUtils.encodeURL(path));
+                String pathLog = URLUtils.encodeURL(path);
+                LogHelper.Log("MultiPlayer, setDataSource: " + pathLog, 1);
+                mMediaPlayer.setDataSource(pathLog);
             	mMediaPlayer.prepareAsync();
             }
             
-            Log.v(TAG, "Preparing media player");
+            LogHelper.Log("Preparing media player", 1);
         } catch (IOException ex) {
-        	Log.v(TAG, "Error initializing media player");
+            LogHelper.Log("Error initializing media player", 1);
             mIsInitialized = false;
             if (mListener != null) {
             	mListener.onError(this, 0, 0);
             }
         } catch (IllegalArgumentException ex) {
-        	Log.v(TAG, "Error initializing media player");
+            LogHelper.Log("Error initializing media player", 1);
             mIsInitialized = false;
             if (mListener != null) {
             	mListener.onError(this, 0, 0);
@@ -160,7 +152,7 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
         
     private AbstractMediaPlayer.OnPreparedListener onPreparedListener = new AbstractMediaPlayer.OnPreparedListener() {
 		public void onPrepared(AbstractMediaPlayer mp) {
-			Log.i(TAG, "onPreparedListener called");
+			LogHelper.Log("MultiPlayer; onPreparedListener called", 1);
 			
 	        mIsInitialized = true;
             if (mListener != null) {
@@ -183,13 +175,13 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
 
     private AbstractMediaPlayer.OnErrorListener onErrorListener = new AbstractMediaPlayer.OnErrorListener() {
         public boolean onError(AbstractMediaPlayer mp, int what, int extra) {
-        	Log.i(TAG, "onErrorListener called");
-        	Log.d(TAG, "Error: " + what + "," + extra);
+        	LogHelper.Log("MultiPlayer, onErrorListener called", 1);
+        	LogHelper.Log("MultiPlayer, onErrorListener; Error: " + what + "," + extra, 1);
         	
             switch (what) {
-            	case MediaPlayer.MEDIA_ERROR_SERVER_DIED:
+            	case MediaPlayer.MEDIA_ERROR_IO:
             		release();
-            		mNativeMediaPlayer = new NativePlayer();
+            		mNativeMediaPlayer = new NativePlayer(context);
             		mMediaPlayer = mNativeMediaPlayer;
             		
                     if (mListener != null) {
@@ -259,13 +251,7 @@ public final class MultiPlayer implements HTTPRequestTask.HTTPRequestListener {
      * @return a media player.
      */
 	private AbstractMediaPlayer getMediaPlayer(String uri) {
-		if (uri.startsWith(HTTP.getProtocolName())) {
-			return mNativeMediaPlayer;
-		} else if (uri.startsWith(File.getProtocolName())) {
-			return mNativeMediaPlayer;
-		} else {
-			return mNativeMediaPlayer;
-		}
+		return mNativeMediaPlayer;
 	}
     
 	private DownloadPlayer getDownloadPlayer() {

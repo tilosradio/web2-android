@@ -18,9 +18,8 @@
 package pontezit.android.tilos.com.alarm;
 
 import pontezit.android.tilos.com.R;
-import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.TilosDatabase;
 import pontezit.android.tilos.com.utils.DetermineActionTask;
+import pontezit.android.tilos.com.utils.LogHelper;
 import pontezit.android.tilos.com.utils.MusicUtils;
 import pontezit.android.tilos.com.utils.MusicUtils.ServiceToken;
 
@@ -105,6 +104,7 @@ public class AlarmKlaxon extends Service implements ServiceConnection,
 
     @Override
     public void onCreate() {
+        LogHelper.Log("AlamrKlaxon; onCreate run");
         mVibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         // Listen for incoming calls to kill the alarm.
         mTelephonyManager =
@@ -126,11 +126,13 @@ public class AlarmKlaxon extends Service implements ServiceConnection,
 
     @Override
     public IBinder onBind(Intent intent) {
+        LogHelper.Log("AlamrKlaxon; onBind run");
         return null;
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        LogHelper.Log("AlamrKlaxon; onStartCommand run");
         // No intent, tell the system not to restart us.
         if (intent == null) {
             stopSelf();
@@ -168,65 +170,53 @@ public class AlarmKlaxon extends Service implements ServiceConnection,
     // Volume suggested by media team for in-call alarms.
     private static final float IN_CALL_VOLUME = 0.125f;
 
-    private void play(Alarm alarm) {
+    private void play(Alarm alarm){
+        LogHelper.Log("AlamrKlaxon; play run");
         // stop() checks to see if we are already playing.
         stop();
 
         Log.v(TAG, "AlarmKlaxon.play() " + alarm.id + " alert " + alarm.alert);
 
-        if (!alarm.silent) {
-        	TilosDatabase streamdb = new TilosDatabase(this);
-        	UriBean uri = streamdb.findUri(alarm.alert);
-        	streamdb.close();
-        	
-        	Uri alert = null;
-        	if (uri != null)
-        		alert = uri.getUri();
 
-            // Fall back on the default alarm if the database does not have an
-            // alarm stored.
-            if (alert == null) {
-                alert = RingtoneManager.getDefaultUri(
-                        RingtoneManager.TYPE_ALARM);
-                Log.v(TAG, "Using default alarm: " + alert.toString());
+
+        Uri uri = Uri.parse("http://stream.tilos.hu:80/tilos");
+
+        // TODO: Reuse mMediaPlayer instead of creating a new one and/or use
+        // RingtoneManager.
+        mMediaPlayer = new MediaPlayer();
+        mMediaPlayer.setOnErrorListener(new OnErrorListener(){
+            public boolean onError(MediaPlayer mp, int what, int extra){
+                Log.e(TAG, "Error occurred while playing audio.");
+                mp.stop();
+                mp.release();
+                mMediaPlayer = null;
+                return true;
             }
+        });
 
-            // TODO: Reuse mMediaPlayer instead of creating a new one and/or use
-            // RingtoneManager.
-            mMediaPlayer = new MediaPlayer();
-            mMediaPlayer.setOnErrorListener(new OnErrorListener() {
-                public boolean onError(MediaPlayer mp, int what, int extra) {
-                    Log.e(TAG, "Error occurred while playing audio.");
-                    mp.stop();
-                    mp.release();
-                    mMediaPlayer = null;
-                    return true;
-                }
-            });
-            
-            mMediaPlayer.setOnPreparedListener(new OnPreparedListener() {
-				public void onPrepared(MediaPlayer mp) {
-					mMediaPlayer.start();	
-				}
-            });
-
-            try {
-                // Check if we are in a call. If we are, use the in-call alarm
-                // resource at a low volume to not disrupt the call.
-                if (mTelephonyManager.getCallState()
-                        != TelephonyManager.CALL_STATE_IDLE) {
-                    Log.v(TAG, "Using the in-call alarm");
-                    mMediaPlayer.setVolume(IN_CALL_VOLUME, IN_CALL_VOLUME);
-                    setDataSourceFromResource(getResources(), mMediaPlayer,
-                            R.raw.in_call_alarm);
-                    startAlarm(mMediaPlayer);
-                } else {                	
-                	new DetermineActionTask(this, uri, this).execute();
-                }
-            } catch (Exception ex) {
-            	useFallbackSound();
+        mMediaPlayer.setOnPreparedListener(new OnPreparedListener() {
+            public void onPrepared(MediaPlayer mp) {
+                mMediaPlayer.start();
             }
+        });
+
+        try {
+            // Check if we are in a call. If we are, use the in-call alarm
+            // resource at a low volume to not disrupt the call.
+            if (mTelephonyManager.getCallState()
+                    != TelephonyManager.CALL_STATE_IDLE) {
+                Log.v(TAG, "Using the in-call alarm");
+                mMediaPlayer.setVolume(IN_CALL_VOLUME, IN_CALL_VOLUME);
+                setDataSourceFromResource(getResources(), mMediaPlayer,
+                        R.raw.in_call_alarm);
+                startAlarm(mMediaPlayer);
+            } else {
+                new DetermineActionTask(this, uri.toString(), this).execute();
+            }
+        } catch (Exception ex) {
+            useFallbackSound();
         }
+
 
         /* Start the vibrator after everything is ok with the media player */
         if (alarm.vibrate) {
@@ -345,9 +335,9 @@ public class AlarmKlaxon extends Service implements ServiceConnection,
 	}
 
 	@Override
-	public void onMusicRetrieverPrepared(String action, UriBean uri, long[] list) {
+	public void onMusicRetrieverPrepared(String action, String path) {
 		if (action.equals(DetermineActionTask.URL_ACTION_PLAY)) {
-			MusicUtils.playAllFromService(AlarmKlaxon.this, list, 0);        
+			MusicUtils.play(AlarmKlaxon.this, path, true);
 		} else {
 			mHandler.sendEmptyMessage(FALLBACK);
 		}

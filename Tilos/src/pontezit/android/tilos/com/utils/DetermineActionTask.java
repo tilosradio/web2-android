@@ -17,77 +17,69 @@
 
 package pontezit.android.tilos.com.utils;
 
-import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.transport.AbsTransport;
-import pontezit.android.tilos.com.transport.TransportFactory;
-
 import android.content.Context;
+import android.net.Uri;
 import android.os.AsyncTask;
 
 /**
  * Asynchronous task that prepares a MusicRetriever. This asynchronous task essentially calls
- * {@link MusicRetriever#prepare()} on a {@link MusicRetriever}, which may take some time to
+ * MusicRetriever#prepare() on a  MusicRetriever, which may take some time to
  * run. Upon finishing, it notifies the indicated {@MusicRetrieverPreparedListener}.
  */
 public class DetermineActionTask extends AsyncTask<Void, Void, Void> {
     
 	public static final String URL_ACTION_UNDETERMINED = "undetermined";
-	public static final String URL_ACTION_BROWSE = "browse";
 	public static final String URL_ACTION_PLAY = "play";
 	
 	private Context mContext;
-	private UriBean mUri;
 	private MusicRetrieverPreparedListener mListener;
-	
+	private Uri mUri;
 	private String mAction;
 	private long[] mList;
 
-    public DetermineActionTask(Context context,
-    		UriBean uri,
-            MusicRetrieverPreparedListener listener) {
+    public DetermineActionTask(Context context, String url, MusicRetrieverPreparedListener listener) {
+        LogHelper.Log("DetermineActionTask; constructor run", 1);
     	mContext = context;
-		mUri = uri;
+        mUri = Uri.parse(url);
         mListener = listener;
     }
 
 	@Override
     protected Void doInBackground(Void... arg0) {
-	    processUri();
+        processUri();
 	    return null;
 	}
 
 	private void processUri() {
-		AbsTransport transport = TransportFactory.getTransport(getUri().getProtocol());
-		transport.setUri(getUri());
-
+        LogHelper.Log("DetermineActionTask; processUri run", 1);
+        HTTPTransport transport = new HTTPTransport(mUri);
 		try {
-			transport.connect();
-
             mAction = URL_ACTION_PLAY;
             LogHelper.Log("DetermineAction, isPotentialPlayList", 1);
-            mList = MusicUtils.getFilesInPlaylist(mContext, getUri().getScrubbedUri().toString(), transport.getContentType(), transport.getConnection());
+
+            //mList = MusicUtils.getFilesInPlaylist(mContext, mUri, transport.getContentType(), transport.getConnection());
 
 		} catch (Exception e) {
+            LogHelper.Log("DetermineActionTask; processUri exception catch: " + e, 1);
 			e.printStackTrace();
 			mAction = URL_ACTION_UNDETERMINED;
-		} finally {
-			transport.close();
 		}
 	}
 	
     @Override
     protected void onPostExecute(Void result) {
-        mListener.onMusicRetrieverPrepared(mAction, mUri, mList);
+        LogHelper.Log("DetermineActionTask; onPostExecute run; path:" + mUri.toString(), 1);
+        mListener.onMusicRetrieverPrepared(mAction, mUri.toString());
     }
 	
     /**
 	 * @return the mUri
 	 */
-	public UriBean getUri() {
+	public Uri getUri() {
 		return mUri;
 	}
 
 	public interface MusicRetrieverPreparedListener {
-        public void onMusicRetrieverPrepared(String action, UriBean uri, long [] list);
+        public void onMusicRetrieverPrepared(String action, String path);
     }
 }

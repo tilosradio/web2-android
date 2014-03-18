@@ -20,12 +20,11 @@ package pontezit.android.tilos.com.alarm;
 import java.util.List;
 
 import pontezit.android.tilos.com.R;
-import pontezit.android.tilos.com.bean.UriBean;
-import pontezit.android.tilos.com.dbutils.TilosDatabase;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.net.Uri;
 import android.preference.ListPreference;
 import android.util.AttributeSet;
 
@@ -42,33 +41,18 @@ public class AlarmPreference extends ListPreference {
     // New value that will be set if a positive result comes back from the
     // dialog.
     private int mNewId = -1;
-	
-	protected TilosDatabase mStreamdb = null;
-    
+
 	public AlarmPreference(Context context, AttributeSet attrs) {
 		super(context, attrs);
-        
-		// connect with streams database and populate list
-		mStreamdb = new TilosDatabase(getContext());
-		
-		List<UriBean> uris = mStreamdb.getUris();
 
-		mStreamdb.close();
-		
-		String [] entries = new String[(uris.size() + 1)];
-		String [] entryValues = new String[(uris.size() + 1)];
-		mIds = new int[uris.size() + 1];
-		
-		entries[0] = getContext().getString(R.string.silent_alarm_summary);
-		entryValues[0] = String.valueOf("0");
+		String [] entries = new String[1];
+		String [] entryValues = new String[1];
+
+		entries[0] = getContext().getString(R.string.live_stream);
+		entryValues[0] = String.valueOf("http://stream.tilos.hu:80/tilos");
+        mIds = new int[1];
 		mIds[0] = 0;
-		
-		for (int i = 0; i < uris.size(); i++) {
-			entries[i + 1] = uris.get(i).getNickname();
-			entryValues[i + 1] = String.valueOf(i + 1);
-			mIds[i + 1] = (int) uris.get(i).getId();
-		}
-		
+
         setEntries(entries);
         setEntryValues(entryValues);
 	}

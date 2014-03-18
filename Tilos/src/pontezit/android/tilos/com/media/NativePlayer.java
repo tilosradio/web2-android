@@ -22,6 +22,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import android.content.Context;
+//import io.vov.vitamio.MediaPlayer;
 import android.media.MediaPlayer;
 import android.util.Log;
 
@@ -29,9 +30,11 @@ public class NativePlayer extends AbstractMediaPlayer {
     private static final String TAG = NativePlayer.class.getName();
 	
 	protected MediaPlayer mMediaPlayer;
-	
-	public NativePlayer() {
+
+    public NativePlayer(Context context) {
+        //mMediaPlayer = new MediaPlayer();
 		mMediaPlayer = new MediaPlayer();
+        //mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 		initializeStaticCompatMethods();
 	}
 	
@@ -81,12 +84,12 @@ public class NativePlayer extends AbstractMediaPlayer {
 
 	@Override
 	public int getCurrentPosition() {
-		return mMediaPlayer.getCurrentPosition();
+		return (int) mMediaPlayer.getCurrentPosition();
 	}
 
 	@Override
 	public int getDuration() {
-		return mMediaPlayer.getDuration();
+		return (int) mMediaPlayer.getDuration();
 	}
 	
 	@Override
