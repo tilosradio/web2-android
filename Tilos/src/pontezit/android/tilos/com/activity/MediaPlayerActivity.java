@@ -62,8 +62,6 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
         isTabletView = (detailsFragment != null);
         if(isTabletView)
             this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        else
-            this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         /*if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
             return;*/
@@ -455,6 +453,7 @@ public class MediaPlayerActivity extends ActionBarActivity implements MusicUtils
     public boolean isTabletView(){
         return isTabletView;
     }
+
 
 
 }

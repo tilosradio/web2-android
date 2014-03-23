@@ -6,13 +6,16 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class ArchiveUrl{
 
     public static String getUrl(int unixTime){
         Date date = new Date((long) unixTime*1000);
         SimpleDateFormat slashFormatter = new SimpleDateFormat("yyyy/MM/dd");
+        slashFormatter.setTimeZone(TimeZone.getTimeZone("CET"));
         SimpleDateFormat hyphenFormatter = new SimpleDateFormat("yyyyMMdd-kkmm");
+        hyphenFormatter.setTimeZone(TimeZone.getTimeZone("CET"));
         String url = "http://archive.tilos.hu/online/"+slashFormatter.format(date)+"/tilosradio-"+hyphenFormatter.format(date)+".mp3";
         LogHelper.Log("ArchiveUrl; getUrl; return value: " + url);
         return url;
