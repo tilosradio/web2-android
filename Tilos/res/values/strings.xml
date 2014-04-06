@@ -19,7 +19,6 @@
     <string name="playback_failed">Ajajj...Lehet, hogy hiba csúszott a lejátszásba!?</string>
     <string name="dialogCallTitle">Telefonálás</string>
     <string name="dialogCallMessage">Biztos, hogy betelefonálsz az élő adásba?\n</string>
-
     <string name="exit">Kilépés</string>
     <string name="cancel">Mégse</string>
     <string name="ok">Oké</string>
@@ -33,8 +32,8 @@
     <string name="alarm_alar_title">Beta veszély!</string>
     <string name="alarm_alarm">Kizárólag erre alapozni ébredésed komoly rizikót jelent! Ajánlott egy másik, biztonsági ébresztő beállítása. A hangerőt állítsd magasra!\n</string>
 
-    <!--  Widget -->
-	<string name="widget_one_track_info_unavailable">"No track info available"</string>
+    <!-- Widget -->
+    <string name="widget_one_track_info_unavailable">"No track info available"</string>
 
     <!-- Title for AlarmClock activity -->
     <string name="alarm_list_title">Ébresztés</string>
@@ -60,7 +59,7 @@
     <string name="alarm_vibrate">Vibrálás</string>
     <string name="label">Elnevezés</string>
     <string name="default_label">Alarm</string>
-    
+
     <!-- Alarm alert -->
     <string name="alarm_alert_dismiss_text">Kikapcsolás</string>
     <string name="alarm_alert_alert_silenced">Ébresztés némítása <xliff:g id="minutes">%d</xliff:g> perc után</string>
@@ -69,7 +68,7 @@
     <string name="alarm_notify_text">Válaszd a szundihoz, vagy a kikapcsoláshoz</string>
     <string name="alarm_notify_snooze_label"><xliff:g id="label">%s</xliff:g> (szundi)</string>
     <string name="alarm_notify_snooze_text">Ébresztés beállítva: <xliff:g id="time">%s</xliff:g></string>
-    
+
     <string-array name="alarm_set">
         <item>Kevesebb mint 1 perc múlva ébresztés.</item>
         <item>Az ébresztés: <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> mostantól.</item>
@@ -95,6 +94,6 @@
     <string name="previous_action_title">Előző</string>
     <string name="togglepause_action_title">Lejátszás/Pause</string>
     <string name="next_action_title">Következő</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
-

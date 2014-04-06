@@ -33,6 +33,10 @@
             android:title="@string/equalizer"
             tilos:showAsAction="always"/>
         <item
+            android:id="@+id/menu_item_archive"
+            android:title="@string/archive"
+            tilos:showAsAction="always"/>
+        <item
             android:id="@+id/menu_item_exit"
             android:title="@string/exit"
             tilos:showAsAction="always"/>

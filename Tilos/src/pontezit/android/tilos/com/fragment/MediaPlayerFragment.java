@@ -156,6 +156,15 @@ public class MediaPlayerFragment extends Fragment implements MusicUtils.Defs{
                 transaction.addToBackStack(null);
                 transaction.commit();
                 return true;
+            case (R.id.menu_item_archive):
+                LogHelper.Log("menuItem, archive selected", 1);
+                Fragment archiveFragment = new ArchiveFragment();
+
+                transaction.replace(R.id.mediaPlayerContainer, archiveFragment, "archive");
+
+                transaction.addToBackStack(null);
+                transaction.commit();
+                return true;
             case (R.id.menu_item_call):
                 showCallDialog();
                 return true;
