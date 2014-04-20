@@ -1,16 +1,26 @@
 package pontezit.android.tilos.com.fragment;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.TextView;
 
 import com.androidquery.AQuery;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
+
+import java.util.Calendar;
 
 import flexjson.JSONDeserializer;
 import pontezit.android.tilos.com.R;
@@ -27,24 +37,57 @@ import pontezit.android.tilos.com.utils.PreferencesHelper;
 
 public class ArchiveFragment extends Fragment {
 
+    private View view;
+    private TextView archiveDate;
+    private MediaPlayerActivity activity;
+
     public ArchiveFragment() {
         return;
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState){
-        LogHelper.Log("ShowDetailsFragment; onActivityCreated run", 1);
-        super.onActivityCreated(savedInstanceState);
-
-        getCurrentArchive();
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        try{
+            setHasOptionsMenu(true);
+        }catch(NullPointerException e){
+            LogHelper.Log("setHasOptionsMenu, NullpointerExcepotion");
+        }
+        activity = (MediaPlayerActivity) getActivity();
+
+        //Show the menubar
+        if(!activity.isTabletView())
+            activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_archive, container, false);
+        view = inflater.inflate(R.layout.fragment_archive, container, false);
+        archiveDate = (TextView) view.findViewById(R.id.archiveDate);
+
+        //Set the datepicker for today's date
+        setDatePicker();
+        //Show today's archive
+        getCurrentArchive();
+
         return view;
+    }
+
+    private void setDatePicker(){
+        archiveDate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                Calendar calendar = Calendar.getInstance();
+                Dialog mDialog = new DatePickerDialog(getActivity(),
+                        mDatesetListener, calendar.get(Calendar.YEAR),
+                        calendar.get(Calendar.MONTH), calendar
+                        .get(Calendar.DAY_OF_MONTH));
+                mDialog.show();
+            }
+        });
     }
 
 
@@ -92,6 +135,36 @@ public class ArchiveFragment extends Fragment {
             }
         });
 */
+    }
+
+    private DatePickerDialog.OnDateSetListener mDatesetListener = new DatePickerDialog.OnDateSetListener() {
+
+        public void onDateSet(DatePicker arg0, int arg1, int arg2, int arg3) {
+            arg2 = arg2 + 1;
+
+            String my_date = arg1 + "-" + arg2 + "-" + arg3;
+            archiveDate.setText(my_date);
+        }
+    };
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+    {
+        super.onCreateOptionsMenu(menu, inflater);
+        if(!activity.isTabletView())
+            menu.clear();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch(item.getItemId()) {
+            case android.R.id.home:
+                getActivity().onBackPressed();
+                return true;
+        }
+
+        return false;
     }
 
 

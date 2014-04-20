@@ -4,10 +4,72 @@
     android:layout_height="match_parent"
     tools:context="pontezit.android.tilos.com.fragment.ArchiveFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center">
+
+            <RelativeLayout android:layout_marginTop="0dp"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal">
+
+                <Button android:id="@+id/button1"
+                    android:text="New Button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/archiveDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:padding="10dp"
+                            android:text="dd/mm/yyyy" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button android:id="@+id/button2"
+                    android:text="New Button"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+
+
+        </TableLayout>
+
 
 </FrameLayout>
